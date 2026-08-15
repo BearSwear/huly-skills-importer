@@ -1,6 +1,6 @@
 version: 1
 name: Import skills for Huly Recruiting
-description: An example skill catalogue for importing into Huly Recruiting module. Categories map to the built-in Huly Recruiting skill categories.
+description: An example skill catalogue for importing into Huly Recruiting module. Categories map to the built-in Huly Recruiting skill categories. Edit this file to suit your needs :)
 categories:
   Backend Development:
     aliases:
