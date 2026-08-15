@@ -18,7 +18,7 @@ The project was created to make it practical to maintain a larger recruiting ski
 - supports a safe `--dry-run` mode;
 - can optionally synchronize existing skill descriptions/categories/colors with `--update-existing`;
 - never deletes skills;
-- includes a broad example catalogue for an AI-first SaaS/platform startup.
+- includes a broad example catalogue for a startup.
 
 ## How Huly represents Recruiting skills
 
