@@ -22,7 +22,7 @@ const program = new Command()
 program
   .command('check')
   .description('Validate a YAML skill catalogue without connecting to Huly.')
-  .argument('[catalog]', 'catalogue YAML file', 'skills/startup-platform.yaml')
+  .argument('[catalog]', 'catalogue YAML file', 'skills/import-skills.yaml')
   .action(async (catalogPath: string) => {
     const catalog = await loadCatalog(catalogPath)
     console.log(`Catalogue: ${catalog.name}`)
@@ -64,7 +64,7 @@ program
 program
   .command('import')
   .description('Import missing skills from a YAML catalogue.')
-  .argument('[catalog]', 'catalogue YAML file', 'skills/startup-platform.yaml')
+  .argument('[catalog]', 'catalogue YAML file', 'skills/import-skills.yaml')
   .option('--dry-run', 'show planned changes without writing to Huly', false)
   .option('--update-existing', 'synchronize description/category/color for existing skills', false)
   .action(async (
