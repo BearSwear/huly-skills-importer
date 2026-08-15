@@ -23,4 +23,4 @@ Total skills: 255
 | Web Development | 10 |
 | Other | 46 |
 
-Generated from `skills/startup-platform.yaml`. This file is informational only.
+Generated from `skills/import-skills.yaml`. This file is informational only.
