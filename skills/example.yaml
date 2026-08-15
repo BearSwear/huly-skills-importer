@@ -1,0 +1,22 @@
+version: 1
+name: Example Huly recruiting skills
+description: Minimal example catalogue for huly-skills-importer.
+
+categories:
+  DevOps:
+    aliases:
+      - DevOps
+  Programming Languages:
+    aliases:
+      - Programming Languages
+
+skills:
+  - name: Docker
+    category: DevOps
+    description: Container deployment, networking, storage and troubleshooting.
+    phases: [0, 1, 2, 3]
+
+  - name: Python
+    category: Programming Languages
+    description: Python development for backend services, automation and integrations.
+    phases: [0, 1, 2, 3]
