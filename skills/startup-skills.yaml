@@ -1,0 +1,1807 @@
+version: 1
+name: Startup skills for Huly Recruiting
+description: A broad skill catalogue for building and operating a startup through development
+  phases 0-3. Categories map to the built-in Huly Recruiting skill categories.
+categories:
+  Backend Development:
+    aliases:
+    - Backend development
+    - Backend Development
+  Business Analytics:
+    aliases:
+    - Business Analytics
+  Database Development:
+    aliases:
+    - Database Development
+  Data Structures:
+    aliases:
+    - Data Structures
+  Design:
+    aliases:
+    - Design
+  Desktop Application Development:
+    aliases:
+    - Desktop Application Development
+  DevOps:
+    aliases:
+    - DevOps
+  Hard Skills:
+    aliases:
+    - Hard Skills
+  Management:
+    aliases:
+    - Management
+  Marketing:
+    aliases:
+    - Marketing
+  Mobile Development:
+    aliases:
+    - Mobile Development
+  Networking:
+    aliases:
+    - Networking
+  Programming Languages:
+    aliases:
+    - Programming Languages
+  Quality Assurance:
+    aliases:
+    - Quality Assurance
+  Sales:
+    aliases:
+    - Sales
+  Soft Skills:
+    aliases:
+    - Soft Skills
+  Web Development:
+    aliases:
+    - Web Development
+  Other:
+    aliases:
+    - Other
+skills:
+- name: Backend Development
+  category: Backend Development
+  description: Design and implementation of server-side application and platform logic.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: REST API Design
+  category: Backend Development
+  description: Design of stable, versioned and well-authorized HTTP APIs.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: GraphQL
+  category: Backend Development
+  description: GraphQL schemas, queries, mutations and API integration.
+  phases:
+  - 0
+  - 1
+  - 2
+- name: Async Job Processing
+  category: Backend Development
+  description: Reliable execution of long-running provisioning, backup and integration jobs.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: State Machine Design
+  category: Backend Development
+  description: Explicit lifecycle modelling for tenants, subscriptions, deployments and operations.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Event-Driven Architecture
+  category: Backend Development
+  description: Design of systems driven by events, queues and asynchronous integration.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Webhooks
+  category: Backend Development
+  description: Secure webhook ingestion, verification, retries and delivery.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: API Integration
+  category: Backend Development
+  description: Integration of external APIs with authentication, error handling and reconciliation.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Idempotency
+  category: Backend Development
+  description: Design of safely retryable operations without duplicate side effects.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Reconciliation Systems
+  category: Backend Development
+  description: Detection and repair of differences between desired and actual state.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Multi-Tenant Application Design
+  category: Backend Development
+  description: Tenant-aware backend design with strong data and authorization boundaries.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Provider Abstraction
+  category: Backend Development
+  description: Decoupling platform business logic from infrastructure-specific providers.
+  phases:
+  - 1
+  - 2
+- name: Service Lifecycle Management
+  category: Backend Development
+  description: Provision, validate, upgrade, suspend, restore and destroy managed services.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: SaaS Operations
+  category: Backend Development
+  description: Technical operation of multi-customer managed SaaS services.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Product Analytics
+  category: Business Analytics
+  description: Measurement of product usage, adoption, funnels and feature outcomes.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: SaaS Metrics
+  category: Business Analytics
+  description: MRR, churn, ARPU, conversion, retention and other SaaS metrics.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Unit Economics
+  category: Business Analytics
+  description: Cost, gross margin, support effort and contribution analysis per customer or plan.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Capacity Planning
+  category: Business Analytics
+  description: Forecasting compute, memory, storage, backup and operational capacity.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Cost Attribution
+  category: Business Analytics
+  description: Attributing infrastructure, AI, backup and support costs to tenants and products.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Market Research
+  category: Business Analytics
+  description: Structured research of markets, competitors, customer segments and demand.
+  phases:
+  - 2
+  - 3
+- name: Competitive Analysis
+  category: Business Analytics
+  description: Comparison of product capabilities, pricing, positioning and alternatives.
+  phases:
+  - 2
+  - 3
+- name: Customer Discovery
+  category: Business Analytics
+  description: Evidence-based investigation of customer problems, workflows and purchasing behavior.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Product-Market Validation
+  category: Business Analytics
+  description: Testing repeatability, willingness to pay and product-market fit.
+  phases:
+  - 3
+- name: Workflow Analysis
+  category: Business Analytics
+  description: Mapping business processes, handoffs, bottlenecks and automation opportunities.
+  phases:
+  - 2
+  - 3
+- name: KPI Design
+  category: Business Analytics
+  description: Definition of actionable business and operational performance indicators.
+  phases:
+  - 2
+  - 3
+- name: Cohort Analysis
+  category: Business Analytics
+  description: Analysis of retention and behavior across customer cohorts.
+  phases:
+  - 2
+  - 3
+- name: PostgreSQL
+  category: Database Development
+  description: PostgreSQL schema design, administration, performance and recovery.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: CockroachDB
+  category: Database Development
+  description: Operation and troubleshooting of CockroachDB-backed applications such as Huly.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Database Design
+  category: Database Development
+  description: Relational schema, constraints, indexing and data lifecycle design.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Database Migrations
+  category: Database Development
+  description: Safe, version-controlled database schema evolution.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: SQL Performance Tuning
+  category: Database Development
+  description: Query analysis, indexing and performance troubleshooting.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Vector Databases
+  category: Database Development
+  description: Vector storage and retrieval for semantic search and RAG.
+  phases:
+  - 2
+  - 3
+- name: Redis
+  category: Database Development
+  description: Redis operation and use for caching, queues and transient state.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Database Backup and Recovery
+  category: Database Development
+  description: Consistent database backup, point-in-time considerations and restore validation.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Data Modeling
+  category: Data Structures
+  description: Modelling business entities, relationships and lifecycle state.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Data Transformation
+  category: Data Structures
+  description: Transforming data safely between systems and schemas.
+  phases:
+  - 2
+  - 3
+- name: ETL
+  category: Data Structures
+  description: Extract, transform and load workflows for integrations and migrations.
+  phases:
+  - 2
+  - 3
+- name: Metadata Mapping
+  category: Data Structures
+  description: Mapping source metadata into platform and vertical data models.
+  phases:
+  - 2
+  - 3
+- name: Taxonomy Design
+  category: Data Structures
+  description: Design of controlled vocabularies for classification, search and AI retrieval.
+  phases:
+  - 3
+- name: Event Schema Design
+  category: Data Structures
+  description: Stable schemas for platform, billing, security and workflow events.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Data Synchronization
+  category: Data Structures
+  description: Reliable synchronization and conflict handling between systems.
+  phases:
+  - 2
+  - 3
+- name: Search and Index Design
+  category: Data Structures
+  description: Search/index structures for operational and knowledge workloads.
+  phases:
+  - 2
+  - 3
+- name: UX Design
+  category: Design
+  description: Design of usable workflows and interactions for customers and operators.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: UI Design
+  category: Design
+  description: Visual and interaction design for web application interfaces.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Service Design
+  category: Design
+  description: End-to-end design of customer-facing managed services.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Information Architecture
+  category: Design
+  description: Organization of navigation, content and information structures.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Customer Journey Design
+  category: Design
+  description: Design of signup, onboarding, operation, support and offboarding journeys.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Form Design
+  category: Design
+  description: Low-friction forms for onboarding, ordering, migration and administration.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Dashboard Design
+  category: Design
+  description: Design of useful customer and operator dashboards.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Design Systems
+  category: Design
+  description: Reusable interface components, patterns and consistency standards.
+  phases:
+  - 2
+  - 3
+- name: Desktop Application Development
+  category: Desktop Application Development
+  description: Development and packaging of native or cross-platform desktop applications.
+  phases:
+  - 2
+  - 3
+- name: Electron
+  category: Desktop Application Development
+  description: Development of desktop applications using Electron.
+  phases:
+  - 2
+  - 3
+- name: Linux Systems Administration
+  category: DevOps
+  description: Linux server administration, configuration, patching and troubleshooting.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Unraid Administration
+  category: DevOps
+  description: Unraid storage, Docker, VM, network and host administration.
+  phases:
+  - 0
+  - 1
+  - 2
+- name: KVM and libvirt
+  category: DevOps
+  description: Virtual machine definition, lifecycle, storage and networking with KVM/libvirt.
+  phases:
+  - 0
+  - 1
+  - 2
+- name: Docker
+  category: DevOps
+  description: Container deployment, networking, storage, security and troubleshooting.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Docker Compose
+  category: DevOps
+  description: Operation of reproducible multi-container application stacks.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Infrastructure as Code
+  category: DevOps
+  description: Declarative and version-controlled infrastructure management.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: OpenTofu / Terraform
+  category: DevOps
+  description: Infrastructure provisioning and provider-oriented IaC workflows.
+  phases:
+  - 0
+  - 1
+  - 2
+- name: Ansible
+  category: DevOps
+  description: Automated host configuration, hardening and application deployment.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Configuration Management
+  category: DevOps
+  description: Repeatable management of configuration across hosts and tenants.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Git
+  category: DevOps
+  description: Version control for code, configuration and infrastructure.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: GitHub Actions
+  category: DevOps
+  description: CI/CD automation using GitHub Actions.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: CI/CD
+  category: DevOps
+  description: Automated build, test, validation and deployment pipelines.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Release Management
+  category: DevOps
+  description: Controlled promotion, rollout and rollback of platform releases.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Environment Management
+  category: DevOps
+  description: Separation and management of development, staging and production environments.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: ZFS
+  category: DevOps
+  description: ZFS mirrors, datasets, snapshots, replication and storage recovery.
+  phases:
+  - 0
+  - 1
+  - 2
+- name: Storage Architecture
+  category: DevOps
+  description: Design of fast, durable and cost-efficient application and backup storage.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Backup Architecture
+  category: DevOps
+  description: Design of encrypted, isolated and testable backup systems.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Restic
+  category: DevOps
+  description: Encrypted backup repositories, retention and restore workflows using Restic.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Disaster Recovery Engineering
+  category: DevOps
+  description: Recovery architecture, testing, priorities, RPO and RTO planning.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Restore Testing
+  category: DevOps
+  description: Systematic proof that backups can reconstruct working services.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: High Availability Architecture
+  category: DevOps
+  description: Design for redundancy, failover and elimination of critical single points of failure.
+  phases:
+  - 2
+  - 3
+- name: Observability
+  category: DevOps
+  description: Logs, metrics, traces, health checks and operational insight.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Prometheus
+  category: DevOps
+  description: Metrics collection, querying and monitoring with Prometheus.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Structured Logging
+  category: DevOps
+  description: Machine-readable logs suitable for correlation and investigation.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Site Reliability Engineering
+  category: DevOps
+  description: SLOs, reliability, incident learning and sustainable platform operation.
+  phases:
+  - 2
+  - 3
+- name: Incident Management
+  category: DevOps
+  description: Operational incident detection, coordination, communication and review.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Application Packaging
+  category: DevOps
+  description: Turning upstream applications into repeatable managed service packages.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Upgrade Engineering
+  category: DevOps
+  description: Safe preflight, backup, upgrade, validation and rollback workflows.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Huly Self-Hosting
+  category: DevOps
+  description: Deployment, upgrade, backup and troubleshooting of self-hosted Huly.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Paperless-ngx Administration
+  category: DevOps
+  description: Deployment, operation, backup and upgrade of Paperless-ngx.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Security Architecture
+  category: Hard Skills
+  description: Design of security boundaries, trust models and platform controls.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Linux Hardening
+  category: Hard Skills
+  description: Secure configuration of Linux hosts and administrative access.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Container Security
+  category: Hard Skills
+  description: Container image, host, runtime and privilege security.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Vulnerability Management
+  category: Hard Skills
+  description: Detection, prioritization, remediation and reporting of vulnerabilities.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: SIEM
+  category: Hard Skills
+  description: Central collection, analysis and investigation of security events.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Wazuh
+  category: Hard Skills
+  description: Wazuh manager, indexer, agents, rules, vulnerability detection and integrations.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Security Monitoring
+  category: Hard Skills
+  description: Continuous security telemetry and actionable alerting.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: File Integrity Monitoring
+  category: Hard Skills
+  description: Detection of sensitive file and configuration changes.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Detection Engineering
+  category: Hard Skills
+  description: Design, testing and tuning of security detection rules.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Incident Response
+  category: Hard Skills
+  description: Technical investigation, containment, remediation and recovery.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Security Operations / SOC
+  category: Hard Skills
+  description: Operational triage and management of security alerts and incidents.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Threat Modeling
+  category: Hard Skills
+  description: Systematic analysis of threats, assets, trust boundaries and mitigations.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Web Application Security
+  category: Hard Skills
+  description: Security of browser applications, APIs, sessions and public endpoints.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: WAF / Application Security
+  category: Hard Skills
+  description: Web application firewall policy, attack detection and blocking.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: CrowdSec
+  category: Hard Skills
+  description: CrowdSec detection, intelligence and remediation integration.
+  phases:
+  - 0
+  - 1
+  - 2
+- name: Identity Security
+  category: Hard Skills
+  description: MFA, privileged identities, sessions and authorization controls.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Secrets Management
+  category: Hard Skills
+  description: Secure generation, storage, rotation and revocation of credentials.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: OpenBao / Vault
+  category: Hard Skills
+  description: Operation and integration of OpenBao or Vault-style secret stores.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Security Logging and Audit
+  category: Hard Skills
+  description: Design of security logs and traceable privileged actions.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Security Testing
+  category: Hard Skills
+  description: Controlled validation of application, infrastructure and security controls.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Supply Chain Security
+  category: Hard Skills
+  description: Security of dependencies, container images, builds and upstream components.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: GDPR
+  category: Hard Skills
+  description: Practical application of GDPR to hosted services and data processing.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Data Protection
+  category: Hard Skills
+  description: Protection and governance of personal and customer data.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Data Processing Agreements
+  category: Hard Skills
+  description: Processor/controller responsibilities and data processing terms.
+  phases:
+  - 2
+  - 3
+- name: Data Mapping
+  category: Hard Skills
+  description: Documentation of data stores, flows, subprocessors and processing activities.
+  phases:
+  - 2
+  - 3
+- name: Data Retention
+  category: Hard Skills
+  description: Policy and implementation of retention for customer data, logs and backups.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Data Subject Rights
+  category: Hard Skills
+  description: Workflows for access, export, correction and deletion requests.
+  phases:
+  - 2
+  - 3
+- name: Privacy by Design
+  category: Hard Skills
+  description: Embedding privacy requirements into architecture and product design.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: DPIA
+  category: Hard Skills
+  description: Data Protection Impact Assessment for higher-risk processing.
+  phases:
+  - 2
+  - 3
+- name: Subprocessor Management
+  category: Hard Skills
+  description: Assessment and documentation of third-party data processors.
+  phases:
+  - 2
+  - 3
+- name: Information Security Governance
+  category: Hard Skills
+  description: Policies, ownership, evidence and governance of security controls.
+  phases:
+  - 2
+  - 3
+- name: Risk Management
+  category: Hard Skills
+  description: Identification, evaluation, treatment and tracking of business and technical risks.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Open Source Licensing
+  category: Hard Skills
+  description: Assessment of open-source licences for commercial hosting and distribution.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Regulatory Analysis
+  category: Hard Skills
+  description: Interpretation of industry-specific operational and compliance requirements.
+  phases:
+  - 3
+- name: AI Governance
+  category: Hard Skills
+  description: Governance of model use, data, auditability and human oversight.
+  phases:
+  - 2
+  - 3
+- name: AI Privacy
+  category: Hard Skills
+  description: Privacy-aware routing, logging and processing of AI workloads.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Product Management
+  category: Management
+  description: Product strategy, prioritization, roadmap and outcome ownership.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: SaaS Product Strategy
+  category: Management
+  description: Strategy for managed SaaS products, platform leverage and recurring revenue.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: MVP Design
+  category: Management
+  description: Defining the smallest complete product that validates key assumptions.
+  phases:
+  - 1
+- name: Roadmapping
+  category: Management
+  description: Sequencing product and technical work around dependencies and outcomes.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Backlog Management
+  category: Management
+  description: Structuring, prioritizing and maintaining actionable project work.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Requirements Engineering
+  category: Management
+  description: Turning customer and system needs into testable requirements.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: User Story Design
+  category: Management
+  description: Writing user-centered backlog items with clear outcomes.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Acceptance Criteria
+  category: Management
+  description: Defining objective completion and quality criteria.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Pilot Program Management
+  category: Management
+  description: Design and operation of pilots, beta cohorts and design partnerships.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Project Management
+  category: Management
+  description: Planning, coordination, risk and delivery management.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Agile / Scrum
+  category: Management
+  description: Iterative planning, review and delivery practices.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Customer Success
+  category: Management
+  description: Customer adoption, value realization, retention and expansion.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Technical Account Management
+  category: Management
+  description: Technical relationship ownership for higher-value customers.
+  phases:
+  - 2
+  - 3
+- name: Team Leadership
+  category: Management
+  description: Direction, delegation, feedback and team development.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Vendor Management
+  category: Management
+  description: Selection, evaluation and management of external technology providers.
+  phases:
+  - 2
+  - 3
+- name: Product Marketing
+  category: Marketing
+  description: Product positioning, messaging and customer-facing value communication.
+  phases:
+  - 2
+  - 3
+- name: Positioning
+  category: Marketing
+  description: Clear definition of target customer, category and differentiated value.
+  phases:
+  - 2
+  - 3
+- name: Go-to-Market Strategy
+  category: Marketing
+  description: Planning acquisition, channels, launches and commercial validation.
+  phases:
+  - 2
+  - 3
+- name: Content Marketing
+  category: Marketing
+  description: Educational and demand-generating content for target customers.
+  phases:
+  - 2
+  - 3
+- name: SEO
+  category: Marketing
+  description: Search visibility and content optimization for customer acquisition.
+  phases:
+  - 3
+- name: Competitive Positioning
+  category: Marketing
+  description: Communicating differentiation against customer alternatives.
+  phases:
+  - 2
+  - 3
+- name: Lead Generation
+  category: Marketing
+  description: Creation and testing of repeatable prospect acquisition channels.
+  phases:
+  - 3
+- name: Market Segmentation
+  category: Marketing
+  description: Grouping customers by needs, behavior and commercial potential.
+  phases:
+  - 2
+  - 3
+- name: Value Proposition Design
+  category: Marketing
+  description: Connecting product capabilities to measurable customer outcomes.
+  phases:
+  - 2
+  - 3
+- name: Mobile Development
+  category: Mobile Development
+  description: Development and delivery of mobile applications and mobile experiences.
+  phases:
+  - 2
+  - 3
+- name: iOS Development
+  category: Mobile Development
+  description: Native iOS application development.
+  phases:
+  - 2
+  - 3
+- name: Android Development
+  category: Mobile Development
+  description: Native Android application development.
+  phases:
+  - 2
+  - 3
+- name: Flutter
+  category: Mobile Development
+  description: Cross-platform mobile development with Flutter.
+  phases:
+  - 2
+  - 3
+- name: React Native
+  category: Mobile Development
+  description: Cross-platform mobile development with React Native.
+  phases:
+  - 2
+  - 3
+- name: TCP/IP Networking
+  category: Networking
+  description: IP addressing, routing, ports, troubleshooting and packet-level fundamentals.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: VLAN Design
+  category: Networking
+  description: Network segmentation for management, tenants, security and edge services.
+  phases:
+  - 0
+  - 1
+  - 2
+- name: Firewall Policy Design
+  category: Networking
+  description: Least-privilege network policy and inter-zone access control.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: UniFi Networking
+  category: Networking
+  description: UniFi gateway, switch, VLAN, routing and firewall administration.
+  phases:
+  - 0
+  - 1
+  - 2
+- name: DNS
+  category: Networking
+  description: Internal and external DNS architecture and automation.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: TLS / PKI
+  category: Networking
+  description: Certificates, HTTPS, trust, key handling and TLS troubleshooting.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Reverse Proxy Architecture
+  category: Networking
+  description: Design of secure application ingress and reverse proxy layers.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Traefik
+  category: Networking
+  description: Dynamic Traefik routing, middleware, metrics and configuration.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Cloudflare
+  category: Networking
+  description: Cloudflare DNS, edge services, access controls and security.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Cloudflare Tunnel
+  category: Networking
+  description: Outbound-only publication of private services through Cloudflare Tunnel.
+  phases:
+  - 0
+  - 1
+  - 2
+- name: Cloudflare Access
+  category: Networking
+  description: Identity-aware application access using Cloudflare Access.
+  phases:
+  - 0
+  - 1
+  - 2
+- name: Tailscale
+  category: Networking
+  description: Secure administrative access and private networking with Tailscale.
+  phases:
+  - 0
+  - 1
+  - 2
+- name: WebSockets / HTTP Proxying
+  category: Networking
+  description: Reliable proxying of WebSocket and HTTP application traffic.
+  phases:
+  - 0
+  - 1
+  - 2
+- name: Network Security Architecture
+  category: Networking
+  description: Secure zones, trust boundaries, routes and exposure design.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Python
+  category: Programming Languages
+  description: Python development for backend services, automation, security and integrations.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: TypeScript
+  category: Programming Languages
+  description: Type-safe JavaScript development for web, APIs and tooling.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: JavaScript
+  category: Programming Languages
+  description: JavaScript development for web applications and integrations.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: SQL
+  category: Programming Languages
+  description: SQL querying and data manipulation for relational databases.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Bash / Shell
+  category: Programming Languages
+  description: Shell scripting for Linux automation and operational tooling.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Go
+  category: Programming Languages
+  description: Go development for infrastructure, networking and backend services.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Rust
+  category: Programming Languages
+  description: Rust development for systems and high-assurance components.
+  phases:
+  - 2
+  - 3
+- name: Automated Testing
+  category: Quality Assurance
+  description: Automated validation of platform and product behavior.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: End-to-End Testing
+  category: Quality Assurance
+  description: Testing complete customer and service workflows across systems.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Integration Testing
+  category: Quality Assurance
+  description: Testing boundaries between services, APIs and external systems.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Test Automation
+  category: Quality Assurance
+  description: Building repeatable automated test tooling and pipelines.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Regression Testing
+  category: Quality Assurance
+  description: Preventing previously working platform behaviors from breaking.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Performance Testing
+  category: Quality Assurance
+  description: Load, latency, throughput and resource behavior testing.
+  phases:
+  - 2
+  - 3
+- name: Disaster Recovery Testing
+  category: Quality Assurance
+  description: Controlled failure and recovery exercises for infrastructure and services.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: AI Evaluation
+  category: Quality Assurance
+  description: Evaluation datasets, factuality, usefulness and safety testing for AI features.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: AI Red Teaming
+  category: Quality Assurance
+  description: Adversarial testing of AI prompts, tools, permissions and data boundaries.
+  phases:
+  - 2
+  - 3
+- name: B2B SaaS Sales
+  category: Sales
+  description: Selling recurring business software and managed services to organizations.
+  phases:
+  - 2
+  - 3
+- name: SMB Sales
+  category: Sales
+  description: Sales processes and purchasing dynamics for small and medium businesses.
+  phases:
+  - 2
+  - 3
+- name: Technical Sales
+  category: Sales
+  description: Explaining technical, security and AI capabilities in customer terms.
+  phases:
+  - 2
+  - 3
+- name: Solution Consulting
+  category: Sales
+  description: Mapping customer workflows and problems to a viable platform solution.
+  phases:
+  - 2
+  - 3
+- name: Sales Discovery
+  category: Sales
+  description: Qualification of customer need, urgency, authority, budget and fit.
+  phases:
+  - 3
+- name: Partnership Development
+  category: Sales
+  description: Development of channel, technology and industry partnerships.
+  phases:
+  - 3
+- name: Pricing Negotiation
+  category: Sales
+  description: Commercial negotiation and validation of willingness to pay.
+  phases:
+  - 3
+- name: Customer Acquisition Analytics
+  category: Sales
+  description: Measurement of lead, demo, pilot and conversion economics.
+  phases:
+  - 3
+- name: Demo Design
+  category: Sales
+  description: Design of outcome-oriented product demonstrations.
+  phases:
+  - 3
+- name: Account Management
+  category: Sales
+  description: Ongoing commercial relationship and expansion management.
+  phases:
+  - 2
+  - 3
+- name: Technical Communication
+  category: Soft Skills
+  description: Clear communication of complex technical topics to mixed audiences.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Collaboration
+  category: Soft Skills
+  description: Effective work across engineering, product, security and commercial roles.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Problem Solving
+  category: Soft Skills
+  description: Structured diagnosis and resolution of ambiguous technical and business problems.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Mentoring
+  category: Soft Skills
+  description: Helping others develop technical judgment and execution capability.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Stakeholder Management
+  category: Soft Skills
+  description: Managing expectations, priorities and communication across stakeholders.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Customer Interviewing
+  category: Soft Skills
+  description: Conducting unbiased and useful customer discovery interviews.
+  phases:
+  - 2
+  - 3
+- name: Facilitation
+  category: Soft Skills
+  description: Leading workshops, planning sessions and decision-making discussions.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Documentation Mindset
+  category: Soft Skills
+  description: Treating documentation and reproducibility as part of completed work.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Systems Thinking
+  category: Soft Skills
+  description: Reasoning about dependencies, feedback loops and whole-system outcomes.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Decision Making
+  category: Soft Skills
+  description: Making timely, evidence-based decisions under uncertainty.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Ownership
+  category: Soft Skills
+  description: Taking responsibility for outcomes from problem definition through operation.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Learning Agility
+  category: Soft Skills
+  description: Rapidly acquiring and applying unfamiliar technical or domain knowledge.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Frontend Development
+  category: Web Development
+  description: Implementation of customer and operator web interfaces.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Web Application Development
+  category: Web Development
+  description: Full lifecycle development of browser-based applications.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: HTML / CSS
+  category: Web Development
+  description: Semantic HTML and maintainable CSS for web interfaces.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: React
+  category: Web Development
+  description: Web application development using React.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Next.js
+  category: Web Development
+  description: React application development with Next.js.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Responsive Web Design
+  category: Web Development
+  description: Interfaces that work across desktop, tablet and mobile layouts.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Web Accessibility
+  category: Web Development
+  description: Accessible web experiences and practical WCAG implementation.
+  phases:
+  - 2
+  - 3
+- name: Localization / i18n
+  category: Web Development
+  description: Internationalization, translation and locale-aware application behavior.
+  phases:
+  - 2
+  - 3
+- name: Authentication Integration
+  category: Web Development
+  description: OIDC, sessions, login flows and authorization integration in web applications.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Customer Portal Development
+  category: Web Development
+  description: Development of self-service subscription and service administration portals.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: AI / LLM Architecture
+  category: Other
+  description: Architecture of model gateways, providers, policies, data flows and AI applications.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: LLM Application Development
+  category: Other
+  description: Development of production LLM features grounded in business workflows.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Local LLM Inference
+  category: Other
+  description: Operation of local language models on self-managed compute.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: GPU Inference
+  category: Other
+  description: Deployment and optimization of GPU-backed AI inference workloads.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Ollama
+  category: Other
+  description: Local model deployment and OpenAI-adjacent integration using Ollama.
+  phases:
+  - 0
+  - 1
+  - 2
+- name: OpenAI-Compatible APIs
+  category: Other
+  description: Building against OpenAI-compatible model interfaces and gateways.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: AI Gateway
+  category: Other
+  description: Central model routing, keys, limits, policies and usage attribution.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: LiteLLM or Equivalent
+  category: Other
+  description: Operation of an AI gateway such as LiteLLM for routing and metering.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Prompt Engineering
+  category: Other
+  description: Task-focused prompt design with structured context and outputs.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Retrieval-Augmented Generation
+  category: Other
+  description: Grounded generation using indexed customer or industry knowledge.
+  phases:
+  - 2
+  - 3
+- name: Embeddings
+  category: Other
+  description: Embedding generation and semantic retrieval design.
+  phases:
+  - 2
+  - 3
+- name: AI Agents
+  category: Other
+  description: Tool-using AI systems that participate in controlled workflows.
+  phases:
+  - 2
+  - 3
+- name: Tool Calling
+  category: Other
+  description: Securely exposing bounded application actions to AI models.
+  phases:
+  - 2
+  - 3
+- name: AI Safety / Guardrails
+  category: Other
+  description: Approval boundaries, output validation and safe failure behavior for AI.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: AI Tenant Isolation
+  category: Other
+  description: Preventing cross-tenant leakage through prompts, retrieval, caches and tooling.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Permission-Aware Retrieval
+  category: Other
+  description: Ensuring AI retrieval respects source-system user permissions.
+  phases:
+  - 3
+- name: Prompt Injection Defense
+  category: Other
+  description: Protection of RAG and tool-using AI systems against malicious instructions.
+  phases:
+  - 2
+  - 3
+- name: AI Observability
+  category: Other
+  description: Monitoring model usage, latency, failures, quality and policy decisions.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: AI Cost Management
+  category: Other
+  description: Managing model selection, token consumption and AI unit economics.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Workflow Automation
+  category: Other
+  description: Automation of multi-step business workflows across systems and humans.
+  phases:
+  - 2
+  - 3
+- name: Integration Architecture
+  category: Other
+  description: Design of reusable, secure and observable external-system integrations.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: n8n
+  category: Other
+  description: Rapid workflow and integration automation using n8n.
+  phases:
+  - 2
+  - 3
+- name: Technical Writing
+  category: Other
+  description: Clear technical documentation for developers, operators and customers.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Runbook Development
+  category: Other
+  description: Creation of repeatable operational, security and recovery procedures.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Architecture Documentation
+  category: Other
+  description: Documentation of systems, data flows, boundaries and design decisions.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Customer Documentation
+  category: Other
+  description: Usable instructions and explanations for non-specialist customers.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: API Documentation
+  category: Other
+  description: Documentation of APIs, authentication, errors and integration patterns.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Knowledge Management
+  category: Other
+  description: Structuring and maintaining useful organizational knowledge.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Huly Administration
+  category: Other
+  description: Administration of Huly workspaces, projects, recruiting and collaboration features.
+  phases:
+  - 0
+  - 1
+  - 2
+  - 3
+- name: Open Source Software Evaluation
+  category: Other
+  description: Evaluation of OSS technical fit, health, maintenance and hosting suitability.
+  phases:
+  - 1
+  - 2
+  - 3
+- name: Vertical SaaS Strategy
+  category: Other
+  description: Design of industry-specific software propositions on a shared core platform.
+  phases:
+  - 3
+- name: Jobs-to-be-Done
+  category: Other
+  description: Product discovery focused on the progress customers are trying to make.
+  phases:
+  - 3
+- name: Business Process Automation
+  category: Other
+  description: Automation of repeatable operational processes and approvals.
+  phases:
+  - 2
+  - 3
+- name: Migration Support
+  category: Other
+  description: Planning and assisting customer migration from existing systems.
+  phases:
+  - 2
+  - 3
+- name: Document Processing
+  category: Other
+  description: Classification, extraction, indexing and workflow handling of documents.
+  phases:
+  - 2
+  - 3
+- name: Professional Services Operations
+  category: Other
+  description: Domain knowledge of project-based professional services firms.
+  phases:
+  - 3
+- name: Engineering Consultancy Domain Knowledge
+  category: Other
+  description: Domain knowledge of engineering and technical consulting businesses.
+  phases:
+  - 3
+- name: Construction Industry Knowledge
+  category: Other
+  description: Domain knowledge of construction, contracting and project delivery.
+  phases:
+  - 3
+- name: Property and Facility Management
+  category: Other
+  description: Domain knowledge of property and facility operations.
+  phases:
+  - 3
+- name: Legal Services Domain Knowledge
+  category: Other
+  description: Domain knowledge of legal-service workflows and confidentiality requirements.
+  phases:
+  - 3
+- name: Accounting and Bookkeeping Domain Knowledge
+  category: Other
+  description: Domain knowledge of accounting and bookkeeping workflows.
+  phases:
+  - 3
+- name: Cybersecurity Services Domain Knowledge
+  category: Other
+  description: Domain knowledge of managed security and cybersecurity service businesses.
+  phases:
+  - 3
+- name: Environmental Consultancy Domain Knowledge
+  category: Other
+  description: Domain knowledge of environmental consulting and technical reporting workflows.
+  phases:
+  - 3
+- name: Municipal / Public-Sector Domain Knowledge
+  category: Other
+  description: Domain knowledge of municipal and public-sector workflows and procurement.
+  phases:
+  - 3
+- name: Records Management
+  category: Other
+  description: Structured retention, classification and lifecycle management of records.
+  phases:
+  - 2
+  - 3
+- name: Quality Management Systems
+  category: Other
+  description: Process, evidence and controlled-document concepts used in quality systems.
+  phases:
+  - 3
