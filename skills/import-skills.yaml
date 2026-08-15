@@ -1,7 +1,6 @@
 version: 1
-name: Startup skills for Huly Recruiting
-description: A broad skill catalogue for building and operating a startup through development
-  phases 0-3. Categories map to the built-in Huly Recruiting skill categories.
+name: Import skills for Huly Recruiting
+description: An example skill catalogue for importing into Huly Recruiting module. Categories map to the built-in Huly Recruiting skill categories.
 categories:
   Backend Development:
     aliases:
