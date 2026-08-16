@@ -5,9 +5,11 @@ Contributions are welcome.
 ## Development
 
 1. Use Node.js 20.11 or newer.
-2. Copy `.npmrc.example` to `.npmrc` and provide a GitHub Packages token with `read:packages`.
-3. Run `npm install`.
+2. Run `npm install`.
+3. Copy `.env.example` to `.env` only when testing against a Huly workspace.
 4. Run `npm run check` before opening a pull request.
+
+No GitHub Packages token is required for the current dependency set.
 
 ## Scope
 
