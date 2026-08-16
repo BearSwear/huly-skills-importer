@@ -1,8 +1,8 @@
-import type { TagElement } from '@hcengineering/tags'
 import { normalize } from './catalog.js'
 import { resolveCategory } from './category-resolver.js'
 import type {
   HulySkillAdapter,
+  HulyTagElement,
   ImportPlanItem,
   ImportSummary,
   SkillCatalog
@@ -22,7 +22,7 @@ export async function buildImportPlan(
     adapter.listSkills()
   ])
 
-  const existingByName = new Map<string, TagElement>()
+  const existingByName = new Map<string, HulyTagElement>()
   for (const existing of existingSkills) {
     existingByName.set(normalize(existing.title), existing)
   }
