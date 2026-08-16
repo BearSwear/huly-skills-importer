@@ -1,704 +1,1209 @@
 version: 1
 name: Example Huly Recruiting skill catalogue
-description: Example skill catalogue for importing into Huly Recruiting module. Categories map to the built-in Huly Recruiting skill categories. Edit this file to suit your needs :)
+description: An example skill catalogue for importing into Huly Recruiting module. Categories map to the built-in Huly Recruiting
+  skill categories. Edit this file to suit your needs :)
 categories:
   Backend Development:
     aliases:
-      - Backend development
-      - Backend Development
+    - Backend development
+    - Backend Development
   Business Analytics:
     aliases:
-      - Business Analytics
-      - Bussines analytics
-      - Bussines Analytics
+    - Business Analytics
+    - Bussines analytics
+    - Bussines Analytics
   Database Development:
     aliases:
-      - Database Development
+    - Database Development
   Data Structures:
     aliases:
-      - Data Structures
+    - Data Structures
   Design:
     aliases:
-      - Design
+    - Design
   Desktop Application Development:
     aliases:
-      - Desktop Application Development
+    - Desktop Application Development
   DevOps:
     aliases:
-      - DevOps
+    - DevOps
   Hard Skills:
     aliases:
-      - Hard Skills
+    - Hard Skills
   Management:
     aliases:
-      - Management
+    - Management
   Marketing:
     aliases:
-      - Marketing
+    - Marketing
   Mobile Development:
     aliases:
-      - Mobile Development
+    - Mobile Development
   Networking:
     aliases:
-      - Networking
+    - Networking
   Programming Languages:
     aliases:
-      - Programming Languages
+    - Programming Languages
   Quality Assurance:
     aliases:
-      - Quality Assurance
+    - Quality Assurance
   Sales:
     aliases:
-      - Sales
+    - Sales
   Soft Skills:
     aliases:
-      - Soft Skills
+    - Soft Skills
   Web Development:
     aliases:
-      - Web Development
+    - Web Development
   Other:
     aliases:
-      - Other
+    - Other
 skills:
-  - name: REST API Design
-    category: Backend Development
-    description: Design of stable, versioned and well-authorized HTTP APIs.
-  - name: GraphQL
-    category: Backend Development
-    description: GraphQL schemas, queries, mutations and API integration.
-  - name: Async Job Processing
-    category: Backend Development
-    description: Reliable execution of long-running provisioning, backup and integration jobs.
-  - name: State Machine Design
-    category: Backend Development
-    description: Explicit lifecycle modelling for tenants, subscriptions, deployments and operations.
-  - name: Event-Driven Architecture
-    category: Backend Development
-    description: Design of systems driven by events, queues and asynchronous integration.
-  - name: Webhooks
-    category: Backend Development
-    description: Secure webhook ingestion, verification, retries and delivery.
-  - name: API Integration
-    category: Backend Development
-    description: Integration of external APIs with authentication, error handling and reconciliation.
-  - name: Idempotency
-    category: Backend Development
-    description: Design of safely retryable operations without duplicate side effects.
-  - name: Reconciliation Systems
-    category: Backend Development
-    description: Detection and repair of differences between desired and actual state.
-  - name: Multi-Tenant Application Design
-    category: Backend Development
-    description: Tenant-aware backend design with strong data and authorization boundaries.
-  - name: Provider Abstraction
-    category: Backend Development
-    description: Decoupling platform business logic from infrastructure-specific providers.
-  - name: Service Lifecycle Management
-    category: Backend Development
-    description: Provision, validate, upgrade, suspend, restore and destroy managed services.
-  - name: SaaS Operations
-    category: Backend Development
-    description: Technical operation of hosted application and platform services.
-  - name: Product Analytics
-    category: Business Analytics
-    description: Measurement of product usage, adoption, funnels and feature outcomes.
-  - name: SaaS Metrics
-    category: Business Analytics
-    description: MRR, churn, ARPU, conversion, retention and other SaaS metrics.
-  - name: Unit Economics
-    category: Business Analytics
-    description: Cost, gross margin, support effort and contribution analysis per customer or plan.
-  - name: Capacity Planning
-    category: Business Analytics
-    description: Forecasting compute, memory, storage, backup and operational capacity.
-  - name: Cost Attribution
-    category: Business Analytics
-    description: Attributing infrastructure, AI, backup and support costs to tenants and products.
-  - name: Market Research
-    category: Business Analytics
-    description: Structured research of markets, competitors, customer segments and demand.
-  - name: Competitive Analysis
-    category: Business Analytics
-    description: Comparison of product capabilities, pricing, positioning and alternatives.
-  - name: Customer Discovery
-    category: Business Analytics
-    description: Evidence-based investigation of customer problems, workflows and purchasing behavior.
-  - name: Product-Market Validation
-    category: Business Analytics
-    description: Testing repeatability, willingness to pay and product-market fit.
-  - name: Workflow Analysis
-    category: Business Analytics
-    description: Mapping business processes, handoffs, bottlenecks and automation opportunities.
-  - name: KPI Design
-    category: Business Analytics
-    description: Definition of actionable business and operational performance indicators.
-  - name: Cohort Analysis
-    category: Business Analytics
-    description: Analysis of retention and behavior across customer cohorts.
-  - name: CockroachDB
-    category: Database Development
-    description: Operation and troubleshooting of CockroachDB-backed applications such as Huly.
-  - name: Database Design
-    category: Database Development
-    description: Relational schema, constraints, indexing and data lifecycle design.
-  - name: Database Migrations
-    category: Database Development
-    description: Safe, version-controlled database schema evolution.
-  - name: SQL Performance Tuning
-    category: Database Development
-    description: Query analysis, indexing and performance troubleshooting.
-  - name: Vector Databases
-    category: Database Development
-    description: Vector storage and retrieval for semantic search and RAG.
-  - name: Database Backup and Recovery
-    category: Database Development
-    description: Consistent database backup, point-in-time considerations and restore validation.
-  - name: Data Transformation
-    category: Data Structures
-    description: Transforming data safely between systems and schemas.
-  - name: ETL
-    category: Data Structures
-    description: Extract, transform and load workflows for integrations and migrations.
-  - name: Metadata Mapping
-    category: Data Structures
-    description: Mapping source metadata into platform and vertical data models.
-  - name: Taxonomy Design
-    category: Data Structures
-    description: Design of controlled vocabularies for classification, search and AI retrieval.
-  - name: Event Schema Design
-    category: Data Structures
-    description: Stable schemas for platform, billing, security and workflow events.
-  - name: Data Synchronization
-    category: Data Structures
-    description: Reliable synchronization and conflict handling between systems.
-  - name: Search and Index Design
-    category: Data Structures
-    description: Search/index structures for operational and knowledge workloads.
-  - name: Service Design
-    category: Design
-    description: End-to-end design of customer-facing managed services.
-  - name: Information Architecture
-    category: Design
-    description: Organization of navigation, content and information structures.
-  - name: Customer Journey Design
-    category: Design
-    description: Design of signup, onboarding, operation, support and offboarding journeys.
-  - name: Form Design
-    category: Design
-    description: Low-friction forms for onboarding, ordering, migration and administration.
-  - name: Dashboard Design
-    category: Design
-    description: Design of useful customer and operator dashboards.
-  - name: Design Systems
-    category: Design
-    description: Reusable interface components, patterns and consistency standards.
-  - name: Desktop Application Development
-    category: Desktop Application Development
-    description: Development and packaging of native or cross-platform desktop applications.
-  - name: Electron
-    category: Desktop Application Development
-    description: Development of desktop applications using Electron.
-  - name: Linux Systems Administration
-    category: DevOps
-    description: Linux server administration, configuration, patching and troubleshooting.
-  - name: Unraid Administration
-    category: DevOps
-    description: Unraid storage, Docker, VM, network and host administration.
-  - name: KVM and libvirt
-    category: DevOps
-    description: Virtual machine definition, lifecycle, storage and networking with KVM/libvirt.
-  - name: Infrastructure as Code
-    category: DevOps
-    description: Declarative and version-controlled infrastructure management.
-  - name: OpenTofu
-    category: DevOps
-    description: Infrastructure as code using OpenTofu and compatible Terraform-style workflows.
-  - name: Configuration Management
-    category: DevOps
-    description: Repeatable management of configuration across hosts and tenants.
-  - name: GitHub Actions
-    category: DevOps
-    description: CI/CD automation using GitHub Actions.
-  - name: Release Management
-    category: DevOps
-    description: Controlled promotion, rollout and rollback of platform releases.
-  - name: Environment Management
-    category: DevOps
-    description: Separation and management of development, staging and production environments.
-  - name: ZFS
-    category: DevOps
-    description: ZFS mirrors, datasets, snapshots, replication and storage recovery.
-  - name: Storage Architecture
-    category: DevOps
-    description: Design of fast, durable and cost-efficient application and backup storage.
-  - name: Backup Architecture
-    category: DevOps
-    description: Design of encrypted, isolated and testable backup systems.
-  - name: Restic
-    category: DevOps
-    description: Encrypted backup repositories, retention and restore workflows using Restic.
-  - name: Disaster Recovery Engineering
-    category: DevOps
-    description: Recovery architecture, testing, priorities, RPO and RTO planning.
-  - name: Restore Testing
-    category: DevOps
-    description: Systematic proof that backups can reconstruct working services.
-  - name: High Availability Architecture
-    category: DevOps
-    description: Design for redundancy, failover and elimination of critical single points of failure.
-  - name: Observability
-    category: DevOps
-    description: Logs, metrics, traces, health checks and operational insight.
-  - name: Prometheus
-    category: DevOps
-    description: Metrics collection, querying and monitoring with Prometheus.
-  - name: Structured Logging
-    category: DevOps
-    description: Machine-readable logs suitable for correlation and investigation.
-  - name: Site Reliability Engineering
-    category: DevOps
-    description: SLOs, reliability, incident learning and sustainable platform operation.
-  - name: Incident Management
-    category: DevOps
-    description: Operational incident detection, coordination, communication and review.
-  - name: Application Packaging
-    category: DevOps
-    description: Turning upstream applications into repeatable managed service packages.
-  - name: Upgrade Engineering
-    category: DevOps
-    description: Safe preflight, backup, upgrade, validation and rollback workflows.
-  - name: Huly Self-Hosting
-    category: DevOps
-    description: Deployment, upgrade, backup and troubleshooting of self-hosted Huly.
-  - name: Paperless-ngx Administration
-    category: DevOps
-    description: Deployment, operation, backup and upgrade of Paperless-ngx.
-  - name: Security Architecture
-    category: Hard Skills
-    description: Design of security boundaries, trust models and platform controls.
-  - name: Linux Hardening
-    category: Hard Skills
-    description: Secure configuration of Linux hosts and administrative access.
-  - name: Container Security
-    category: Hard Skills
-    description: Container image, host, runtime and privilege security.
-  - name: Vulnerability Management
-    category: Hard Skills
-    description: Detection, prioritization, remediation and reporting of vulnerabilities.
-  - name: SIEM
-    category: Hard Skills
-    description: Central collection, analysis and investigation of security events.
-  - name: Wazuh
-    category: Hard Skills
-    description: Wazuh manager, indexer, agents, rules, vulnerability detection and integrations.
-  - name: Security Monitoring
-    category: Hard Skills
-    description: Continuous security telemetry and actionable alerting.
-  - name: File Integrity Monitoring
-    category: Hard Skills
-    description: Detection of sensitive file and configuration changes.
-  - name: Detection Engineering
-    category: Hard Skills
-    description: Design, testing and tuning of security detection rules.
-  - name: Incident Response
-    category: Hard Skills
-    description: Technical investigation, containment, remediation and recovery.
-  - name: Security Operations / SOC
-    category: Hard Skills
-    description: Operational triage and management of security alerts and incidents.
-  - name: Threat Modeling
-    category: Hard Skills
-    description: Systematic analysis of threats, assets, trust boundaries and mitigations.
-  - name: Web Application Security
-    category: Hard Skills
-    description: Security of browser applications, APIs, sessions and public endpoints.
-  - name: WAF / Application Security
-    category: Hard Skills
-    description: Web application firewall policy, attack detection and blocking.
-  - name: CrowdSec
-    category: Hard Skills
-    description: CrowdSec detection, intelligence and remediation integration.
-  - name: Identity Security
-    category: Hard Skills
-    description: MFA, privileged identities, sessions and authorization controls.
-  - name: Secrets Management
-    category: Hard Skills
-    description: Secure generation, storage, rotation and revocation of credentials.
-  - name: OpenBao / Vault
-    category: Hard Skills
-    description: Operation and integration of OpenBao or Vault-style secret stores.
-  - name: Security Logging and Audit
-    category: Hard Skills
-    description: Design of security logs and traceable privileged actions.
-  - name: Security Testing
-    category: Hard Skills
-    description: Controlled validation of application, infrastructure and security controls.
-  - name: Supply Chain Security
-    category: Hard Skills
-    description: Security of dependencies, container images, builds and upstream components.
-  - name: GDPR
-    category: Hard Skills
-    description: Practical application of GDPR to hosted services and data processing.
-  - name: Data Protection
-    category: Hard Skills
-    description: Protection and governance of personal and customer data.
-  - name: Data Processing Agreements
-    category: Hard Skills
-    description: Processor/controller responsibilities and data processing terms.
-  - name: Data Retention
-    category: Hard Skills
-    description: Policy and implementation of retention for customer data, logs and backups.
-  - name: Data Subject Rights
-    category: Hard Skills
-    description: Workflows for access, export, correction and deletion requests.
-  - name: Privacy by Design
-    category: Hard Skills
-    description: Embedding privacy requirements into architecture and product design.
-  - name: DPIA
-    category: Hard Skills
-    description: Data Protection Impact Assessment for higher-risk processing.
-  - name: Subprocessor Management
-    category: Hard Skills
-    description: Assessment and documentation of third-party data processors.
-  - name: Information Security Governance
-    category: Hard Skills
-    description: Policies, ownership, evidence and governance of security controls.
-  - name: Risk Management
-    category: Hard Skills
-    description: Identification, evaluation, treatment and tracking of business and technical risks.
-  - name: Open Source Licensing
-    category: Hard Skills
-    description: Assessment of open-source licences for commercial hosting and distribution.
-  - name: Regulatory Analysis
-    category: Hard Skills
-    description: Interpretation of industry-specific operational and compliance requirements.
-  - name: AI Governance
-    category: Hard Skills
-    description: Governance of model use, data, auditability and human oversight.
-  - name: AI Privacy
-    category: Hard Skills
-    description: Privacy-aware routing, logging and processing of AI workloads.
-  - name: Product Management
-    category: Management
-    description: Product strategy, prioritization, roadmap and outcome ownership.
-  - name: SaaS Product Strategy
-    category: Management
-    description: Strategy for software-as-a-service products, platform leverage and recurring revenue.
-  - name: MVP Design
-    category: Management
-    description: Defining the smallest complete product that validates key assumptions.
-  - name: Roadmapping
-    category: Management
-    description: Sequencing product and technical work around dependencies and outcomes.
-  - name: Backlog Management
-    category: Management
-    description: Structuring, prioritizing and maintaining actionable project work.
-  - name: Requirements Engineering
-    category: Management
-    description: Turning customer and system needs into testable requirements.
-  - name: User Story Design
-    category: Management
-    description: Writing user-centered backlog items with clear outcomes.
-  - name: Acceptance Criteria
-    category: Management
-    description: Defining objective completion and quality criteria.
-  - name: Pilot Program Management
-    category: Management
-    description: Design and operation of pilots, beta cohorts and design partnerships.
-  - name: Customer Success
-    category: Management
-    description: Customer adoption, value realization, retention and expansion.
-  - name: Technical Account Management
-    category: Management
-    description: Technical relationship ownership for higher-value customers.
-  - name: Vendor Management
-    category: Management
-    description: Selection, evaluation and management of external technology providers.
-  - name: Product Marketing
-    category: Marketing
-    description: Product positioning, messaging and customer-facing value communication.
-  - name: Positioning
-    category: Marketing
-    description: Clear definition of target customer, category and differentiated value.
-  - name: Go-to-Market Strategy
-    category: Marketing
-    description: Planning acquisition, channels, launches and commercial validation.
-  - name: Content Marketing
-    category: Marketing
-    description: Educational and demand-generating content for target customers.
-  - name: Competitive Positioning
-    category: Marketing
-    description: Communicating differentiation against customer alternatives.
-  - name: Market Segmentation
-    category: Marketing
-    description: Grouping customers by needs, behavior and commercial potential.
-  - name: Value Proposition Design
-    category: Marketing
-    description: Connecting product capabilities to measurable customer outcomes.
-  - name: Flutter
-    category: Mobile Development
-    description: Cross-platform mobile development with Flutter.
-  - name: React Native
-    category: Mobile Development
-    description: Cross-platform mobile development with React Native.
-  - name: VLAN Design
-    category: Networking
-    description: Network segmentation for management, tenants, security and edge services.
-  - name: Firewall Policy Design
-    category: Networking
-    description: Least-privilege network policy and inter-zone access control.
-  - name: UniFi Networking
-    category: Networking
-    description: UniFi gateway, switch, VLAN, routing and firewall administration.
-  - name: TLS / PKI
-    category: Networking
-    description: Certificates, HTTPS, trust, key handling and TLS troubleshooting.
-  - name: Reverse Proxy Architecture
-    category: Networking
-    description: Design of secure application ingress and reverse proxy layers.
-  - name: Traefik
-    category: Networking
-    description: Dynamic Traefik routing, middleware, metrics and configuration.
-  - name: Cloudflare
-    category: Networking
-    description: Cloudflare DNS, edge services, access controls and security.
-  - name: Cloudflare Tunnel
-    category: Networking
-    description: Outbound-only publication of private services through Cloudflare Tunnel.
-  - name: Cloudflare Access
-    category: Networking
-    description: Identity-aware application access using Cloudflare Access.
-  - name: Tailscale
-    category: Networking
-    description: Secure administrative access and private networking with Tailscale.
-  - name: WebSockets / HTTP Proxying
-    category: Networking
-    description: Reliable proxying of WebSocket and HTTP application traffic.
-  - name: Network Security Architecture
-    category: Networking
-    description: Secure zones, trust boundaries, routes and exposure design.
-  - name: End-to-End Testing
-    category: Quality Assurance
-    description: Testing complete customer and service workflows across systems.
-  - name: Integration Testing
-    category: Quality Assurance
-    description: Testing boundaries between services, APIs and external systems.
-  - name: Performance Testing
-    category: Quality Assurance
-    description: Load, latency, throughput and resource behavior testing.
-  - name: Disaster Recovery Testing
-    category: Quality Assurance
-    description: Controlled failure and recovery exercises for infrastructure and services.
-  - name: AI Evaluation
-    category: Quality Assurance
-    description: Evaluation datasets, factuality, usefulness and safety testing for AI features.
-  - name: AI Red Teaming
-    category: Quality Assurance
-    description: Adversarial testing of AI prompts, tools, permissions and data boundaries.
-  - name: B2B SaaS Sales
-    category: Sales
-    description: Selling recurring business software and managed services to organizations.
-  - name: SMB Sales
-    category: Sales
-    description: Sales processes and purchasing dynamics for small and medium businesses.
-  - name: Technical Sales
-    category: Sales
-    description: Explaining technical, security and AI capabilities in customer terms.
-  - name: Solution Consulting
-    category: Sales
-    description: Mapping customer workflows and problems to a viable platform solution.
-  - name: Sales Discovery
-    category: Sales
-    description: Qualification of customer need, urgency, authority, budget and fit.
-  - name: Partnership Development
-    category: Sales
-    description: Development of channel, technology and industry partnerships.
-  - name: Pricing Negotiation
-    category: Sales
-    description: Commercial negotiation and validation of willingness to pay.
-  - name: Customer Acquisition Analytics
-    category: Sales
-    description: Measurement of lead, demo, pilot and conversion economics.
-  - name: Demo Design
-    category: Sales
-    description: Design of outcome-oriented product demonstrations.
-  - name: Account Management
-    category: Sales
-    description: Ongoing commercial relationship and expansion management.
-  - name: Mentoring
-    category: Soft Skills
-    description: Helping others develop technical judgment and execution capability.
-  - name: Stakeholder Management
-    category: Soft Skills
-    description: Managing expectations, priorities and communication across stakeholders.
-  - name: Customer Interviewing
-    category: Soft Skills
-    description: Conducting unbiased and useful customer discovery interviews.
-  - name: Documentation Mindset
-    category: Soft Skills
-    description: Treating documentation and reproducibility as part of completed work.
-  - name: Systems Thinking
-    category: Soft Skills
-    description: Reasoning about dependencies, feedback loops and whole-system outcomes.
-  - name: Decision Making
-    category: Soft Skills
-    description: Making timely, evidence-based decisions under uncertainty.
-  - name: Ownership
-    category: Soft Skills
-    description: Taking responsibility for outcomes from problem definition through operation.
-  - name: Learning Agility
-    category: Soft Skills
-    description: Rapidly acquiring and applying unfamiliar technical or domain knowledge.
-  - name: Next.js
-    category: Web Development
-    description: React application development with Next.js.
-  - name: Web Accessibility
-    category: Web Development
-    description: Accessible web experiences and practical WCAG implementation.
-  - name: Localization / i18n
-    category: Web Development
-    description: Internationalization, translation and locale-aware application behavior.
-  - name: Authentication Integration
-    category: Web Development
-    description: OIDC, sessions, login flows and authorization integration in web applications.
-  - name: Customer Portal Development
-    category: Web Development
-    description: Development of self-service subscription and service administration portals.
-  - name: AI / LLM Architecture
-    category: Other
-    description: Architecture of model gateways, providers, policies, data flows and AI applications.
-  - name: LLM Application Development
-    category: Other
-    description: Development of production LLM features grounded in business workflows.
-  - name: Local LLM Inference
-    category: Other
-    description: Operation of local language models on self-managed compute.
-  - name: GPU Inference
-    category: Other
-    description: Deployment and optimization of GPU-backed AI inference workloads.
-  - name: Ollama
-    category: Other
-    description: Local model deployment and OpenAI-adjacent integration using Ollama.
-  - name: OpenAI-Compatible APIs
-    category: Other
-    description: Building against OpenAI-compatible model interfaces and gateways.
-  - name: AI Gateway
-    category: Other
-    description: Central model routing, keys, limits, policies and usage attribution.
-  - name: LiteLLM or Equivalent
-    category: Other
-    description: Operation of an AI gateway such as LiteLLM for routing and metering.
-  - name: Prompt Engineering
-    category: Other
-    description: Task-focused prompt design with structured context and outputs.
-  - name: Retrieval-Augmented Generation
-    category: Other
-    description: Grounded generation using indexed customer or industry knowledge.
-  - name: Embeddings
-    category: Other
-    description: Embedding generation and semantic retrieval design.
-  - name: AI Agents
-    category: Other
-    description: Tool-using AI systems that participate in controlled workflows.
-  - name: Tool Calling
-    category: Other
-    description: Securely exposing bounded application actions to AI models.
-  - name: AI Safety / Guardrails
-    category: Other
-    description: Approval boundaries, output validation and safe failure behavior for AI.
-  - name: AI Tenant Isolation
-    category: Other
-    description: Preventing cross-tenant leakage through prompts, retrieval, caches and tooling.
-  - name: Permission-Aware Retrieval
-    category: Other
-    description: Ensuring AI retrieval respects source-system user permissions.
-  - name: Prompt Injection Defense
-    category: Other
-    description: Protection of RAG and tool-using AI systems against malicious instructions.
-  - name: AI Observability
-    category: Other
-    description: Monitoring model usage, latency, failures, quality and policy decisions.
-  - name: AI Cost Management
-    category: Other
-    description: Managing model selection, token consumption and AI unit economics.
-  - name: Workflow Automation
-    category: Other
-    description: Automation of multi-step business workflows across systems and humans.
-  - name: Integration Architecture
-    category: Other
-    description: Design of reusable, secure and observable external-system integrations.
-  - name: n8n
-    category: Other
-    description: Rapid workflow and integration automation using n8n.
-  - name: Technical Writing
-    category: Other
-    description: Clear technical documentation for developers, operators and customers.
-  - name: Runbook Development
-    category: Other
-    description: Creation of repeatable operational, security and recovery procedures.
-  - name: Architecture Documentation
-    category: Other
-    description: Documentation of systems, data flows, boundaries and design decisions.
-  - name: Customer Documentation
-    category: Other
-    description: Usable instructions and explanations for non-specialist customers.
-  - name: API Documentation
-    category: Other
-    description: Documentation of APIs, authentication, errors and integration patterns.
-  - name: Knowledge Management
-    category: Other
-    description: Structuring and maintaining useful organizational knowledge.
-  - name: Huly Administration
-    category: Other
-    description: Administration of Huly workspaces, projects, recruiting and collaboration features.
-  - name: Open Source Software Evaluation
-    category: Other
-    description: Evaluation of OSS technical fit, health, maintenance and hosting suitability.
-  - name: Vertical SaaS Strategy
-    category: Other
-    description: Design of industry-specific software propositions on a shared core platform.
-  - name: Jobs-to-be-Done
-    category: Other
-    description: Product discovery focused on the progress customers are trying to make.
-  - name: Business Process Automation
-    category: Other
-    description: Automation of repeatable operational processes and approvals.
-  - name: Migration Support
-    category: Other
-    description: Planning and assisting customer migration from existing systems.
-  - name: Document Processing
-    category: Other
-    description: Classification, extraction, indexing and workflow handling of documents.
-  - name: Professional Services Operations
-    category: Other
-    description: Domain knowledge of project-based professional services firms.
-  - name: Engineering Consultancy Domain Knowledge
-    category: Other
-    description: Domain knowledge of engineering and technical consulting businesses.
-  - name: Construction Industry Knowledge
-    category: Other
-    description: Domain knowledge of construction, contracting and project delivery.
-  - name: Property and Facility Management
-    category: Other
-    description: Domain knowledge of property and facility operations.
-  - name: Legal Services Domain Knowledge
-    category: Other
-    description: Domain knowledge of legal-service workflows and confidentiality requirements.
-  - name: Accounting and Bookkeeping Domain Knowledge
-    category: Other
-    description: Domain knowledge of accounting and bookkeeping workflows.
-  - name: Cybersecurity Services Domain Knowledge
-    category: Other
-    description: Domain knowledge of managed security and cybersecurity service businesses.
-  - name: Environmental Consultancy Domain Knowledge
-    category: Other
-    description: Domain knowledge of environmental consulting and technical reporting workflows.
-  - name: Municipal / Public-Sector Domain Knowledge
-    category: Other
-    description: Domain knowledge of municipal and public-sector workflows and procurement.
-  - name: Records Management
-    category: Other
-    description: Structured retention, classification and lifecycle management of records.
-  - name: Quality Management Systems
-    category: Other
-    description: Process, evidence and controlled-document concepts used in quality systems.
+- name: Backend Development
+  category: Backend Development
+  description: Design and implementation of server-side application and platform logic.
+- name: REST API Design
+  category: Backend Development
+  description: Design of stable, versioned and well-authorized HTTP APIs.
+- name: GraphQL
+  category: Backend Development
+  description: GraphQL schemas, queries, mutations and API integration.
+- name: Async Job Processing
+  category: Backend Development
+  description: Reliable execution of long-running provisioning, backup and integration jobs.
+- name: State Machine Design
+  category: Backend Development
+  description: Explicit lifecycle modelling for tenants, subscriptions, deployments and operations.
+- name: Event-Driven Architecture
+  category: Backend Development
+  description: Design of systems driven by events, queues and asynchronous integration.
+- name: Webhooks
+  category: Backend Development
+  description: Secure webhook ingestion, verification, retries and delivery.
+- name: API Integration
+  category: Backend Development
+  description: Integration of external APIs with authentication, error handling and reconciliation.
+- name: Idempotency
+  category: Backend Development
+  description: Design of safely retryable operations without duplicate side effects.
+- name: Reconciliation Systems
+  category: Backend Development
+  description: Detection and repair of differences between desired and actual state.
+- name: Multi-Tenant Application Design
+  category: Backend Development
+  description: Tenant-aware backend design with strong data and authorization boundaries.
+- name: Provider Abstraction
+  category: Backend Development
+  description: Decoupling platform business logic from infrastructure-specific providers.
+- name: Service Lifecycle Management
+  category: Backend Development
+  description: Provision, validate, upgrade, suspend, restore and destroy managed services.
+- name: SaaS Operations
+  category: Backend Development
+  description: Technical operation of hosted application and platform services.
+- name: Product Analytics
+  category: Business Analytics
+  description: Measurement of product usage, adoption, funnels and feature outcomes.
+- name: SaaS Metrics
+  category: Business Analytics
+  description: MRR, churn, ARPU, conversion, retention and other SaaS metrics.
+- name: Unit Economics
+  category: Business Analytics
+  description: Cost, gross margin, support effort and contribution analysis per customer or plan.
+- name: Capacity Planning
+  category: Business Analytics
+  description: Forecasting compute, memory, storage, backup and operational capacity.
+- name: Cost Attribution
+  category: Business Analytics
+  description: Attributing infrastructure, AI, backup and support costs to tenants and products.
+- name: Market Research
+  category: Business Analytics
+  description: Structured research of markets, competitors, customer segments and demand.
+- name: Competitive Analysis
+  category: Business Analytics
+  description: Comparison of product capabilities, pricing, positioning and alternatives.
+- name: Customer Discovery
+  category: Business Analytics
+  description: Evidence-based investigation of customer problems, workflows and purchasing behavior.
+- name: Product-Market Validation
+  category: Business Analytics
+  description: Testing repeatability, willingness to pay and product-market fit.
+- name: Workflow Analysis
+  category: Business Analytics
+  description: Mapping business processes, handoffs, bottlenecks and automation opportunities.
+- name: KPI Design
+  category: Business Analytics
+  description: Definition of actionable business and operational performance indicators.
+- name: Cohort Analysis
+  category: Business Analytics
+  description: Analysis of retention and behavior across customer cohorts.
+- name: PostgreSQL
+  category: Database Development
+  description: PostgreSQL schema design, administration, performance and recovery.
+- name: CockroachDB
+  category: Database Development
+  description: Operation and troubleshooting of CockroachDB-backed applications such as Huly.
+- name: Database Design
+  category: Database Development
+  description: Relational schema, constraints, indexing and data lifecycle design.
+- name: Database Migrations
+  category: Database Development
+  description: Safe, version-controlled database schema evolution.
+- name: SQL Performance Tuning
+  category: Database Development
+  description: Query analysis, indexing and performance troubleshooting.
+- name: Vector Databases
+  category: Database Development
+  description: Vector storage and retrieval for semantic search and RAG.
+- name: Redis
+  category: Database Development
+  description: Redis operation and use for caching, queues and transient state.
+- name: Database Backup and Recovery
+  category: Database Development
+  description: Consistent database backup, point-in-time considerations and restore validation.
+- name: Data Modeling
+  category: Data Structures
+  description: Modelling business entities, relationships and lifecycle state.
+- name: Data Transformation
+  category: Data Structures
+  description: Transforming data safely between systems and schemas.
+- name: ETL
+  category: Data Structures
+  description: Extract, transform and load workflows for integrations and migrations.
+- name: Metadata Mapping
+  category: Data Structures
+  description: Mapping source metadata into platform and vertical data models.
+- name: Taxonomy Design
+  category: Data Structures
+  description: Design of controlled vocabularies for classification, search and AI retrieval.
+- name: Event Schema Design
+  category: Data Structures
+  description: Stable schemas for platform, billing, security and workflow events.
+- name: Data Synchronization
+  category: Data Structures
+  description: Reliable synchronization and conflict handling between systems.
+- name: Search and Index Design
+  category: Data Structures
+  description: Search/index structures for operational and knowledge workloads.
+- name: UX Design
+  category: Design
+  description: Design of usable workflows and interactions for customers and operators.
+- name: UI Design
+  category: Design
+  description: Visual and interaction design for web application interfaces.
+- name: Service Design
+  category: Design
+  description: End-to-end design of customer-facing managed services.
+- name: Information Architecture
+  category: Design
+  description: Organization of navigation, content and information structures.
+- name: Customer Journey Design
+  category: Design
+  description: Design of signup, onboarding, operation, support and offboarding journeys.
+- name: Form Design
+  category: Design
+  description: Low-friction forms for onboarding, ordering, migration and administration.
+- name: Dashboard Design
+  category: Design
+  description: Design of useful customer and operator dashboards.
+- name: Design Systems
+  category: Design
+  description: Reusable interface components, patterns and consistency standards.
+- name: Desktop Application Development
+  category: Desktop Application Development
+  description: Development and packaging of native or cross-platform desktop applications.
+- name: Electron
+  category: Desktop Application Development
+  description: Development of desktop applications using Electron.
+- name: Linux Systems Administration
+  category: DevOps
+  description: Linux server administration, configuration, patching and troubleshooting.
+- name: Unraid Administration
+  category: DevOps
+  description: Unraid storage, Docker, VM, network and host administration.
+- name: KVM and libvirt
+  category: DevOps
+  description: Virtual machine definition, lifecycle, storage and networking with KVM/libvirt.
+- name: Docker
+  category: DevOps
+  description: Container deployment, networking, storage, security and troubleshooting.
+- name: Docker Compose
+  category: DevOps
+  description: Operation of reproducible multi-container application stacks.
+- name: Infrastructure as Code
+  category: DevOps
+  description: Declarative and version-controlled infrastructure management.
+- name: OpenTofu
+  category: DevOps
+  description: Infrastructure provisioning and provider-oriented IaC workflows.
+- name: Ansible
+  category: DevOps
+  description: Automated host configuration, hardening and application deployment.
+- name: Configuration Management
+  category: DevOps
+  description: Repeatable management of configuration across hosts and tenants.
+- name: Git
+  category: DevOps
+  description: Version control for code, configuration and infrastructure.
+- name: GitHub Actions
+  category: DevOps
+  description: CI/CD automation using GitHub Actions.
+- name: CI/CD
+  category: DevOps
+  description: Automated build, test, validation and deployment pipelines.
+- name: Release Management
+  category: DevOps
+  description: Controlled promotion, rollout and rollback of platform releases.
+- name: Environment Management
+  category: DevOps
+  description: Separation and management of development, staging and production environments.
+- name: ZFS
+  category: DevOps
+  description: ZFS mirrors, datasets, snapshots, replication and storage recovery.
+- name: Storage Architecture
+  category: DevOps
+  description: Design of fast, durable and cost-efficient application and backup storage.
+- name: Backup Architecture
+  category: DevOps
+  description: Design of encrypted, isolated and testable backup systems.
+- name: Restic
+  category: DevOps
+  description: Encrypted backup repositories, retention and restore workflows using Restic.
+- name: Disaster Recovery Engineering
+  category: DevOps
+  description: Recovery architecture, testing, priorities, RPO and RTO planning.
+- name: Restore Testing
+  category: DevOps
+  description: Systematic proof that backups can reconstruct working services.
+- name: High Availability Architecture
+  category: DevOps
+  description: Design for redundancy, failover and elimination of critical single points of failure.
+- name: Observability
+  category: DevOps
+  description: Logs, metrics, traces, health checks and operational insight.
+- name: Prometheus
+  category: DevOps
+  description: Metrics collection, querying and monitoring with Prometheus.
+- name: Structured Logging
+  category: DevOps
+  description: Machine-readable logs suitable for correlation and investigation.
+- name: Site Reliability Engineering
+  category: DevOps
+  description: SLOs, reliability, incident learning and sustainable platform operation.
+- name: Incident Management
+  category: DevOps
+  description: Operational incident detection, coordination, communication and review.
+- name: Application Packaging
+  category: DevOps
+  description: Turning upstream applications into repeatable managed service packages.
+- name: Upgrade Engineering
+  category: DevOps
+  description: Safe preflight, backup, upgrade, validation and rollback workflows.
+- name: Huly Self-Hosting
+  category: DevOps
+  description: Deployment, upgrade, backup and troubleshooting of self-hosted Huly.
+- name: Paperless-ngx Administration
+  category: DevOps
+  description: Deployment, operation, backup and upgrade of Paperless-ngx.
+- name: Security Architecture
+  category: Hard Skills
+  description: Design of security boundaries, trust models and platform controls.
+- name: Linux Hardening
+  category: Hard Skills
+  description: Secure configuration of Linux hosts and administrative access.
+- name: Container Security
+  category: Hard Skills
+  description: Container image, host, runtime and privilege security.
+- name: Vulnerability Management
+  category: Hard Skills
+  description: Detection, prioritization, remediation and reporting of vulnerabilities.
+- name: SIEM
+  category: Hard Skills
+  description: Central collection, analysis and investigation of security events.
+- name: Wazuh
+  category: Hard Skills
+  description: Wazuh manager, indexer, agents, rules, vulnerability detection and integrations.
+- name: Security Monitoring
+  category: Hard Skills
+  description: Continuous security telemetry and actionable alerting.
+- name: File Integrity Monitoring
+  category: Hard Skills
+  description: Detection of sensitive file and configuration changes.
+- name: Detection Engineering
+  category: Hard Skills
+  description: Design, testing and tuning of security detection rules.
+- name: Incident Response
+  category: Hard Skills
+  description: Technical investigation, containment, remediation and recovery.
+- name: Security Operations / SOC
+  category: Hard Skills
+  description: Operational triage and management of security alerts and incidents.
+- name: Threat Modeling
+  category: Hard Skills
+  description: Systematic analysis of threats, assets, trust boundaries and mitigations.
+- name: Web Application Security
+  category: Hard Skills
+  description: Security of browser applications, APIs, sessions and public endpoints.
+- name: WAF / Application Security
+  category: Hard Skills
+  description: Web application firewall policy, attack detection and blocking.
+- name: CrowdSec
+  category: Hard Skills
+  description: CrowdSec detection, intelligence and remediation integration.
+- name: Identity Security
+  category: Hard Skills
+  description: MFA, privileged identities, sessions and authorization controls.
+- name: Secrets Management
+  category: Hard Skills
+  description: Secure generation, storage, rotation and revocation of credentials.
+- name: OpenBao / Vault
+  category: Hard Skills
+  description: Operation and integration of OpenBao or Vault-style secret stores.
+- name: Security Logging and Audit
+  category: Hard Skills
+  description: Design of security logs and traceable privileged actions.
+- name: Security Testing
+  category: Hard Skills
+  description: Controlled validation of application, infrastructure and security controls.
+- name: Supply Chain Security
+  category: Hard Skills
+  description: Security of dependencies, container images, builds and upstream components.
+- name: GDPR
+  category: Hard Skills
+  description: Practical application of GDPR to hosted services and data processing.
+- name: Data Protection
+  category: Hard Skills
+  description: Protection and governance of personal and customer data.
+- name: Data Processing Agreements
+  category: Hard Skills
+  description: Processor/controller responsibilities and data processing terms.
+- name: Data Mapping
+  category: Hard Skills
+  description: Documentation of data stores, flows, subprocessors and processing activities.
+- name: Data Retention
+  category: Hard Skills
+  description: Policy and implementation of retention for customer data, logs and backups.
+- name: Data Subject Rights
+  category: Hard Skills
+  description: Workflows for access, export, correction and deletion requests.
+- name: Privacy by Design
+  category: Hard Skills
+  description: Embedding privacy requirements into architecture and product design.
+- name: DPIA
+  category: Hard Skills
+  description: Data Protection Impact Assessment for higher-risk processing.
+- name: Subprocessor Management
+  category: Hard Skills
+  description: Assessment and documentation of third-party data processors.
+- name: Information Security Governance
+  category: Hard Skills
+  description: Policies, ownership, evidence and governance of security controls.
+- name: Risk Management
+  category: Hard Skills
+  description: Identification, evaluation, treatment and tracking of business and technical risks.
+- name: Open Source Licensing
+  category: Hard Skills
+  description: Assessment of open-source licences for commercial hosting and distribution.
+- name: Regulatory Analysis
+  category: Hard Skills
+  description: Interpretation of industry-specific operational and compliance requirements.
+- name: AI Governance
+  category: Hard Skills
+  description: Governance of model use, data, auditability and human oversight.
+- name: AI Privacy
+  category: Hard Skills
+  description: Privacy-aware routing, logging and processing of AI workloads.
+- name: Product Management
+  category: Management
+  description: Product strategy, prioritization, roadmap and outcome ownership.
+- name: SaaS Product Strategy
+  category: Management
+  description: Strategy for managed SaaS products, platform leverage and recurring revenue.
+- name: MVP Design
+  category: Management
+  description: Defining the smallest complete product that validates key assumptions.
+- name: Roadmapping
+  category: Management
+  description: Sequencing product and technical work around dependencies and outcomes.
+- name: Backlog Management
+  category: Management
+  description: Structuring, prioritizing and maintaining actionable project work.
+- name: Requirements Engineering
+  category: Management
+  description: Turning customer and system needs into testable requirements.
+- name: User Story Design
+  category: Management
+  description: Writing user-centered backlog items with clear outcomes.
+- name: Acceptance Criteria
+  category: Management
+  description: Defining objective completion and quality criteria.
+- name: Pilot Program Management
+  category: Management
+  description: Design and operation of pilots, beta cohorts and design partnerships.
+- name: Project Management
+  category: Management
+  description: Planning, coordination, risk and delivery management.
+- name: Agile
+  category: Management
+  description: Iterative planning, review and delivery practices.
+- name: Customer Success
+  category: Management
+  description: Customer adoption, value realization, retention and expansion.
+- name: Technical Account Management
+  category: Management
+  description: Technical relationship ownership for higher-value customers.
+- name: Team Leadership
+  category: Management
+  description: Direction, delegation, feedback and team development.
+- name: Vendor Management
+  category: Management
+  description: Selection, evaluation and management of external technology providers.
+- name: Product Marketing
+  category: Marketing
+  description: Product positioning, messaging and customer-facing value communication.
+- name: Positioning
+  category: Marketing
+  description: Clear definition of target customer, category and differentiated value.
+- name: Go-to-Market Strategy
+  category: Marketing
+  description: Planning acquisition, channels, launches and commercial validation.
+- name: Content Marketing
+  category: Marketing
+  description: Educational and demand-generating content for target customers.
+- name: SEO
+  category: Marketing
+  description: Search visibility and content optimization for customer acquisition.
+- name: Competitive Positioning
+  category: Marketing
+  description: Communicating differentiation against customer alternatives.
+- name: Lead Generation
+  category: Marketing
+  description: Creation and testing of repeatable prospect acquisition channels.
+- name: Market Segmentation
+  category: Marketing
+  description: Grouping customers by needs, behavior and commercial potential.
+- name: Value Proposition Design
+  category: Marketing
+  description: Connecting product capabilities to measurable customer outcomes.
+- name: iOS
+  category: Mobile Development
+  description: Native iOS application development.
+- name: Android
+  category: Mobile Development
+  description: Native Android application development.
+- name: Flutter
+  category: Mobile Development
+  description: Cross-platform mobile development with Flutter.
+- name: React Native
+  category: Mobile Development
+  description: Cross-platform mobile development with React Native.
+- name: TCP/IP
+  category: Networking
+  description: IP addressing, routing, ports, troubleshooting and packet-level fundamentals.
+- name: VLAN Design
+  category: Networking
+  description: Network segmentation for management, tenants, security and edge services.
+- name: Firewall Policy Design
+  category: Networking
+  description: Least-privilege network policy and inter-zone access control.
+- name: UniFi Networking
+  category: Networking
+  description: UniFi gateway, switch, VLAN, routing and firewall administration.
+- name: DNS
+  category: Networking
+  description: Internal and external DNS architecture and automation.
+- name: TLS / PKI
+  category: Networking
+  description: Certificates, HTTPS, trust, key handling and TLS troubleshooting.
+- name: Reverse Proxy Architecture
+  category: Networking
+  description: Design of secure application ingress and reverse proxy layers.
+- name: Traefik
+  category: Networking
+  description: Dynamic Traefik routing, middleware, metrics and configuration.
+- name: Cloudflare
+  category: Networking
+  description: Cloudflare DNS, edge services, access controls and security.
+- name: Cloudflare Tunnel
+  category: Networking
+  description: Outbound-only publication of private services through Cloudflare Tunnel.
+- name: Cloudflare Access
+  category: Networking
+  description: Identity-aware application access using Cloudflare Access.
+- name: Tailscale
+  category: Networking
+  description: Secure administrative access and private networking with Tailscale.
+- name: WebSockets / HTTP Proxying
+  category: Networking
+  description: Reliable proxying of WebSocket and HTTP application traffic.
+- name: Network Security Architecture
+  category: Networking
+  description: Secure zones, trust boundaries, routes and exposure design.
+- name: Python
+  category: Programming Languages
+  description: Python development for backend services, automation, security and integrations.
+- name: TypeScript
+  category: Programming Languages
+  description: Type-safe JavaScript development for web, APIs and tooling.
+- name: JavaScript
+  category: Programming Languages
+  description: JavaScript development for web applications and integrations.
+- name: SQL
+  category: Programming Languages
+  description: SQL querying and data manipulation for relational databases.
+- name: Bash
+  category: DevOps
+  description: Shell scripting for Linux automation and operational tooling.
+- name: Go
+  category: Programming Languages
+  description: Go development for infrastructure, networking and backend services.
+- name: Rust
+  category: Programming Languages
+  description: Rust development for systems and high-assurance components.
+- name: End-to-End Testing
+  category: Quality Assurance
+  description: Testing complete customer and service workflows across systems.
+- name: Integration Testing
+  category: Quality Assurance
+  description: Testing boundaries between services, APIs and external systems.
+- name: Test Automation
+  category: Quality Assurance
+  description: Building repeatable automated test tooling and pipelines.
+- name: Regression Testing
+  category: Quality Assurance
+  description: Preventing previously working platform behaviors from breaking.
+- name: Performance Testing
+  category: Quality Assurance
+  description: Load, latency, throughput and resource behavior testing.
+- name: Disaster Recovery Testing
+  category: Quality Assurance
+  description: Controlled failure and recovery exercises for infrastructure and services.
+- name: AI Evaluation
+  category: Quality Assurance
+  description: Evaluation datasets, factuality, usefulness and safety testing for AI features.
+- name: AI Red Teaming
+  category: Quality Assurance
+  description: Adversarial testing of AI prompts, tools, permissions and data boundaries.
+- name: B2B SaaS Sales
+  category: Sales
+  description: Selling recurring business software and managed services to organizations.
+- name: SMB Sales
+  category: Sales
+  description: Sales processes and purchasing dynamics for small and medium businesses.
+- name: Technical Sales
+  category: Sales
+  description: Explaining technical, security and AI capabilities in customer terms.
+- name: Solution Consulting
+  category: Sales
+  description: Mapping customer workflows and problems to a viable platform solution.
+- name: Sales Discovery
+  category: Sales
+  description: Qualification of customer need, urgency, authority, budget and fit.
+- name: Partnership Development
+  category: Sales
+  description: Development of channel, technology and industry partnerships.
+- name: Pricing Negotiation
+  category: Sales
+  description: Commercial negotiation and validation of willingness to pay.
+- name: Customer Acquisition Analytics
+  category: Sales
+  description: Measurement of lead, demo, pilot and conversion economics.
+- name: Demo Design
+  category: Sales
+  description: Design of outcome-oriented product demonstrations.
+- name: Account Management
+  category: Sales
+  description: Ongoing commercial relationship and expansion management.
+- name: Technical Communication
+  category: Soft Skills
+  description: Clear communication of complex technical topics to mixed audiences.
+- name: Collaboration
+  category: Soft Skills
+  description: Effective work across engineering, product, security and commercial roles.
+- name: Problem Solving
+  category: Soft Skills
+  description: Structured diagnosis and resolution of ambiguous technical and business problems.
+- name: Mentoring
+  category: Soft Skills
+  description: Helping others develop technical judgment and execution capability.
+- name: Stakeholder Management
+  category: Soft Skills
+  description: Managing expectations, priorities and communication across stakeholders.
+- name: Customer Interviewing
+  category: Soft Skills
+  description: Conducting unbiased and useful customer discovery interviews.
+- name: Facilitation
+  category: Soft Skills
+  description: Leading workshops, planning sessions and decision-making discussions.
+- name: Documentation Mindset
+  category: Soft Skills
+  description: Treating documentation and reproducibility as part of completed work.
+- name: Systems Thinking
+  category: Soft Skills
+  description: Reasoning about dependencies, feedback loops and whole-system outcomes.
+- name: Decision Making
+  category: Soft Skills
+  description: Making timely, evidence-based decisions under uncertainty.
+- name: Ownership
+  category: Soft Skills
+  description: Taking responsibility for outcomes from problem definition through operation.
+- name: Learning Agility
+  category: Soft Skills
+  description: Rapidly acquiring and applying unfamiliar technical or domain knowledge.
+- name: Frontend Development
+  category: Web Development
+  description: Implementation of customer and operator web interfaces.
+- name: Web Application Development
+  category: Web Development
+  description: Full lifecycle development of browser-based applications.
+- name: HTML & CSS
+  category: Web Development
+  description: Semantic HTML and maintainable CSS for web interfaces.
+- name: React
+  category: Web Development
+  description: Web application development using React.
+- name: Next.js
+  category: Web Development
+  description: React application development with Next.js.
+- name: Responsive Web Design
+  category: Web Development
+  description: Interfaces that work across desktop, tablet and mobile layouts.
+- name: Web Accessibility
+  category: Web Development
+  description: Accessible web experiences and practical WCAG implementation.
+- name: Localization / i18n
+  category: Web Development
+  description: Internationalization, translation and locale-aware application behavior.
+- name: Authentication Integration
+  category: Web Development
+  description: OIDC, sessions, login flows and authorization integration in web applications.
+- name: Customer Portal Development
+  category: Web Development
+  description: Development of self-service subscription and service administration portals.
+- name: AI / LLM Architecture
+  category: Hard Skills
+  description: Architecture of model gateways, providers, policies, data flows and AI applications.
+- name: LLM Application Development
+  category: Hard Skills
+  description: Development of production LLM features grounded in business workflows.
+- name: Local LLM Inference
+  category: Hard Skills
+  description: Operation of local language models on self-managed compute.
+- name: GPU Inference
+  category: Hard Skills
+  description: Deployment and optimization of GPU-backed AI inference workloads.
+- name: Ollama
+  category: Hard Skills
+  description: Local model deployment and OpenAI-adjacent integration using Ollama.
+- name: OpenAI-Compatible APIs
+  category: Hard Skills
+  description: Building against OpenAI-compatible model interfaces and gateways.
+- name: AI Gateway
+  category: Hard Skills
+  description: Central model routing, keys, limits, policies and usage attribution.
+- name: LiteLLM or Equivalent
+  category: Hard Skills
+  description: Operation of an AI gateway such as LiteLLM for routing and metering.
+- name: Prompt Engineering
+  category: Hard Skills
+  description: Task-focused prompt design with structured context and outputs.
+- name: Retrieval-Augmented Generation
+  category: Hard Skills
+  description: Grounded generation using indexed customer or industry knowledge.
+- name: Embeddings
+  category: Hard Skills
+  description: Embedding generation and semantic retrieval design.
+- name: AI Agents
+  category: Hard Skills
+  description: Tool-using AI systems that participate in controlled workflows.
+- name: Tool Calling
+  category: Hard Skills
+  description: Securely exposing bounded application actions to AI models.
+- name: AI Safety / Guardrails
+  category: Hard Skills
+  description: Approval boundaries, output validation and safe failure behavior for AI.
+- name: AI Tenant Isolation
+  category: Hard Skills
+  description: Preventing cross-tenant leakage through prompts, retrieval, caches and tooling.
+- name: Permission-Aware Retrieval
+  category: Hard Skills
+  description: Ensuring AI retrieval respects source-system user permissions.
+- name: Prompt Injection Defense
+  category: Hard Skills
+  description: Protection of RAG and tool-using AI systems against malicious instructions.
+- name: AI Observability
+  category: Hard Skills
+  description: Monitoring model usage, latency, failures, quality and policy decisions.
+- name: AI Cost Management
+  category: Hard Skills
+  description: Managing model selection, token consumption and AI unit economics.
+- name: Workflow Automation
+  category: Hard Skills
+  description: Automation of multi-step business workflows across systems and humans.
+- name: Integration Architecture
+  category: Hard Skills
+  description: Design of reusable, secure and observable external-system integrations.
+- name: n8n
+  category: Hard Skills
+  description: Rapid workflow and integration automation using n8n.
+- name: Technical Writing
+  category: Soft Skills
+  description: Clear technical documentation for developers, operators and customers.
+- name: Runbook Development
+  category: Soft Skills
+  description: Creation of repeatable operational, security and recovery procedures.
+- name: Architecture Documentation
+  category: Soft Skills
+  description: Documentation of systems, data flows, boundaries and design decisions.
+- name: Customer Documentation
+  category: Soft Skills
+  description: Usable instructions and explanations for non-specialist customers.
+- name: API Documentation
+  category: Soft Skills
+  description: Documentation of APIs, authentication, errors and integration patterns.
+- name: Knowledge Management
+  category: Management
+  description: Structuring and maintaining useful organizational knowledge.
+- name: Huly Administration
+  category: DevOps
+  description: Administration of Huly workspaces, projects, recruiting and collaboration features.
+- name: Open Source Software Evaluation
+  category: Hard Skills
+  description: Evaluation of OSS technical fit, health, maintenance and hosting suitability.
+- name: Vertical SaaS Strategy
+  category: Management
+  description: Design of industry-specific software propositions on a shared core platform.
+- name: Jobs-to-be-Done
+  category: Business Analytics
+  description: Product discovery focused on the progress customers are trying to make.
+- name: Business Process Automation
+  category: Business Analytics
+  description: Automation of repeatable operational processes and approvals.
+- name: Migration Support
+  category: Management
+  description: Planning and assisting customer migration from existing systems.
+- name: Document Processing
+  category: Hard Skills
+  description: Classification, extraction, indexing and workflow handling of documents.
+- name: Professional Services Operations
+  category: Management
+  description: Domain knowledge of project-based professional services firms.
+- name: Records Management
+  category: Management
+  description: Structured retention, classification and lifecycle management of records.
+- name: Quality Management Systems
+  category: Management
+  description: Process, evidence and controlled-document concepts used in quality systems.
+- name: REST
+  category: Backend Development
+  description: RESTful API development and integration.
+- name: API
+  category: Backend Development
+  description: Design and integration of application programming interfaces.
+- name: Microservices
+  category: Backend Development
+  description: Design and operation of independently deployable backend services.
+- name: Node.js
+  category: Backend Development
+  description: Server-side application development with Node.js.
+- name: Spring
+  category: Backend Development
+  description: Backend development with the Spring ecosystem.
+- name: Spring Boot
+  category: Backend Development
+  description: Production backend services with Spring Boot.
+- name: Django
+  category: Backend Development
+  description: Backend web application development with Django.
+- name: FastAPI
+  category: Backend Development
+  description: Python API development with FastAPI.
+- name: ASP.NET
+  category: Backend Development
+  description: Backend and web application development with ASP.NET.
+- name: RabbitMQ
+  category: Backend Development
+  description: Message-oriented integration and asynchronous processing with RabbitMQ.
+- name: Kafka
+  category: Backend Development
+  description: Event streaming and asynchronous integration with Apache Kafka.
+- name: WebSocket
+  category: Backend Development
+  description: Real-time application communication using WebSockets.
+- name: gRPC
+  category: Backend Development
+  description: Service-to-service APIs using gRPC and Protocol Buffers.
+- name: OAuth 2.0 / OpenID Connect
+  category: Backend Development
+  description: Authentication and authorization integration using OAuth 2.0 and OpenID Connect.
+- name: Data Analysis
+  category: Business Analytics
+  description: Analysis and interpretation of business or operational data.
+- name: Business Process Modeling
+  category: Business Analytics
+  description: Modeling business processes, actors, decisions and information flows.
+- name: Business Analysis
+  category: Business Analytics
+  description: Requirements, process and stakeholder analysis for business change.
+- name: Data Visualization
+  category: Business Analytics
+  description: Communicating data and trends through clear visual representations.
+- name: MongoDB
+  category: Database Development
+  description: Application data modeling and operation with MongoDB.
+- name: Elasticsearch
+  category: Database Development
+  description: Search, indexing and analytics using Elasticsearch.
+- name: MySQL
+  category: Database Development
+  description: Relational database development and administration with MySQL.
+- name: SQLite
+  category: Database Development
+  description: Embedded relational database development with SQLite.
+- name: Microsoft SQL Server
+  category: Database Development
+  description: Relational database development and administration with Microsoft SQL Server.
+- name: Oracle Database
+  category: Database Development
+  description: Relational database development and administration with Oracle Database.
+- name: NoSQL
+  category: Database Development
+  description: Design and use of non-relational data stores.
+- name: Algorithms
+  category: Data Structures
+  description: Design and analysis of algorithms.
+- name: Data Structures
+  category: Data Structures
+  description: Selection and implementation of appropriate data structures.
+- name: Design Patterns
+  category: Data Structures
+  description: Reusable software design patterns and architectural techniques.
+- name: Usability
+  category: Design
+  description: Design and evaluation of usable interfaces and workflows.
+- name: Accessibility Design
+  category: Design
+  description: Inclusive design for users with different abilities and needs.
+- name: Figma
+  category: Design
+  description: Interface design and prototyping with Figma.
+- name: Windows
+  category: Desktop Application Development
+  description: Windows desktop application and platform knowledge.
+- name: Qt
+  category: Desktop Application Development
+  description: Cross-platform desktop application development with Qt.
+- name: Linux
+  category: DevOps
+  description: Linux administration and development environments.
+- name: Kubernetes
+  category: Backend Development
+  description: Container orchestration and workload operation with Kubernetes.
+- name: Terraform
+  category: DevOps
+  description: Infrastructure as code using Terraform.
+- name: AWS
+  category: DevOps
+  description: Cloud infrastructure and services on Amazon Web Services.
+- name: Azure
+  category: Backend Development
+  description: Cloud infrastructure and services on Microsoft Azure.
+- name: Google Cloud
+  category: DevOps
+  description: Cloud infrastructure and services on Google Cloud Platform.
+- name: GitLab
+  category: DevOps
+  description: Source control, CI/CD and delivery workflows using GitLab.
+- name: Jenkins
+  category: DevOps
+  description: CI/CD automation and build pipelines with Jenkins.
+- name: GitHub
+  category: DevOps
+  description: Source control and collaboration using GitHub.
+- name: Helm
+  category: DevOps
+  description: Packaging and deployment of Kubernetes applications with Helm.
+- name: Argo CD
+  category: DevOps
+  description: GitOps-based Kubernetes delivery using Argo CD.
+- name: GitOps
+  category: DevOps
+  description: Declarative infrastructure and application delivery driven by Git.
+- name: Grafana
+  category: DevOps
+  description: Dashboards and operational visualization with Grafana.
+- name: Kibana
+  category: Backend Development
+  description: Search, analysis and dashboards using Kibana.
+- name: Elastic Stack
+  category: DevOps
+  description: Logging, search and observability using the Elastic Stack.
+- name: Packer
+  category: DevOps
+  description: Machine image automation using HashiCorp Packer.
+- name: Vagrant
+  category: DevOps
+  description: Reproducible local development environments with Vagrant.
+- name: Security
+  category: Hard Skills
+  description: Information security principles, controls and operational practices.
+- name: Digital Forensics
+  category: Hard Skills
+  description: Collection, preservation and analysis of digital evidence.
+- name: Threat Intelligence
+  category: Hard Skills
+  description: Collection and analysis of information about threats and adversaries.
+- name: Phishing Analysis
+  category: Hard Skills
+  description: Analysis of phishing messages, infrastructure and related indicators.
+- name: Ransomware Response
+  category: Hard Skills
+  description: Technical and operational response to ransomware incidents.
+- name: Vulnerability Assessment
+  category: Hard Skills
+  description: Identification and assessment of security vulnerabilities.
+- name: Penetration Testing
+  category: Hard Skills
+  description: Authorized security testing of systems and applications.
+- name: Ethical Hacking
+  category: Hard Skills
+  description: Security testing using attacker techniques for defensive purposes.
+- name: Malware Analysis
+  category: Hard Skills
+  description: Analysis of malicious software behavior and indicators.
+- name: MITRE ATT&CK
+  category: Hard Skills
+  description: Use of the MITRE ATT&CK knowledge base for detection and threat analysis.
+- name: ISO 27001
+  category: Hard Skills
+  description: Information security management using ISO/IEC 27001.
+- name: ISO 27005
+  category: Hard Skills
+  description: Information security risk management using ISO/IEC 27005.
+- name: Splunk
+  category: Hard Skills
+  description: Security and operational analytics using Splunk.
+- name: Nessus
+  category: Hard Skills
+  description: Vulnerability scanning and assessment using Nessus.
+- name: Metasploit
+  category: Hard Skills
+  description: Authorized security testing using the Metasploit framework.
+- name: OpenVAS
+  category: Hard Skills
+  description: Vulnerability scanning and assessment using OpenVAS/Greenbone.
+- name: Nmap
+  category: Hard Skills
+  description: Network discovery and security assessment using Nmap.
+- name: Burp Suite
+  category: Hard Skills
+  description: Web application security testing using Burp Suite.
+- name: OWASP
+  category: Hard Skills
+  description: Web application security principles and OWASP guidance.
+- name: Active Directory Security
+  category: Hard Skills
+  description: Security assessment and hardening of Microsoft Active Directory.
+- name: Multi-Factor Authentication
+  category: Hard Skills
+  description: Design, deployment and operation of multi-factor authentication.
+- name: Identity and Access Management
+  category: Hard Skills
+  description: Identity lifecycle, authentication, authorization and access governance.
+- name: Zero Trust Architecture
+  category: Hard Skills
+  description: Security architecture based on explicit verification and least privilege.
+- name: Endpoint Detection and Response
+  category: Hard Skills
+  description: Operation and use of EDR technologies for endpoint security.
+- name: Cloud Security
+  category: Hard Skills
+  description: Security architecture and controls for cloud environments.
+- name: Network Security
+  category: Hard Skills
+  description: Network segmentation, controls, monitoring and secure design.
+- name: SOC Operations
+  category: Hard Skills
+  description: Day-to-day Security Operations Center monitoring and response.
+- name: Log Analysis
+  category: Hard Skills
+  description: Analysis of system, application and security logs.
+- name: Security Reporting
+  category: Hard Skills
+  description: Clear documentation and communication of security findings and incidents.
+- name: Threat Hunting
+  category: Hard Skills
+  description: Proactive search for malicious activity using telemetry and hypotheses.
+- name: Forensic Readiness
+  category: Hard Skills
+  description: Preparation of systems and processes for effective evidence collection.
+- name: LLM Security
+  category: Hard Skills
+  description: Security considerations for language-model applications and agentic systems.
+- name: FastAPI / Pydantic
+  category: Hard Skills
+  description: Building typed Python services using FastAPI and Pydantic.
+- name: Scrum
+  category: Management
+  description: Team delivery using Scrum roles, events and artifacts.
+- name: Kanban
+  category: Management
+  description: Flow-based work management using Kanban.
+- name: Jira
+  category: Management
+  description: Planning and work tracking using Jira.
+- name: ITIL
+  category: Management
+  description: IT service management concepts and practices based on ITIL.
+- name: Change Management
+  category: Management
+  description: Planning and managing organizational or technical change.
+- name: People Management
+  category: Management
+  description: Leadership, coaching and management of people and teams.
+- name: B2B Marketing
+  category: Marketing
+  description: Marketing products and services to business customers.
+- name: A/B Testing
+  category: Marketing
+  description: Controlled testing of product or marketing variants.
+- name: Email Marketing
+  category: Marketing
+  description: Campaign design and execution using email channels.
+- name: Web Analytics
+  category: Marketing
+  description: Measurement and analysis of website and digital behavior.
+- name: VPN
+  category: Networking
+  description: Design and operation of virtual private networks.
+- name: WireGuard
+  category: Networking
+  description: Secure networking and VPN configuration using WireGuard.
+- name: Wireshark
+  category: Networking
+  description: Network protocol capture and analysis using Wireshark.
+- name: Cisco
+  category: Networking
+  description: Networking using Cisco technologies and platforms.
+- name: SNMP
+  category: Networking
+  description: Network monitoring and management using SNMP.
+- name: VoIP
+  category: Networking
+  description: Voice-over-IP networking and services.
+- name: HTTP / HTTPS
+  category: Networking
+  description: Web protocols, TLS transport and HTTP service behavior.
+- name: Java
+  category: Programming Languages
+  description: Software development using Java.
+- name: C
+  category: Programming Languages
+  description: Software development using C.
+- name: C++
+  category: Programming Languages
+  description: Software development using C++.
+- name: C#
+  category: Programming Languages
+  description: Software development using C#.
+- name: PHP
+  category: Programming Languages
+  description: Software development using PHP.
+- name: Kotlin
+  category: Programming Languages
+  description: Software development using Kotlin.
+- name: Swift
+  category: Programming Languages
+  description: Software development using Swift.
+- name: Ruby
+  category: Programming Languages
+  description: Software development using Ruby.
+- name: PowerShell
+  category: Programming Languages
+  description: Automation and administration using PowerShell.
+- name: R
+  category: Programming Languages
+  description: Data analysis and software development using R.
+- name: Functional Testing
+  category: Quality Assurance
+  description: Validation of software behavior against functional requirements.
+- name: Playwright
+  category: Quality Assurance
+  description: Browser automation and end-to-end testing using Playwright.
+- name: pytest
+  category: Quality Assurance
+  description: Python testing using pytest.
+- name: Selenium
+  category: Quality Assurance
+  description: Browser automation and testing using Selenium.
+- name: JUnit
+  category: Quality Assurance
+  description: Java unit and integration testing using JUnit.
+- name: JMeter
+  category: Quality Assurance
+  description: Load and performance testing using Apache JMeter.
+- name: Test Case Design
+  category: Quality Assurance
+  description: Design of effective, traceable software test cases.
+- name: CRM
+  category: Sales
+  description: Customer relationship management processes and tooling.
+- name: Negotiation
+  category: Sales
+  description: Commercial negotiation and stakeholder agreement.
+- name: Customer Relationship Management
+  category: Sales
+  description: Management and development of customer relationships.
+- name: Effective Communication
+  category: Soft Skills
+  description: Clear written and verbal communication across audiences.
+- name: Conflict Management
+  category: Soft Skills
+  description: Constructive handling of disagreement and conflict.
+- name: Critical Thinking
+  category: Soft Skills
+  description: Structured evaluation of evidence, assumptions and alternatives.
+- name: Adaptability
+  category: Soft Skills
+  description: Ability to adjust effectively to changing requirements and contexts.
+- name: Attention to Detail
+  category: Soft Skills
+  description: Consistent accuracy and attention to important details.
+- name: Time Management
+  category: Soft Skills
+  description: Prioritization and effective management of time and commitments.
+- name: Teamwork
+  category: Soft Skills
+  description: Effective contribution and collaboration within teams.
+- name: Leadership
+  category: Soft Skills
+  description: Influence and leadership of people, work and decisions.
+- name: Report Writing
+  category: Soft Skills
+  description: Clear, structured professional report writing.
+- name: Angular
+  category: Web Development
+  description: Web application development using Angular.
+- name: Vue.js
+  category: Web Development
+  description: Web application development using Vue.js.
+- name: Svelte
+  category: Web Development
+  description: Web application development using Svelte.
+- name: HTML
+  category: Web Development
+  description: Semantic web markup using HTML.
+- name: CSS
+  category: Web Development
+  description: Web styling and responsive layout using CSS.
+- name: npm
+  category: Web Development
+  description: JavaScript package management and tooling using npm.
+- name: Webpack
+  category: Web Development
+  description: Web application bundling and build tooling using Webpack.
+- name: Redux
+  category: Web Development
+  description: State management for JavaScript web applications using Redux.

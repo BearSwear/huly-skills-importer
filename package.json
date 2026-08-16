@@ -1,23 +1,25 @@
 {
   "name": "huly-skills-importer",
-  "version": "0.2.0",
-  "description": "Community CLI for discovering and importing Recruiting skills into a Huly workspace.",
+  "version": "0.3.0",
+  "description": "Community CLI for materializing and inspecting controlled Huly Recruiting skill taxonomies.",
   "type": "module",
   "license": "MIT",
   "author": "huly-skills-importer contributors",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BearSwear/huly-skills-importer.git"
+    "url": "https://github.com/YOUR-GITHUB-USER/huly-skills-importer.git"
   },
-  "homepage": "https://github.com/BearSwear/huly-skills-importer#readme",
+  "homepage": "https://github.com/YOUR-GITHUB-USER/huly-skills-importer#readme",
   "bugs": {
-    "url": "https://github.com/BearSwear/huly-skills-importer/issues"
+    "url": "https://github.com/YOUR-GITHUB-USER/huly-skills-importer/issues"
   },
   "keywords": [
     "huly",
     "recruiting",
     "skills",
+    "taxonomy",
     "importer",
+    "rekoni",
     "ats",
     "hr",
     "cli"
@@ -32,6 +34,8 @@
     "dist",
     "skills/import-skills.yaml",
     "skills/example.yaml",
+    "skills/CATALOG.md",
+    "docs",
     "README.md",
     "LICENSE",
     "NOTICE.md"
@@ -40,6 +44,8 @@
     "build": "tsc -p tsconfig.json",
     "dev": "tsx src/index.ts",
     "discover": "tsx src/index.ts discover",
+    "suggestions": "tsx src/index.ts suggestions",
+    "inspect": "tsx src/index.ts inspect",
     "import:dry": "tsx src/index.ts import skills/import-skills.yaml --dry-run",
     "import": "tsx src/index.ts import skills/import-skills.yaml",
     "catalog:check": "tsx src/index.ts check skills/import-skills.yaml",

@@ -1,39 +1,62 @@
 # huly-skills-importer
 
-Community CLI for discovering and importing Recruiting skills into a Huly workspace.
+Community CLI for materializing and inspecting controlled Huly Recruiting skill taxonomies.
 
 > [!IMPORTANT]
 > This is an independent community project. It is not affiliated with, maintained by, sponsored by, or endorsed by Huly or Hardcore Engineering Inc. Huly and related names and marks belong to their respective owners.
 
-`huly-skills-importer` makes it practical to maintain Recruiting skill catalogues as YAML instead of adding skills manually one at a time. It uses Huly's published API client and the same tag model used by Huly Recruiting. It does not write directly to the Huly database.
+`huly-skills-importer` helps Huly Recruiting administrators preload a curated set of real workspace skills, inspect candidate skill assignments, and understand Huly's built-in skill suggestion vocabulary.
 
-## What it does
+The practical goal is to make CV ingestion more predictable: materialize the skills you want candidates to map to, then keep Huly's **Create new skills if existing not found** option disabled unless you explicitly want CV imports to grow the taxonomy.
 
-- discovers the Recruiting skill categories available in a workspace;
+The CLI uses Huly's published API client. It does not write directly to CockroachDB.
+
+## Why this exists
+
+Huly Recruiting has several related but distinct skill layers:
+
+1. **Built-in suggestions** — strings stored in `TagCategory.tags[]`. These are category/recognition vocabulary, not necessarily visible workspace skills.
+2. **Materialized skills** — `TagElement` documents. These are the real skills visible under Recruiting → Skills and available for candidate references.
+3. **Candidate assignments** — `TagReference` documents linking a candidate to a materialized skill, optionally with a proficiency `weight`.
+4. **CV recognition** — Huly's Rekoni service extracts skill names from uploaded resumes, then Recruiting maps those names to materialized skills.
+
+Compatibility testing against Huly self-host `v0.7.426` demonstrated the useful behavior behind this project:
+
+- Rekoni extracted 15 skills from a controlled test CV.
+- Only 6 of those skills were already materialized in the workspace.
+- With **Create new skills if existing not found** disabled, Huly mapped exactly those 6 existing skills.
+- After saving the candidate, exactly those 6 `TagReference`s were persisted.
+- Automatically parsed skill references had no proficiency weight set.
+
+So pre-materializing a controlled taxonomy is useful even when the same names already appear in Huly's built-in suggestions.
+
+`huly-skills-importer` does **not** teach Rekoni to recognize new terminology. Materializing a skill and extending Rekoni's recognition vocabulary are separate concerns.
+
+See [`docs/RECRUITING-SKILL-MODEL.md`](docs/RECRUITING-SKILL-MODEL.md) for the model and observed workflow in more detail.
+
+## What v0.3.0 does
+
+- discovers Recruiting categories and distinguishes built-in suggestions from materialized skills;
 - validates YAML skill catalogues locally;
-- resolves catalogue categories by Huly category label and aliases rather than hard-coded document IDs;
-- reads existing Recruiting skills;
-- creates only missing skills by default;
+- materializes only missing skills by default;
+- resolves category labels through aliases rather than persisting Huly internal category IDs;
 - compares skill names case-insensitively for idempotent imports;
 - supports a safe `--dry-run` mode;
-- can optionally synchronize descriptions, categories and colors for existing skills with `--update-existing`;
-- never deletes skills;
-- includes an editable example catalogue in `skills/import-skills.yaml`.
-
-## How Huly represents Recruiting skills
-
-Huly Recruiting currently models candidate skills through Huly's tag system. A skill is a `TagElement` targeted at the Recruiting `Candidate` mixin, while categories are `TagCategory` documents. The importer creates normal Huly documents through the API client rather than modifying CockroachDB directly.
-
-This is an implementation detail of Huly, not a permanent compatibility guarantee. Run `discover` and a dry-run against your own Huly release before applying changes.
+- can optionally synchronize existing skills, but only when title, description, category or color actually differs;
+- inspects candidate skill references and Huly proficiency weights;
+- highlights low-reference skills in the default `Other` category that may be affected by Huly's Skills Optimizer;
+- inspects and exports Huly's built-in suggestion vocabulary;
+- never deletes skills or candidate references;
+- includes an editable broad example catalogue in `skills/import-skills.yaml`.
 
 ## Requirements
 
 - Node.js 20.11 or newer;
 - a Huly workspace with Recruiting enabled;
-- credentials permitted to read/create Recruiting skills;
+- credentials permitted to read Recruiting data and, for import operations, create/update skills;
 - network access to the public npm registry.
 
-## 1. Clone and install
+## Install
 
 ```bash
 git clone https://github.com/YOUR-GITHUB-USER/huly-skills-importer.git
@@ -44,7 +67,7 @@ npm install
 
 No GitHub Packages token is required for the current dependency set.
 
-## 2. Configure Huly access
+## Configure Huly access
 
 Edit `.env`:
 
@@ -69,29 +92,119 @@ HULY_EMAIL=user@example.com
 HULY_PASSWORD=your-password
 ```
 
-## 3. Discover your Huly categories
+The importer removes accidental whitespace from copied API tokens before authentication.
 
-Before importing anything:
+## Discover the workspace model
 
 ```bash
 npm run discover
 ```
 
-or after building/installing the CLI:
+or:
 
 ```bash
 huly-skills-importer discover
 ```
 
-For machine-readable output:
+Example output starts with separate counts for the three important workspace concepts:
+
+```text
+Huly Recruiting discovery
+-------------------------
+Categories:            18
+Built-in suggestions:  502
+Materialized skills:   15
+```
+
+The command then lists each Recruiting category, its internal ID, number of built-in suggestions, and a small suggestion sample.
+
+Machine-readable output:
 
 ```bash
 huly-skills-importer discover --json
 ```
 
-Discovery returns Recruiting categories visible to the configured workspace, including their labels, internal IDs and sample built-in suggestion tags. The importer resolves categories by labels and aliases and does not persist those internal IDs in the catalogue.
+## Inspect built-in suggestions
 
-## 4. Validate the example catalogue
+Summary:
+
+```bash
+npm run suggestions
+```
+
+Print every built-in suggestion grouped by category:
+
+```bash
+huly-skills-importer suggestions --all
+```
+
+Export the workspace's built-in suggestion vocabulary as an importable YAML catalogue:
+
+```bash
+huly-skills-importer suggestions --export huly-native-suggestions.yaml
+```
+
+The exporter removes duplicate names case-insensitively, keeping the first category occurrence. Review the generated file before importing it.
+
+This is useful when you want to materialize a large portion of Huly's native recognition/category vocabulary rather than maintain a smaller curated catalogue.
+
+## Inspect materialized skills and references
+
+Basic workspace and optimizer-oriented summary:
+
+```bash
+npm run inspect
+```
+
+Show every materialized skill with reference/proficiency counts:
+
+```bash
+huly-skills-importer inspect --skills
+```
+
+Show candidate skill assignments:
+
+```bash
+huly-skills-importer inspect --candidates
+```
+
+Filter candidate assignments by display name:
+
+```bash
+huly-skills-importer inspect --candidate alex
+```
+
+Complete JSON output:
+
+```bash
+huly-skills-importer inspect --json
+```
+
+The current compatibility model interprets Huly skill weights as:
+
+| Weight | Level |
+|---:|---|
+| unset | Unset |
+| 0–2 | Initial |
+| 3–5 | Meaningful |
+| >5 | Expert |
+
+Huly `v0.7.426`'s Skills Optimizer was also observed to enable an expert-title signal by default only when that normalized skill title has at least five expert references. These optimizer details are version-specific diagnostics, not guarantees for future Huly releases.
+
+## Skills Optimizer warning
+
+Huly's Skills Optimizer treats skills in named Recruiting categories differently from low-reference skills in the default `Other` category. During compatibility testing, a disposable skill in `Other` was proposed for cleanup and removed after applying the optimizer plan, while named-category skills were retained.
+
+For that reason:
+
+- the bundled v0.3.0 catalogue intentionally contains **zero** `Other` skills;
+- `check` warns when a custom catalogue uses `Other`;
+- `inspect` reports low-reference `Other` skills as optimizer-risk indicators;
+- this CLI never applies the Huly optimizer or deletes anything itself.
+
+Always review Huly's optimizer plan before applying it.
+
+## Validate a catalogue
 
 ```bash
 npm run catalog:check
@@ -103,9 +216,13 @@ or:
 huly-skills-importer check skills/import-skills.yaml
 ```
 
-The validator catches duplicate normalized skill names and references to unknown catalogue categories before connecting to Huly.
+The validator catches:
 
-## 5. Dry-run the import
+- duplicate normalized skill names;
+- references to undefined catalogue categories;
+- use of the `Other` category as a warning.
+
+## Dry-run an import
 
 Always review a dry-run first:
 
@@ -119,26 +236,11 @@ or:
 huly-skills-importer import skills/import-skills.yaml --dry-run
 ```
 
-Example:
+The plan reports `CREATE`, `SKIP`, or `UPDATE` for each requested skill. A dry-run performs no writes.
 
-```text
-Catalogue: Example Huly Recruiting skill catalogue
-Requested: 214
-Create:    214
-Update:    0
-Skip:      0
-Mode:      DRY RUN
+If a Huly category cannot be resolved, the entire import stops before writing anything. Run `discover` and update category aliases in the YAML catalogue.
 
-[dry-run] CREATE REST API Design (Backend development)
-[dry-run] CREATE GraphQL (Backend development)
-...
-```
-
-The exact create/skip counts depend on skills already created in your workspace.
-
-If a Huly category cannot be resolved, the import stops before creating anything. Run `discover` and add the exact label used by your Huly version as an alias in the YAML file.
-
-## 6. Apply the import
+## Apply an import
 
 After reviewing the dry-run:
 
@@ -152,19 +254,30 @@ or:
 huly-skills-importer import skills/import-skills.yaml
 ```
 
-Running the same command again should skip skills that already exist.
+Running the same command again should skip every already-materialized skill.
 
 ## Updating existing skills
 
-Existing normalized skill names are skipped by default, even if their description or category differs from the YAML catalogue.
+Existing normalized skill names are skipped by default even if their title casing, description, category or color differs from the YAML catalogue.
 
-To synchronize existing entries:
+Preview synchronization:
 
 ```bash
 huly-skills-importer import skills/import-skills.yaml --dry-run --update-existing
 ```
 
-Review the plan and then, if appropriate:
+With `--update-existing`, the planner compares the existing `TagElement` with the desired catalogue values. A matching skill stays `SKIP`; only real differences become `UPDATE`. Each planned update prints the exact fields that would change, for example:
+
+```text
+[dry-run] UPDATE Docker (DevOps)
+          title: "docker" -> "Docker"
+          description: "" -> "Container deployment, networking, storage and troubleshooting."
+          color: 3 -> 17
+```
+
+The bundled example catalogue follows native Huly/Rekoni category placement where live testing gave us a clear answer for common terms, reducing unnecessary category churn.
+
+Apply synchronization only after reviewing those field-level differences:
 
 ```bash
 huly-skills-importer import skills/import-skills.yaml --update-existing
@@ -188,37 +301,76 @@ categories:
       - Hard Skills
 
 skills:
-  - name: Restore Testing
+  - name: Kubernetes
     category: DevOps
-    description: Practical validation that backups can be restored successfully.
+    description: Container orchestration and workload operation with Kubernetes.
 
-  - name: Threat Modeling
+  - name: Incident Response
     category: Hard Skills
-    description: Structured identification of threats, trust boundaries and mitigations.
+    description: Structured response to security incidents from triage through recovery.
 ```
 
-Supported skill fields are:
+Supported skill fields:
 
 - `name` — required skill name;
 - `category` — required catalogue category key;
 - `description` — optional description written to Huly;
-- `color` — optional Huly color integer; otherwise a deterministic color is generated.
+- `color` — optional Huly color integer; otherwise a deterministic cosmetic value is generated.
 
 ## Included example catalogue
 
-`skills/import-skills.yaml` is an editable example, not an official Huly taxonomy. Its description is intentionally explicit:
+`skills/import-skills.yaml` is a broad editable example, not an official Huly taxonomy. Its description is:
 
 > An example skill catalogue for importing into Huly Recruiting module. Categories map to the built-in Huly Recruiting skill categories. Edit this file to suit your needs :)
 
-The catalogue maps to the 18 built-in Recruiting categories observed during compatibility testing. It contains 214 example additions covering software development, infrastructure, security, data, product, design, QA, sales, operations, AI and other professional skills.
+v0.3.0 intentionally restores overlap with Huly's built-in suggestions. A suggestion string is not the same thing as a materialized workspace skill, and pre-materializing recognized terms is the behavior that enables controlled CV mapping with automatic skill creation disabled.
 
-To avoid unnecessary duplicates, the bundled example was compared with the built-in category suggestion tags observed in a Huly `v0.7.426` workspace. Twenty-two exact normalized matches and nineteen obvious direct equivalents were excluded. Built-in suggestions can change between Huly versions and workspaces, so treat this as an example rather than a definitive deduplication database. See `skills/CATALOG.md` for the comparison summary.
+The example contains 382 materialized-skill definitions across the 18 built-in Recruiting category keys. `Other` is retained as a resolvable category but contains no bundled skills. The catalogue includes conventional Huly-recognized terms such as Python, Linux, Kubernetes, Docker, Terraform, PostgreSQL, AWS, Redis, RabbitMQ, Node.js, TypeScript and REST, plus more modern platform, security, AI, product and professional skills.
 
-A smaller two-skill catalogue is also available at `skills/example.yaml` for write testing before a bulk import.
+A smaller two-skill catalogue is available at `skills/example.yaml` for an initial write/idempotency test.
+
+See `skills/CATALOG.md` for statistics and design notes.
+
+## Recommended Recruiting workflow
+
+A controlled workflow looks like this:
+
+```text
+Curated YAML catalogue
+        │
+        ▼
+huly-skills-importer import
+        │
+        ▼
+Materialized TagElement skills
+        │
+        ▼
+Upload CV to Huly Recruiting
+        │
+        ▼
+Rekoni extracts recognized names
+        │
+        ▼
+Huly maps matching materialized skills
+        │
+        ▼
+Candidate TagReference assignments
+```
+
+For a curated taxonomy, keep **Create new skills if existing not found** disabled during normal CV imports. Enable it deliberately when you want the resume ingestion path to expand the taxonomy.
+
+After importing candidates, use:
+
+```bash
+huly-skills-importer inspect --skills
+huly-skills-importer inspect --candidates
+```
+
+Then use Huly's native Skills Optimizer only after reviewing its plan.
 
 ## Category aliases
 
-Category labels can vary slightly by Huly release. The example catalogue therefore supports aliases:
+Category labels can vary slightly between Huly releases. The example catalogue supports aliases:
 
 ```yaml
 categories:
@@ -233,29 +385,37 @@ categories:
       - Bussines Analytics
 ```
 
-Resolution is case-insensitive and whitespace-normalized. The `Bussines analytics` spelling above reflects a label observed in Huly and is retained as a compatibility alias.
+Resolution is case-insensitive and whitespace-normalized. `Bussines analytics` reflects a label observed in Huly `v0.7.426` and is kept only as a compatibility alias.
 
 ## Safety model
 
-The importer is deliberately conservative:
+The CLI is deliberately conservative:
 
 1. catalogue validation happens before connecting;
-2. all referenced categories must resolve before a write is attempted;
-3. existing created skills are detected case-insensitively;
+2. every referenced category must resolve before a write is attempted;
+3. existing skills are detected case-insensitively;
 4. existing skills are skipped by default;
 5. `--dry-run` performs no writes;
-6. deletion is not implemented;
-7. updating existing skills requires an explicit flag.
-
-The suggestion strings stored on Huly categories are not themselves necessarily created `TagElement` skills. The bundled example catalogue has been manually deduplicated against a known set of built-in suggestions, but custom catalogues should still be reviewed against `discover` output when avoiding semantic overlap matters.
+6. deletions are not implemented;
+7. candidate references are read-only;
+8. Skills Optimizer actions are read-only diagnostics in this tool;
+9. updating existing skills requires an explicit flag.
 
 Back up important self-hosted Huly data before using community integration tooling against a production workspace.
 
-## Huly compatibility
+## Compatibility
 
-This repository uses `@hcengineering/api-client@0.7.423` as its only direct Huly runtime dependency. Huly-specific resource IDs and minimal document shapes are isolated in `src/huly.ts`, avoiding direct dependencies on platform-internal Recruiting, Tags, Core and UI packages.
+The current compatibility baseline is:
 
-Read-only discovery has been tested against self-hosted Huly `v0.7.426` using token authentication and WebSocket transport. Because the published API client can trail the self-hosted release, test a disposable skill before a bulk write. See `docs/UPSTREAM.md` for the compatibility baseline and validation procedure.
+- `hcengineering/huly-selfhost`
+- Huly `v0.7.426`
+- `@hcengineering/api-client@0.7.423`
+- token authentication
+- WebSocket transport
+
+Live tests covered category/suggestion discovery, materialized-skill reads, skill creation, idempotency, candidate `TagReference` reads, proficiency weights, Rekoni CV mapping with auto-create both enabled and disabled, and observed Skills Optimizer behavior.
+
+The API client emitted repeated non-fatal model-transaction warnings while connecting to the newer self-hosted release. All tested reads and writes still completed correctly. See [`docs/UPSTREAM.md`](docs/UPSTREAM.md).
 
 ## Development
 
@@ -265,13 +425,14 @@ npm test
 npm run build
 ```
 
-The tests mock the Huly adapter, so most importer behavior can be tested without a live Huly workspace.
-
 Repository layout:
 
 ```text
 huly-skills-importer/
 ├── .github/workflows/ci.yml
+├── docs/
+│   ├── RECRUITING-SKILL-MODEL.md
+│   └── UPSTREAM.md
 ├── skills/
 │   ├── CATALOG.md
 │   ├── example.yaml
@@ -283,36 +444,28 @@ huly-skills-importer/
 │   ├── huly.ts
 │   ├── importer.ts
 │   ├── index.ts
+│   ├── inspector.ts
+│   ├── suggestions.ts
 │   └── types.ts
 ├── tests/
 │   ├── category-resolver.test.ts
-│   └── importer.test.ts
-├── .editorconfig
-├── .env.example
-├── .gitignore
-├── CHANGELOG.md
-├── CONTRIBUTING.md
-├── LICENSE
-├── NOTICE.md
-├── README.md
-├── SECURITY.md
-├── docs/UPSTREAM.md
-├── package.json
-└── tsconfig.json
+│   ├── importer.test.ts
+│   ├── inspector.test.ts
+│   └── suggestions.test.ts
+└── ...
 ```
 
-## Publishing
-
-Before publishing the repository:
+## Before publishing
 
 1. replace `YOUR-GITHUB-USER` in `package.json` and README examples;
-2. run `npm run check` and `npm run build`;
-3. test `discover` against your Huly workspace;
-4. run a complete dry-run;
-5. import the tiny `skills/example.yaml` catalogue first;
-6. verify the created skills in the Huly Recruiting UI;
-7. run it again to confirm idempotency;
-8. only then consider a larger catalogue import.
+2. run `npm install`;
+3. run `npm run check` and `npm run build`;
+4. run `discover`, `suggestions`, and `inspect` against a test workspace;
+5. run an import dry-run;
+6. import `skills/example.yaml` first;
+7. verify the created skills in Recruiting → Skills;
+8. rerun the same import to prove idempotency;
+9. only then use a larger catalogue.
 
 ## Licence
 

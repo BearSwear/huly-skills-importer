@@ -26,7 +26,7 @@ export interface SkillCatalog {
   skills: CatalogSkill[]
 }
 
-/** Minimal Huly TagCategory shape needed by the importer. */
+/** Minimal Huly TagCategory shape needed by this project. */
 export interface HulyTagCategory {
   _id: string
   label?: string
@@ -36,7 +36,7 @@ export interface HulyTagCategory {
   [key: string]: unknown
 }
 
-/** Minimal Huly TagElement shape needed by the importer. */
+/** Minimal Huly TagElement shape needed by this project. */
 export interface HulyTagElement {
   _id: string
   space: string
@@ -48,12 +48,39 @@ export interface HulyTagElement {
   [key: string]: unknown
 }
 
+/** Minimal Huly TagReference shape used for candidate skill assignments. */
+export interface HulyTagReference {
+  _id: string
+  tag: string
+  title?: string
+  attachedTo: string
+  attachedToClass?: string
+  collection?: string
+  weight?: number
+  [key: string]: unknown
+}
+
+/** Minimal Person shape used to resolve candidate display names. */
+export interface HulyPerson {
+  _id: string
+  name?: string
+  [key: string]: unknown
+}
+
 export interface CategoryInfo {
   id: string
   label: string
   targetClass: string
   default: boolean
   tags: string[]
+}
+
+export type SkillUpdateField = 'title' | 'description' | 'category' | 'color'
+
+export interface SkillUpdateChange {
+  field: SkillUpdateField
+  from: string | number
+  to: string | number
 }
 
 export interface ImportPlanItem {
@@ -63,6 +90,7 @@ export interface ImportPlanItem {
   categoryLabel: string
   existing?: HulyTagElement
   reason?: string
+  changes?: SkillUpdateChange[]
 }
 
 export interface ImportSummary {
@@ -74,9 +102,13 @@ export interface ImportSummary {
   errors: number
 }
 
+export type SkillLevel = 'Unset' | 'Initial' | 'Meaningful' | 'Expert' | 'Unknown'
+
 export interface HulySkillAdapter {
   listCategories(): Promise<HulyTagCategory[]>
   listSkills(): Promise<HulyTagElement[]>
+  listSkillReferences(): Promise<HulyTagReference[]>
+  listPeople(ids: string[]): Promise<HulyPerson[]>
   createSkill(skill: CatalogSkill, categoryId: string): Promise<string>
   updateSkill(existing: HulyTagElement, skill: CatalogSkill, categoryId: string): Promise<void>
   close(): Promise<void>

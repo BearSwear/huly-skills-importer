@@ -6,4 +6,4 @@ Huly and related names, marks, and logos belong to their respective owners. This
 
 The importer depends on packages in the `@hcengineering` namespace. Those packages are separate third-party works and retain their own licences and copyright notices. See their package metadata and upstream repositories for details.
 
-The skill catalogue in `skills/import-skills.yaml` is original example data intended for recruiting and team-planning experiments. It is not an official Huly skill taxonomy.
+The skill catalogue in `skills/import-skills.yaml` is original example data intended to demonstrate materialized Huly Recruiting taxonomies. It is not an official Huly, Hardcore Engineering, or Rekoni skill taxonomy.

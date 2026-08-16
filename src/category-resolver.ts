@@ -6,13 +6,7 @@ export interface ResolvedCategory {
   label: string
 }
 
-/**
- * Resolve a catalogue category to a Huly TagCategory.
- *
- * Resolution is deliberately based on category labels/aliases instead of
- * internal document IDs, because IDs are workspace/platform implementation
- * details and may differ between Huly versions.
- */
+/** Resolve a catalogue category to a Huly TagCategory by label/alias. */
 export function resolveCategory(
   requested: string,
   catalog: SkillCatalog,
@@ -37,6 +31,7 @@ export function categoryDiagnostics(categories: HulyTagCategory[]): Array<Record
     label: String(category.label ?? ''),
     targetClass: String(category.targetClass ?? ''),
     default: Boolean(category.default),
-    sampleTags: Array.isArray(category.tags) ? category.tags.slice(0, 8) : []
+    builtInSuggestionCount: Array.isArray(category.tags) ? category.tags.length : 0,
+    builtInSuggestionSample: Array.isArray(category.tags) ? category.tags.slice(0, 8) : []
   }))
 }

@@ -53,9 +53,26 @@ export async function loadCatalog(path: string): Promise<SkillCatalog> {
 }
 
 export function summarizeCatalog(catalog: SkillCatalog): Record<string, number> {
-  const result: Record<string, number> = {}
+  const result: Record<string, number> = Object.fromEntries(
+    Object.keys(catalog.categories).map((category) => [category, 0])
+  )
   for (const skill of catalog.skills) {
     result[skill.category] = (result[skill.category] ?? 0) + 1
   }
   return result
+}
+
+export function catalogWarnings(catalog: SkillCatalog): string[] {
+  const warnings: string[] = []
+  const otherSkills = catalog.skills.filter((skill) => normalize(skill.category) === 'other')
+
+  if (otherSkills.length > 0) {
+    warnings.push(
+      `${otherSkills.length} skill(s) use the default Other category. ` +
+      'On Huly v0.7.426 the Skills Optimizer can treat low-reference Other skills as cleanup/deletion candidates. ' +
+      'Prefer a named Recruiting category when one is reasonable.'
+    )
+  }
+
+  return warnings
 }

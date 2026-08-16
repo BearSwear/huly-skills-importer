@@ -1,15 +1,66 @@
 import { normalize } from './catalog.js'
 import { resolveCategory } from './category-resolver.js'
+import { desiredSkillColor } from './skill-values.js'
 import type {
   HulySkillAdapter,
   HulyTagElement,
   ImportPlanItem,
   ImportSummary,
-  SkillCatalog
+  SkillCatalog,
+  SkillUpdateChange
 } from './types.js'
 
 export interface PlanOptions {
   updateExisting: boolean
+}
+
+function valueForDisplay(value: string | number | undefined): string | number {
+  if (value === undefined) return '(unset)'
+  return value
+}
+
+function changesForExisting(
+  existing: HulyTagElement,
+  skill: ImportPlanItem['skill'],
+  categoryId: string,
+  categoryLabel: string,
+  categoryLabelsById: Map<string, string>
+): SkillUpdateChange[] {
+  const changes: SkillUpdateChange[] = []
+  const desiredColor = desiredSkillColor(skill)
+  const existingDescription = existing.description ?? ''
+
+  if (existing.title !== skill.name) {
+    changes.push({ field: 'title', from: existing.title, to: skill.name })
+  }
+
+  if (existingDescription !== skill.description) {
+    changes.push({
+      field: 'description',
+      from: existingDescription,
+      to: skill.description
+    })
+  }
+
+  if (existing.category !== categoryId) {
+    changes.push({
+      field: 'category',
+      from: existing.category === undefined
+        ? '(unset)'
+        : (categoryLabelsById.get(existing.category) ?? existing.category),
+      to: categoryLabel
+    })
+  }
+
+  if (existing.color !== desiredColor) {
+    changes.push({
+      field: 'color',
+      from: valueForDisplay(existing.color),
+      to: desiredColor
+    })
+  }
+
+  return changes
 }
 
 export async function buildImportPlan(
@@ -25,6 +76,11 @@ export async function buildImportPlan(
   const existingByName = new Map<string, HulyTagElement>()
   for (const existing of existingSkills) {
     existingByName.set(normalize(existing.title), existing)
+  }
+
+  const categoryLabelsById = new Map<string, string>()
+  for (const category of categories) {
+    categoryLabelsById.set(category._id, String(category.label || category._id))
   }
 
   const resolvedCategories = new Map<string, { id: string; label: string }>()
@@ -64,15 +120,59 @@ export async function buildImportPlan(
       }
     }
 
+    if (!options.updateExisting) {
+      return {
+        skill,
+        action: 'skip' as const,
+        categoryId: category.id,
+        categoryLabel: category.label,
+        existing,
+        reason: 'skill already exists'
+      }
+    }
+
+    const changes = changesForExisting(
+      existing,
+      skill,
+      category.id,
+      category.label,
+      categoryLabelsById
+    )
+
+    if (changes.length === 0) {
+      return {
+        skill,
+        action: 'skip' as const,
+        categoryId: category.id,
+        categoryLabel: category.label,
+        existing,
+        changes,
+        reason: 'existing skill already matches catalogue'
+      }
+    }
+
     return {
       skill,
-      action: options.updateExisting ? 'update' as const : 'skip' as const,
+      action: 'update' as const,
       categoryId: category.id,
       categoryLabel: category.label,
       existing,
-      reason: options.updateExisting ? 'existing skill will be synchronized' : 'skill already exists'
+      changes,
+      reason: 'existing skill differs from catalogue'
     }
   })
+}
+
+function formatChangeValue(value: string | number): string {
+  return typeof value === 'string' ? JSON.stringify(value) : String(value)
+}
+
+function printChanges(item: ImportPlanItem): void {
+  for (const change of item.changes ?? []) {
+    console.log(
+      `          ${change.field}: ${formatChangeValue(change.from)} -> ${formatChangeValue(change.to)}`
+    )
+  }
 }
 
 export async function executeImportPlan(
@@ -106,6 +206,7 @@ export async function executeImportPlan(
       }
 
       console.log(`${prefix} UPDATE ${item.skill.name} (${item.categoryLabel})`)
+      printChanges(item)
       if (!dryRun && item.existing !== undefined) {
         await adapter.updateSkill(item.existing, item.skill, item.categoryId)
       }

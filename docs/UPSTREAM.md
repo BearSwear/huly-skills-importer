@@ -1,10 +1,10 @@
-# Huly implementation notes
+# Huly implementation and compatibility notes
 
-This project intentionally keeps Huly-specific implementation details isolated in `src/huly.ts`.
+This project intentionally keeps Huly-specific implementation details isolated in `src/huly.ts` and treats optimizer behavior as version-specific diagnostics.
 
 ## Compatibility baseline
 
-Read-only discovery was tested on 2026-08-16 with:
+Live testing on 2026-08-16 used:
 
 - `hcengineering/huly-selfhost`
 - `HULY_VERSION=v0.7.426`
@@ -12,28 +12,73 @@ Read-only discovery was tested on 2026-08-16 with:
 - token authentication
 - WebSocket transport
 
-The probe successfully authenticated, returned the Recruiting categories, and returned existing Recruiting `TagElement` skill documents.
+Tested successfully:
 
-The WebSocket client emitted several non-fatal model-transaction warnings during connection because the published API client trails the self-hosted platform release. Discovery nevertheless completed successfully. Write compatibility should be verified with a disposable skill before a bulk import.
+- npm installation from the public npm registry;
+- API authentication;
+- Recruiting category discovery;
+- built-in `TagCategory.tags[]` suggestion counts;
+- materialized `TagElement` reads;
+- idempotent skill creation;
+- candidate `TagReference` reads;
+- candidate/person name resolution;
+- proficiency `weight` inspection;
+- Rekoni resume recognition with auto-create enabled;
+- Rekoni mapping to an existing taxonomy with auto-create disabled;
+- observed Huly Skills Optimizer treatment of a disposable `Other` skill.
 
-## Data model used by the importer
+The WebSocket client emitted repeated non-fatal messages similar to:
 
-The live workspace confirmed the following resource IDs:
+```text
+no document found, failed to apply model transaction, skipping ...
+```
+
+These appeared during connection because the published API client trails the self-hosted platform release. All tested reads and writes still completed correctly. Do not assume that remains safe for every future version combination.
+
+## Resource IDs used by the CLI
+
+Verified in the tested workspace:
 
 - Tag category class: `tags:class:TagCategory`
 - Tag element class: `tags:class:TagElement`
+- Tag reference class: `tags:class:TagReference`
 - Recruiting Candidate target: `recruit:mixin:Candidate`
+- Person class: `contact:class:Person`
 - Workspace space: `core:space:Workspace`
+- Candidate skill collection: `skills`
 
-Recruiting Candidate categories are queried by `targetClass`. Skills are queried as `TagElement` documents with the same Candidate target.
-
-The importer intentionally does not depend directly on `@hcengineering/recruit`, `@hcengineering/tags`, `@hcengineering/core`, or `@hcengineering/ui`. This keeps it insulated from Huly's internal workspace package graph.
+The importer intentionally does not depend directly on `@hcengineering/recruit`, `@hcengineering/tags`, `@hcengineering/core`, or `@hcengineering/ui`.
 
 ## API client packaging
 
-`@hcengineering/api-client@0.7.423` installs from the public npm registry. The published package currently lacks usable TypeScript declaration files, so `src/huly.ts` loads it at runtime using Node's `createRequire()` and supplies only the minimal local interfaces required by this project.
+`@hcengineering/api-client@0.7.423` installs from the public npm registry. The published package does not provide usable TypeScript declarations for this project, so `src/huly.ts` loads it at runtime with Node's `createRequire()` and defines only the minimal local interfaces needed by the CLI.
 
-Upstream references:
+The self-hosted Huly release tag and published npm package version are not guaranteed to match. For the tested deployment, Huly was `v0.7.426` while the usable public API client was `0.7.423`.
+
+## Skills and suggestions are different objects
+
+A central compatibility finding is that built-in category suggestions are not materialized workspace skills:
+
+```text
+TagCategory.tags[]  -> suggestion/category vocabulary
+TagElement          -> real Recruiting skill
+TagReference        -> candidate assignment to that skill
+```
+
+This is why v0.3.0 intentionally allows the bundled import catalogue to overlap with Huly's built-in suggestion vocabulary.
+
+## Skills Optimizer
+
+Observed behavior in Huly `v0.7.426`:
+
+- `weight > 5` is treated as expert-level;
+- normalized expert titles with fewer than five expert references are disabled by default in the optimizer UI;
+- low-reference skills in the default `Other` category can be cleanup/deletion candidates;
+- named Recruiting categories are treated as canonical/good tags in the optimizer path.
+
+`inspect` reports indicators based on these observations but never applies optimizer writes.
+
+## Upstream references
 
 - Huly platform: https://github.com/hcengineering/platform
 - Huly self-host: https://github.com/hcengineering/huly-selfhost
@@ -42,10 +87,13 @@ Upstream references:
 
 ## Validation procedure for a new Huly release
 
-1. run `discover`;
-2. run the example catalogue with `--dry-run`;
-3. create one disposable example skill;
-4. verify it appears correctly under Recruiting → Skills;
-5. run the same import again and verify it is skipped;
-6. optionally test `--update-existing` against that disposable skill;
-7. only then import the larger catalogue.
+1. update/test the API client only when necessary;
+2. run `discover`;
+3. run `suggestions` and record counts;
+4. run `inspect` and confirm reference queries work;
+5. validate the bundled catalogue;
+6. dry-run `skills/example.yaml`;
+7. create its two skills in a disposable/test workspace;
+8. run the same import again and verify both are skipped;
+9. upload a controlled resume with auto-create disabled and verify existing skill mapping;
+10. only then consider a larger catalogue import.
