@@ -4,8 +4,6 @@ import { parse } from 'yaml'
 import { z } from 'zod'
 import type { SkillCatalog } from './types.js'
 
-const phaseSchema = z.number().int().min(0).max(3)
-
 const catalogSchema = z.object({
   version: z.number().int().positive(),
   name: z.string().min(1),
@@ -21,7 +19,6 @@ const catalogSchema = z.object({
       name: z.string().min(1),
       category: z.string().min(1),
       description: z.string().default(''),
-      phases: z.array(phaseSchema).optional(),
       color: z.number().int().optional()
     })
   ).min(1)
