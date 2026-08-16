@@ -1,6 +1,5 @@
-import type { TagCategory } from '@hcengineering/tags'
 import { normalize } from './catalog.js'
-import type { SkillCatalog } from './types.js'
+import type { HulyTagCategory, SkillCatalog } from './types.js'
 
 export interface ResolvedCategory {
   id: string
@@ -17,7 +16,7 @@ export interface ResolvedCategory {
 export function resolveCategory(
   requested: string,
   catalog: SkillCatalog,
-  categories: TagCategory[]
+  categories: HulyTagCategory[]
 ): ResolvedCategory | undefined {
   const definition = catalog.categories[requested]
   const candidates = [requested, ...(definition?.aliases ?? [])].map(normalize)
@@ -32,7 +31,7 @@ export function resolveCategory(
   return undefined
 }
 
-export function categoryDiagnostics(categories: TagCategory[]): Array<Record<string, unknown>> {
+export function categoryDiagnostics(categories: HulyTagCategory[]): Array<Record<string, unknown>> {
   return categories.map((category) => ({
     id: String(category._id),
     label: String(category.label ?? ''),
