@@ -16,8 +16,8 @@ function printSummary(summary: Record<string, number>): void {
 
 const program = new Command()
   .name('huly-skills-importer')
-  .description('Discover and populate Huly Recruiting skills using the official Huly API client.')
-  .version('0.1.0')
+  .description('Community CLI for discovering and importing Recruiting skills into a Huly workspace.')
+  .version('0.2.0')
 
 program
   .command('check')
