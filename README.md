@@ -59,7 +59,7 @@ See [`docs/RECRUITING-SKILL-MODEL.md`](docs/RECRUITING-SKILL-MODEL.md) for the m
 ## Install
 
 ```bash
-git clone https://github.com/YOUR-GITHUB-USER/huly-skills-importer.git
+git clone https://github.com/BearSwear/huly-skills-importer.git
 cd huly-skills-importer
 cp .env.example .env
 npm install
