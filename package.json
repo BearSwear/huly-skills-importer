@@ -1,7 +1,7 @@
 {
   "name": "huly-skills-importer",
-  "version": "0.1.0",
-  "description": "Community CLI for discovering and importing Recruiting skills into Huly workspaces.",
+  "version": "0.2.0",
+  "description": "Community CLI for discovering and importing Recruiting skills into a Huly workspace.",
   "type": "module",
   "license": "MIT",
   "author": "huly-skills-importer contributors",
@@ -30,6 +30,7 @@
   },
   "files": [
     "dist",
+    "skills/import-skills.yaml",
     "skills/example.yaml",
     "README.md",
     "LICENSE",
@@ -48,11 +49,7 @@
     "check": "npm run typecheck && npm test"
   },
   "dependencies": {
-    "@hcengineering/api-client": "^0.7.19",
-    "@hcengineering/core": "^0.7.26",
-    "@hcengineering/recruit": "^0.7.0",
-    "@hcengineering/tags": "^0.7.0",
-    "@hcengineering/ui": "^0.7.0",
+    "@hcengineering/api-client": "0.7.423",
     "commander": "^14.0.0",
     "dotenv": "^17.2.1",
     "yaml": "^2.8.1",
