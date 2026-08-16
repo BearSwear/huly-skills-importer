@@ -64,3 +64,15 @@ Live testing against `hcengineering/huly-selfhost v0.7.426` with `@hcengineering
 - Small write-test catalogue.
 - Unit tests and GitHub Actions CI configuration.
 - Security, contribution, licensing and non-affiliation documentation.
+
+## 0.1.0 - 2026-08-15
+
+### Added
+
+- Huly Recruiting category discovery.
+- YAML catalogue validation.
+- Idempotent skill import with dry-run mode.
+- Optional synchronization of existing skills.
+- 255-skill startup platform catalogue mapped to Huly built-in categories.
+- Unit tests and GitHub Actions CI configuration.
+- Security, contribution, licensing and non-affiliation documentation.
