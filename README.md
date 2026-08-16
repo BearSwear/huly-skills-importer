@@ -114,7 +114,7 @@ npm run catalog:check
 or:
 
 ```bash
-huly-skills-importer check skills/startup-platform.yaml
+huly-skills-importer check skills/import-skills.yaml
 ```
 
 The validator catches duplicate normalized skill names and references to unknown catalogue categories before any Huly connection is made.
@@ -130,13 +130,13 @@ npm run import:dry
 or:
 
 ```bash
-huly-skills-importer import skills/startup-platform.yaml --dry-run
+huly-skills-importer import skills/import-skills.yaml --dry-run
 ```
 
 Example:
 
 ```text
-Catalogue: Startup platform skills for Huly Recruiting
+Catalogue: Sample import skills for Huly Recruiting
 Requested: 255
 Create:    198
 Update:    0
@@ -159,7 +159,7 @@ npm run import
 or:
 
 ```bash
-huly-skills-importer import skills/startup-platform.yaml
+huly-skills-importer import skills/import-skills.yaml
 ```
 
 Running the same command again should skip the skills that already exist.
@@ -171,13 +171,13 @@ The default behavior is deliberately conservative: existing normalized skill nam
 To synchronize existing entries with the catalogue:
 
 ```bash
-huly-skills-importer import skills/startup-platform.yaml --dry-run --update-existing
+huly-skills-importer import skills/import-skills.yaml --dry-run --update-existing
 ```
 
 Review the plan and then, if correct:
 
 ```bash
-huly-skills-importer import skills/startup-platform.yaml --update-existing
+huly-skills-importer import skills/import-skills.yaml --update-existing
 ```
 
 There is intentionally no automatic delete/synchronize-absence option.
@@ -212,9 +212,9 @@ skills:
 
 `phases` is catalogue metadata for humans and tooling; it is not currently written into the Huly skill object.
 
-## Included startup catalogue
+## Included sample catalogue
 
-`skills/startup-platform.yaml` covers the skills needed across four development phases of an AI-first managed SaaS platform, including:
+`skills/import-skills.yaml` covers the skills needed across four development phases of an AI-first managed SaaS platform, including:
 
 - infrastructure and DevOps;
 - networking and edge services;
@@ -294,7 +294,7 @@ huly-skills-importer/
 ├── .github/workflows/ci.yml
 ├── skills/
 │   ├── example.yaml
-│   └── startup-platform.yaml
+│   └── import-skills.yaml
 ├── src/
 │   ├── catalog.ts
 │   ├── category-resolver.ts
