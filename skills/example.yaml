@@ -1,22 +1,17 @@
 version: 1
-name: Example Huly recruiting skills
-description: Minimal example catalogue for huly-skills-importer.
-
+name: Small Huly Recruiting import example
+description: A minimal catalogue for testing the importer with a small number of skills.
 categories:
   DevOps:
     aliases:
       - DevOps
-  Programming Languages:
+  Hard Skills:
     aliases:
-      - Programming Languages
-
+      - Hard Skills
 skills:
-  - name: Docker
+  - name: Restore Testing
     category: DevOps
-    description: Container deployment, networking, storage and troubleshooting.
-    phases: [0, 1, 2, 3]
-
-  - name: Python
-    category: Programming Languages
-    description: Python development for backend services, automation and integrations.
-    phases: [0, 1, 2, 3]
+    description: Practical validation that backups can be restored successfully.
+  - name: Threat Modeling
+    category: Hard Skills
+    description: Structured identification of threats, trust boundaries and mitigations.
