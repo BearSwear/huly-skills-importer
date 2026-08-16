@@ -1,5 +1,3 @@
-import type { TagCategory, TagElement } from '@hcengineering/tags'
-
 export interface HulyConnectionOptions {
   url: string
   workspace: string
@@ -17,7 +15,6 @@ export interface CatalogSkill {
   name: string
   category: string
   description: string
-  phases?: number[]
   color?: number
 }
 
@@ -27,6 +24,28 @@ export interface SkillCatalog {
   description?: string
   categories: Record<string, CatalogCategory>
   skills: CatalogSkill[]
+}
+
+/** Minimal Huly TagCategory shape needed by the importer. */
+export interface HulyTagCategory {
+  _id: string
+  label?: string
+  targetClass?: string
+  default?: boolean
+  tags?: string[]
+  [key: string]: unknown
+}
+
+/** Minimal Huly TagElement shape needed by the importer. */
+export interface HulyTagElement {
+  _id: string
+  space: string
+  title: string
+  description?: string
+  targetClass?: string
+  color?: number
+  category?: string
+  [key: string]: unknown
 }
 
 export interface CategoryInfo {
@@ -42,7 +61,7 @@ export interface ImportPlanItem {
   action: 'create' | 'skip' | 'update'
   categoryId: string
   categoryLabel: string
-  existing?: TagElement
+  existing?: HulyTagElement
   reason?: string
 }
 
@@ -56,9 +75,9 @@ export interface ImportSummary {
 }
 
 export interface HulySkillAdapter {
-  listCategories(): Promise<TagCategory[]>
-  listSkills(): Promise<TagElement[]>
+  listCategories(): Promise<HulyTagCategory[]>
+  listSkills(): Promise<HulyTagElement[]>
   createSkill(skill: CatalogSkill, categoryId: string): Promise<string>
-  updateSkill(existing: TagElement, skill: CatalogSkill, categoryId: string): Promise<void>
+  updateSkill(existing: HulyTagElement, skill: CatalogSkill, categoryId: string): Promise<void>
   close(): Promise<void>
 }
