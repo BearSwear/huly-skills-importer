@@ -2,6 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
+<<<<<<< HEAD
 ## 0.4.0 - 2026-08-17
 
 ### Added
@@ -25,7 +26,7 @@ All notable changes to this project will be documented in this file.
 - Industry catalogue overlap is intentional; importing multiple files relies on existing title-level idempotency.
 - All bundled industry examples avoid assigning skills to Huly's default `Other` category.
 
-## 0.3.0 - 2026-08-16
+## 0.3.0 - 2026-08-17
 
 ### Changed
 
@@ -85,5 +86,17 @@ Live testing against `hcengineering/huly-selfhost v0.7.426` with `@hcengineering
 - Optional synchronization of existing skills.
 - Initial generic example catalogue.
 - Small write-test catalogue.
+- Unit tests and GitHub Actions CI configuration.
+- Security, contribution, licensing and non-affiliation documentation.
+
+## 0.1.0 - 2026-08-15
+
+### Added
+
+- Huly Recruiting category discovery.
+- YAML catalogue validation.
+- Idempotent skill import with dry-run mode.
+- Optional synchronization of existing skills.
+- 255-skill startup platform catalogue mapped to Huly built-in categories.
 - Unit tests and GitHub Actions CI configuration.
 - Security, contribution, licensing and non-affiliation documentation.
