@@ -1,0 +1,371 @@
+# Community-maintained example catalogue for huly-skills-importer.
+# Research-informed, not an official taxonomy or certification standard.
+# Research basis: buildingSMART IFC 4.3 / ISO 16739, BCF and IDS; ISO 19650 information management practice; multidisciplinary AEC design, delivery, construction and commissioning workflows.
+# Edit this catalogue to match your organization, jurisdiction and recruiting needs.
+
+version: 1
+name: Architecture, Engineering and Construction Recruiting Skills
+description: An example skill catalogue for architecture, engineering, construction, BIM and multidisciplinary built-environment
+  organizations using Huly Recruiting.
+categories:
+  Backend Development:
+    aliases:
+    - Backend development
+    - Backend Development
+  Business Analytics:
+    aliases:
+    - Business Analytics
+    - Bussines analytics
+    - Bussines Analytics
+  Database Development:
+    aliases:
+    - Database Development
+    - Database development
+  Data Structures:
+    aliases:
+    - Data Structures
+  Design:
+    aliases:
+    - Design
+  Desktop Application Development:
+    aliases:
+    - Desktop Application Development
+  DevOps:
+    aliases:
+    - DevOps
+  Hard Skills:
+    aliases:
+    - Hard Skills
+  Management:
+    aliases:
+    - Management
+  Marketing:
+    aliases:
+    - Marketing
+  Mobile Development:
+    aliases:
+    - Mobile Development
+  Networking:
+    aliases:
+    - Networking
+  Programming Languages:
+    aliases:
+    - Programming Languages
+  Quality Assurance:
+    aliases:
+    - Quality Assurance
+  Sales:
+    aliases:
+    - Sales
+  Soft Skills:
+    aliases:
+    - Soft Skills
+  Web Development:
+    aliases:
+    - Web Development
+  Other:
+    aliases:
+    - Other
+skills:
+- name: Architectural Design
+  category: Design
+  description: Develop building concepts, spatial arrangements, form, materiality and design solutions from brief
+    through delivery.
+- name: Interior Design
+  category: Design
+  description: Design interior environments, finishes, layouts, furniture and user experience to meet functional
+    and aesthetic needs.
+- name: Landscape Architecture
+  category: Design
+  description: Design external spaces, landscapes, public realm and site interfaces with ecological and user considerations.
+- name: Urban Design
+  category: Design
+  description: Shape streets, neighborhoods and public spaces through integrated spatial, mobility and place-making
+    design.
+- name: Design Development
+  category: Design
+  description: Develop approved concepts into coordinated, buildable and documented design solutions.
+- name: Technical Drawing
+  category: Design
+  description: Produce clear technical drawings, details and graphical information for design and construction.
+- name: Building Information Modeling
+  category: Hard Skills
+  description: Create and manage structured digital building models for multidisciplinary design, delivery and operation.
+- name: BIM Coordination
+  category: Hard Skills
+  description: Coordinate multidisciplinary models, interfaces, issues and agreed model-development processes.
+- name: BIM Management
+  category: Management
+  description: Establish BIM execution approaches, responsibilities, standards, model delivery and quality processes.
+- name: Information Management / ISO 19650
+  category: Management
+  description: Manage project information requirements, containers, status, approval and delivery using ISO 19650
+    principles.
+- name: OpenBIM
+  category: Hard Skills
+  description: Use vendor-neutral open standards and workflows for built-asset information exchange and collaboration.
+- name: Industry Foundation Classes / IFC
+  category: Hard Skills
+  description: Exchange and validate structured built-asset information using the buildingSMART IFC standard.
+- name: BIM Collaboration Format / BCF
+  category: Hard Skills
+  description: Manage model-based issues, viewpoints, comments and coordination using BCF.
+- name: Information Delivery Specification / IDS
+  category: Hard Skills
+  description: Define and validate machine-readable information requirements for IFC-based deliveries.
+- name: COBie
+  category: Hard Skills
+  description: Structure asset and facility handover information using COBie-oriented data requirements.
+- name: Common Data Environment
+  category: Hard Skills
+  description: Configure and use controlled project information environments for shared documents and models.
+- name: BIM Execution Planning
+  category: Management
+  description: Define project BIM objectives, responsibilities, deliverables, software, exchange and coordination
+    procedures.
+- name: Asset Information Requirements
+  category: Management
+  description: Define information needed by asset owners and operators for effective downstream use.
+- name: Exchange Information Requirements
+  category: Management
+  description: Define project-specific information deliverables, acceptance criteria and exchange expectations.
+- name: Model Federation
+  category: Hard Skills
+  description: Combine discipline models for coordinated review without losing source-model ownership.
+- name: Clash Detection
+  category: Quality Assurance
+  description: Identify geometric or spatial conflicts between multidisciplinary models and track resolution.
+- name: Model Quality Assurance
+  category: Quality Assurance
+  description: Check model structure, completeness, naming, geometry and required information before delivery.
+- name: Information Requirement Validation
+  category: Quality Assurance
+  description: Validate model and data deliverables against stated information requirements.
+- name: Revit
+  category: Hard Skills
+  description: Create and coordinate parametric BIM models and technical documentation using Autodesk Revit.
+- name: AutoCAD
+  category: Desktop Application Development
+  description: Create and edit 2D and 3D technical drawings using AutoCAD.
+- name: Civil 3D
+  category: Hard Skills
+  description: Design and document civil infrastructure, surfaces, alignments, corridors and pipe networks.
+- name: Tekla Structures
+  category: Hard Skills
+  description: Model and detail structural steel and concrete systems using Tekla Structures.
+- name: Navisworks
+  category: Hard Skills
+  description: Federate models, review coordination issues and perform clash detection using Navisworks.
+- name: Archicad
+  category: Hard Skills
+  description: Develop architectural BIM models, documentation and collaborative workflows using Archicad.
+- name: Rhino
+  category: Design
+  description: Develop complex geometry and design studies using Rhino.
+- name: Grasshopper
+  category: Design
+  description: Create parametric and computational design workflows using Grasshopper.
+- name: Dynamo
+  category: Hard Skills
+  description: Automate Revit and BIM tasks using visual programming and data-driven workflows.
+- name: Structural Engineering
+  category: Hard Skills
+  description: Analyze and design structural systems for strength, stability, serviceability and constructability.
+- name: Concrete Design
+  category: Hard Skills
+  description: Design reinforced and prestressed concrete elements according to applicable codes and loads.
+- name: Steel Design
+  category: Hard Skills
+  description: Design structural steel members, connections and systems according to applicable codes.
+- name: Timber Design
+  category: Hard Skills
+  description: Design structural timber systems including engineered wood and connection requirements.
+- name: Seismic Design
+  category: Hard Skills
+  description: Design structures for seismic actions, ductility, detailing and performance requirements.
+- name: Geotechnical Engineering
+  category: Hard Skills
+  description: Assess soil and rock conditions and design foundations, earthworks and ground improvements.
+- name: Foundation Design
+  category: Hard Skills
+  description: Design shallow and deep foundations based on loads, ground conditions and settlement criteria.
+- name: Civil Engineering
+  category: Hard Skills
+  description: Plan, design and coordinate civil infrastructure and site-development systems.
+- name: Road Design
+  category: Hard Skills
+  description: Design road geometry, profiles, junctions, drainage, safety and associated infrastructure.
+- name: Rail Design
+  category: Hard Skills
+  description: Design and coordinate rail alignment, track, interfaces and supporting infrastructure.
+- name: Bridge Engineering
+  category: Hard Skills
+  description: Analyze, design, inspect and rehabilitate bridge structures and components.
+- name: Drainage Design
+  category: Hard Skills
+  description: Design stormwater collection, conveyance, attenuation and discharge systems.
+- name: Water and Wastewater Infrastructure
+  category: Hard Skills
+  description: Design water supply, sewerage and associated pumping and treatment infrastructure.
+- name: MEP Coordination
+  category: Hard Skills
+  description: Coordinate mechanical, electrical and plumbing systems within multidisciplinary building designs.
+- name: HVAC Design
+  category: Hard Skills
+  description: Size and design heating, ventilation and air-conditioning systems for comfort, energy and indoor
+    environment.
+- name: Electrical Building Services
+  category: Hard Skills
+  description: Design building power distribution, lighting, earthing, emergency power and electrical systems.
+- name: Plumbing Design
+  category: Hard Skills
+  description: Design potable water, sanitary, drainage and plumbing systems for buildings.
+- name: Fire Protection Engineering
+  category: Hard Skills
+  description: Design fire detection, suppression, compartmentation and life-safety solutions.
+- name: Building Physics
+  category: Hard Skills
+  description: Analyze heat, moisture, daylight, air movement and envelope performance.
+- name: Energy Modeling
+  category: Hard Skills
+  description: Model building energy demand, systems and operational performance to support design decisions.
+- name: Daylight Analysis
+  category: Hard Skills
+  description: Assess daylight availability, glare and visual comfort to guide envelope and space design.
+- name: Acoustics
+  category: Hard Skills
+  description: Assess and design room, environmental and building acoustics for performance requirements.
+- name: Facade Engineering
+  category: Hard Skills
+  description: Design and assess building envelopes, facade systems, interfaces and performance.
+- name: Sustainable Building Design
+  category: Hard Skills
+  description: Integrate low-energy, low-impact and resilient design strategies into buildings and infrastructure.
+- name: Life Cycle Assessment
+  category: Hard Skills
+  description: Quantify environmental impacts across material, construction, use and end-of-life stages.
+- name: Embodied Carbon Assessment
+  category: Hard Skills
+  description: Quantify and reduce greenhouse-gas emissions associated with construction materials and products.
+- name: Building Regulations / Codes
+  category: Hard Skills
+  description: Interpret and apply applicable building regulations, standards and technical code requirements.
+- name: Construction Materials
+  category: Hard Skills
+  description: Select and assess construction materials based on performance, durability, sustainability and constructability.
+- name: Specification Writing
+  category: Soft Skills
+  description: Prepare coordinated technical specifications that clearly define products, workmanship and performance
+    requirements.
+- name: Site Inspection
+  category: Quality Assurance
+  description: Inspect construction work against drawings, specifications, quality requirements and approved changes.
+- name: Design Review
+  category: Quality Assurance
+  description: Perform systematic peer and multidisciplinary reviews of design deliverables and assumptions.
+- name: Constructability Review
+  category: Quality Assurance
+  description: Evaluate designs for practical, safe and efficient construction and sequencing.
+- name: Commissioning
+  category: Quality Assurance
+  description: Plan, verify and document functional testing and acceptance of building and infrastructure systems.
+- name: Building Performance Verification
+  category: Quality Assurance
+  description: Verify delivered asset performance against design intent and specified criteria.
+- name: Surveying
+  category: Hard Skills
+  description: Measure and establish spatial positions, levels, boundaries and construction control information.
+- name: Laser Scanning / Point Clouds
+  category: Hard Skills
+  description: Capture and process reality data for existing conditions, verification and model development.
+- name: Reality Capture
+  category: Hard Skills
+  description: Use photogrammetry, scanning and related methods to create digital records of physical assets.
+- name: GIS
+  category: Hard Skills
+  description: Manage and analyze geospatial information for planning, infrastructure and asset contexts.
+- name: ArcGIS
+  category: Desktop Application Development
+  description: Create, analyze and manage geospatial datasets, maps and workflows using ArcGIS.
+- name: QGIS
+  category: Desktop Application Development
+  description: Create and analyze geospatial information using the open-source QGIS platform.
+- name: Digital Twins
+  category: Hard Skills
+  description: Connect asset information, models and operational data to support lifecycle decision making.
+- name: 4D BIM
+  category: Hard Skills
+  description: Link model elements with construction schedules to visualize and analyze sequencing.
+- name: 5D BIM
+  category: Hard Skills
+  description: Link model information with quantities and cost data for estimating and cost control.
+- name: Quantity Takeoff
+  category: Business Analytics
+  description: Extract and validate quantities from drawings, models and specifications for estimating and control.
+- name: Cost Estimating
+  category: Business Analytics
+  description: Develop construction cost estimates using quantities, rates, assumptions and market information.
+- name: Cost Planning
+  category: Business Analytics
+  description: Manage cost targets, design-to-budget decisions and cost evolution through project stages.
+- name: Earned Value Analysis
+  category: Business Analytics
+  description: Compare planned, earned and actual project performance to identify schedule and cost trends.
+- name: Construction Planning
+  category: Management
+  description: Plan construction sequencing, resources, logistics, milestones and constraints.
+- name: Construction Management
+  category: Management
+  description: Coordinate site delivery, contractors, quality, safety, schedule, cost and stakeholder interfaces.
+- name: Design Management
+  category: Management
+  description: Plan and coordinate multidisciplinary design activities, reviews, dependencies and deliverables.
+- name: Project Management
+  category: Management
+  description: Manage scope, schedule, cost, quality, risk, resources, communications and delivery outcomes.
+- name: Programme Management
+  category: Management
+  description: Coordinate multiple related projects, dependencies, benefits and governance across a programme.
+- name: Contract Administration
+  category: Management
+  description: Administer construction contracts, instructions, changes, notices, payment and compliance obligations.
+- name: Procurement Management
+  category: Management
+  description: Plan procurement strategy, tendering, evaluation, contracting and supplier coordination.
+- name: Tender Management
+  category: Management
+  description: Prepare, issue, evaluate and clarify tenders for design, construction and professional services.
+- name: RFI Management
+  category: Management
+  description: Manage requests for information, responses, responsibility and impact during delivery.
+- name: Submittal Management
+  category: Management
+  description: Control contractor product data, shop drawings, samples and approval workflows.
+- name: Change Control
+  category: Management
+  description: Assess, approve and document changes to scope, design, cost, schedule and contract requirements.
+- name: Construction Risk Management
+  category: Management
+  description: Identify and manage delivery risks related to safety, interfaces, cost, schedule and quality.
+- name: Health and Safety in Construction
+  category: Hard Skills
+  description: Apply construction health and safety requirements through design, planning and site delivery.
+- name: Design for Safety
+  category: Hard Skills
+  description: Identify and reduce construction, operation and maintenance hazards through design decisions.
+- name: Value Engineering
+  category: Business Analytics
+  description: Evaluate functions, alternatives and lifecycle value to improve outcomes without unnecessary cost.
+- name: Client Requirements Management
+  category: Management
+  description: Capture, validate and trace client objectives, technical requirements and acceptance criteria.
+- name: Stakeholder Coordination
+  category: Soft Skills
+  description: Coordinate owners, authorities, designers, contractors, suppliers and users across project interfaces.
+- name: Technical Report Writing
+  category: Soft Skills
+  description: Produce clear engineering and design reports that document assumptions, analyses, decisions and recommendations.
+- name: Design Presentation
+  category: Soft Skills
+  description: Communicate design intent and technical decisions effectively through drawings, models, visuals and
+    presentations.

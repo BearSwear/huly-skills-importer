@@ -1,0 +1,323 @@
+# Community-maintained example catalogue for huly-skills-importer.
+# Research-informed, not an official taxonomy or certification standard.
+# Research basis: US EPA Water and Wastewater Competency Model and water-workforce guidance; ISO 14001 and ISO 45001 management systems; common environmental engineering, water, wastewater and geospatial practice.
+# Edit this catalogue to match your organization, jurisdiction and recruiting needs.
+
+version: 1
+name: Environmental and Water Services Recruiting Skills
+description: An example skill catalogue for environmental consultancies, water and wastewater utilities, civil/environmental
+  engineering firms and sustainability teams using Huly Recruiting.
+categories:
+  Backend Development:
+    aliases:
+    - Backend development
+    - Backend Development
+  Business Analytics:
+    aliases:
+    - Business Analytics
+    - Bussines analytics
+    - Bussines Analytics
+  Database Development:
+    aliases:
+    - Database Development
+    - Database development
+  Data Structures:
+    aliases:
+    - Data Structures
+  Design:
+    aliases:
+    - Design
+  Desktop Application Development:
+    aliases:
+    - Desktop Application Development
+  DevOps:
+    aliases:
+    - DevOps
+  Hard Skills:
+    aliases:
+    - Hard Skills
+  Management:
+    aliases:
+    - Management
+  Marketing:
+    aliases:
+    - Marketing
+  Mobile Development:
+    aliases:
+    - Mobile Development
+  Networking:
+    aliases:
+    - Networking
+  Programming Languages:
+    aliases:
+    - Programming Languages
+  Quality Assurance:
+    aliases:
+    - Quality Assurance
+  Sales:
+    aliases:
+    - Sales
+  Soft Skills:
+    aliases:
+    - Soft Skills
+  Web Development:
+    aliases:
+    - Web Development
+  Other:
+    aliases:
+    - Other
+skills:
+- name: Environmental Engineering
+  category: Hard Skills
+  description: Apply engineering principles to protect environmental quality and manage water, waste, pollution
+    and resource systems.
+- name: Water Engineering
+  category: Hard Skills
+  description: Plan, analyze and design water supply, treatment, storage and distribution infrastructure.
+- name: Wastewater Engineering
+  category: Hard Skills
+  description: Plan, analyze and design sewerage, wastewater treatment, pumping and discharge systems.
+- name: Stormwater Management
+  category: Hard Skills
+  description: Plan and design systems for stormwater collection, conveyance, treatment, attenuation and safe discharge.
+- name: Hydrology
+  category: Hard Skills
+  description: Analyze precipitation, runoff, catchments, water balance and hydrologic extremes.
+- name: Hydraulic Modeling
+  category: Hard Skills
+  description: Model flow, pressure, levels and system behavior in water, wastewater and drainage networks.
+- name: Open Channel Hydraulics
+  category: Hard Skills
+  description: Analyze flow in rivers, channels, culverts, spillways and other free-surface systems.
+- name: Flood Risk Assessment
+  category: Hard Skills
+  description: Assess flood hazards, exposure, consequences and risk-reduction measures.
+- name: Flood Modeling
+  category: Hard Skills
+  description: Simulate riverine, pluvial or coastal flooding to support planning, design and emergency management.
+- name: Climate Adaptation
+  category: Hard Skills
+  description: Assess climate hazards and integrate resilience and adaptation measures into infrastructure and environmental
+    planning.
+- name: Sustainable Drainage Systems
+  category: Hard Skills
+  description: Design nature-based and distributed stormwater measures that manage runoff close to source.
+- name: Green Infrastructure
+  category: Hard Skills
+  description: Plan and design vegetated and nature-based infrastructure for water, climate and environmental benefits.
+- name: Water Distribution Systems
+  category: Hard Skills
+  description: Analyze and design potable-water networks, storage, pressure management and operational resilience.
+- name: Sewer Network Design
+  category: Hard Skills
+  description: Analyze and design gravity and pressure sewer systems, capacity and overflow risk.
+- name: Pumping Systems
+  category: Hard Skills
+  description: Select, size and assess pumps, stations, controls, energy use and operational requirements.
+- name: Water Hammer / Transients
+  category: Hard Skills
+  description: Assess hydraulic transients and design protection for pressure pipelines and pumping systems.
+- name: Inflow and Infiltration
+  category: Hard Skills
+  description: Identify and reduce unwanted groundwater and stormwater entering sewer systems.
+- name: Leak Detection
+  category: Hard Skills
+  description: Detect, localize and prioritize leakage in water distribution systems.
+- name: Non-Revenue Water
+  category: Business Analytics
+  description: Analyze water losses, metering, apparent losses and operational measures to improve utility efficiency.
+- name: Pipeline Condition Assessment
+  category: Hard Skills
+  description: Assess pipe condition using inspection, failure history, materials and risk information.
+- name: Trenchless Rehabilitation
+  category: Hard Skills
+  description: Select and specify trenchless repair and renewal methods for buried water infrastructure.
+- name: Drinking Water Treatment
+  category: Hard Skills
+  description: Design and operate processes for producing safe drinking water from source waters.
+- name: Wastewater Treatment
+  category: Hard Skills
+  description: Design and operate physical, chemical and biological treatment processes for wastewater.
+- name: Activated Sludge
+  category: Hard Skills
+  description: Design, operate and troubleshoot suspended-growth biological wastewater treatment.
+- name: Biological Nutrient Removal
+  category: Hard Skills
+  description: Design and optimize biological nitrogen and phosphorus removal processes.
+- name: Membrane Treatment
+  category: Hard Skills
+  description: Apply membrane filtration and separation processes to water and wastewater treatment.
+- name: Disinfection
+  category: Hard Skills
+  description: Design and operate chemical or physical disinfection processes for water and wastewater.
+- name: Sludge and Biosolids Management
+  category: Hard Skills
+  description: Treat, dewater, stabilize, transport and beneficially manage residual solids.
+- name: Resource Recovery
+  category: Hard Skills
+  description: Recover energy, nutrients, water or materials from wastewater and residual streams.
+- name: Industrial Wastewater
+  category: Hard Skills
+  description: Characterize and treat industrial wastewater considering process contaminants and discharge requirements.
+- name: Process Modeling
+  category: Hard Skills
+  description: Use process models to predict treatment performance and test operational or design scenarios.
+- name: Process Control
+  category: Hard Skills
+  description: Apply instrumentation, feedback and control strategies to stabilize and optimize treatment processes.
+- name: SCADA for Water Utilities
+  category: Hard Skills
+  description: Use supervisory control and data acquisition systems for monitoring and operating water infrastructure.
+- name: Water Quality
+  category: Hard Skills
+  description: Interpret physical, chemical and microbiological water-quality parameters and treatment implications.
+- name: Water Sampling
+  category: Quality Assurance
+  description: Plan and perform representative water and wastewater sampling with appropriate preservation and traceability.
+- name: Laboratory Data Review
+  category: Quality Assurance
+  description: Review analytical results for quality, completeness, detection limits and consistency.
+- name: Environmental Sampling
+  category: Quality Assurance
+  description: Plan and perform sampling of water, soil, sediment, air or other environmental media.
+- name: Environmental Impact Assessment
+  category: Hard Skills
+  description: Assess environmental effects of projects, alternatives, mitigation and monitoring measures.
+- name: Environmental Risk Assessment
+  category: Hard Skills
+  description: Evaluate environmental hazards, pathways, receptors, likelihood and consequence.
+- name: Environmental Permitting
+  category: Hard Skills
+  description: Prepare permit applications and demonstrate compliance with environmental approval requirements.
+- name: Environmental Compliance
+  category: Hard Skills
+  description: Interpret obligations, monitor performance and maintain evidence of environmental compliance.
+- name: Pollution Prevention
+  category: Hard Skills
+  description: Identify and implement measures to prevent or minimize pollution at source.
+- name: Contaminated Land Assessment
+  category: Hard Skills
+  description: Investigate soil and groundwater contamination, risk and remediation options.
+- name: Groundwater Hydrogeology
+  category: Hard Skills
+  description: Assess groundwater flow, aquifers, recharge, abstraction and contaminant transport.
+- name: Remediation Design
+  category: Hard Skills
+  description: Select and design remediation measures for contaminated soil, groundwater and sediments.
+- name: Ecological Assessment
+  category: Hard Skills
+  description: Assess habitats, species, ecological value and potential impacts from projects or operations.
+- name: Biodiversity Assessment
+  category: Hard Skills
+  description: Evaluate biodiversity values, pressures, mitigation and opportunities for enhancement.
+- name: Nature-Based Solutions
+  category: Hard Skills
+  description: Use ecosystem processes and natural features to address water, climate and environmental challenges.
+- name: ISO 14001
+  category: Hard Skills
+  description: Implement and maintain an environmental management system aligned with ISO 14001.
+- name: ISO 45001
+  category: Hard Skills
+  description: Apply occupational health and safety management-system principles in field and operational work.
+- name: Environmental Management Systems
+  category: Management
+  description: Establish objectives, controls, monitoring, audits and improvement processes for environmental performance.
+- name: Carbon Accounting
+  category: Hard Skills
+  description: Quantify greenhouse-gas emissions from organizational activities, projects or products.
+- name: Life Cycle Assessment
+  category: Hard Skills
+  description: Assess environmental impacts across product, asset or service life cycles.
+- name: Circular Economy
+  category: Hard Skills
+  description: Design resource loops, reuse, recovery and waste-reduction strategies that reduce virgin resource
+    demand.
+- name: Waste Management
+  category: Hard Skills
+  description: Plan waste prevention, segregation, handling, treatment, recovery and compliant disposal.
+- name: Environmental Monitoring
+  category: Hard Skills
+  description: Design monitoring programs that detect trends, impacts and compliance conditions over time.
+- name: GIS
+  category: Hard Skills
+  description: Manage and analyze geospatial information for environmental, utility and planning applications.
+- name: ArcGIS Pro
+  category: Desktop Application Development
+  description: Build geospatial analyses, maps, networks and data-management workflows using ArcGIS Pro.
+- name: QGIS
+  category: Desktop Application Development
+  description: Perform open-source geospatial mapping, analysis and data management using QGIS.
+- name: Remote Sensing
+  category: Hard Skills
+  description: Use satellite, aerial and sensor data to characterize land, water and environmental change.
+- name: Spatial Analysis
+  category: Data Structures
+  description: Analyze location, topology, proximity, networks and spatial relationships in environmental datasets.
+- name: Geospatial Data Management
+  category: Database Development
+  description: Design, maintain and quality-control spatial databases and geodatabases.
+- name: Utility Network Data
+  category: Data Structures
+  description: Model assets, connectivity and operational relationships in water and wastewater networks.
+- name: Environmental Data Analysis
+  category: Business Analytics
+  description: Analyze monitoring and operational data to identify trends, anomalies and environmental performance.
+- name: Water Utility Analytics
+  category: Business Analytics
+  description: Use operational, asset and customer data to improve water-service performance and decision making.
+- name: Asset Criticality Assessment
+  category: Business Analytics
+  description: Rank infrastructure assets by probability and consequence of failure to prioritize intervention.
+- name: Asset Management
+  category: Management
+  description: Coordinate lifecycle planning, risk, maintenance, renewal and investment for infrastructure assets.
+- name: Capital Planning
+  category: Management
+  description: Prioritize and phase infrastructure investments based on need, risk, service and affordability.
+- name: Operations and Maintenance Planning
+  category: Management
+  description: Plan recurring operations, inspection, preventive maintenance and corrective work for utility assets.
+- name: Regulatory Reporting
+  category: Management
+  description: Coordinate evidence, data quality and submissions required by environmental and utility regulators.
+- name: Water Safety Planning
+  category: Management
+  description: Apply systematic risk management from catchment to consumer to protect drinking-water safety.
+- name: Emergency Response Planning
+  category: Management
+  description: Prepare operational response arrangements for contamination, outages, flooding and infrastructure
+    failures.
+- name: Project Management
+  category: Management
+  description: Manage environmental and water projects across scope, schedule, cost, quality, risk and stakeholders.
+- name: Environmental Programme Management
+  category: Management
+  description: Coordinate multiple environmental initiatives, commitments, monitoring and improvement actions.
+- name: Public Consultation
+  category: Soft Skills
+  description: Plan and conduct transparent engagement with communities and stakeholders on environmental projects.
+- name: Stakeholder Engagement
+  category: Soft Skills
+  description: Build working relationships with regulators, clients, landowners, communities and technical disciplines.
+- name: Environmental Technical Writing
+  category: Soft Skills
+  description: Prepare defensible environmental reports, permit documentation and technical recommendations.
+- name: Engineering Technical Writing
+  category: Soft Skills
+  description: Document engineering assumptions, analyses, designs, risks and decisions clearly.
+- name: Fieldwork Planning
+  category: Management
+  description: Plan safe, efficient field investigations, access, equipment, sampling and logistics.
+- name: Health and Safety in Fieldwork
+  category: Hard Skills
+  description: Identify hazards and apply safe systems of work for site inspections, sampling and field investigations.
+- name: Quality Management
+  category: Quality Assurance
+  description: Establish review, checking, traceability and continuous-improvement practices for technical deliverables.
+- name: Data Quality Assurance
+  category: Quality Assurance
+  description: Validate environmental and utility datasets for completeness, consistency, provenance and fitness
+    for use.
+- name: Model Verification and Validation
+  category: Quality Assurance
+  description: Check environmental and hydraulic models against data, assumptions and expected system behavior.

@@ -1,0 +1,352 @@
+# Community-maintained example catalogue for huly-skills-importer.
+# Research-informed, not an official taxonomy or certification standard.
+# Research basis: Google Ads and Google Analytics Skillshop capabilities; IAB measurement, advertising and privacy guidance; agency campaign, content, creative, analytics and account-management practice.
+# Edit this catalogue to match your organization, jurisdiction and recruiting needs.
+
+version: 1
+name: Marketing and Creative Agency Recruiting Skills
+description: An example skill catalogue for digital marketing agencies, creative studios, growth teams and client-service
+  organizations using Huly Recruiting.
+categories:
+  Backend Development:
+    aliases:
+    - Backend development
+    - Backend Development
+  Business Analytics:
+    aliases:
+    - Business Analytics
+    - Bussines analytics
+    - Bussines Analytics
+  Database Development:
+    aliases:
+    - Database Development
+    - Database development
+  Data Structures:
+    aliases:
+    - Data Structures
+  Design:
+    aliases:
+    - Design
+  Desktop Application Development:
+    aliases:
+    - Desktop Application Development
+  DevOps:
+    aliases:
+    - DevOps
+  Hard Skills:
+    aliases:
+    - Hard Skills
+  Management:
+    aliases:
+    - Management
+  Marketing:
+    aliases:
+    - Marketing
+  Mobile Development:
+    aliases:
+    - Mobile Development
+  Networking:
+    aliases:
+    - Networking
+  Programming Languages:
+    aliases:
+    - Programming Languages
+  Quality Assurance:
+    aliases:
+    - Quality Assurance
+  Sales:
+    aliases:
+    - Sales
+  Soft Skills:
+    aliases:
+    - Soft Skills
+  Web Development:
+    aliases:
+    - Web Development
+  Other:
+    aliases:
+    - Other
+skills:
+- name: Marketing Strategy
+  category: Marketing
+  description: Develop marketing direction, objectives, audiences, channels and investment priorities aligned with
+    business goals.
+- name: Brand Strategy
+  category: Marketing
+  description: Define brand positioning, promise, architecture, audience perception and long-term brand direction.
+- name: Campaign Strategy
+  category: Marketing
+  description: Design integrated campaigns with clear audiences, messages, channels, objectives and measurement.
+- name: Content Strategy
+  category: Marketing
+  description: Plan content themes, formats, distribution, governance and lifecycle around audience needs and business
+    goals.
+- name: Content Marketing
+  category: Marketing
+  description: Create and distribute useful content that attracts, engages and converts target audiences.
+- name: Copywriting
+  category: Marketing
+  description: Write persuasive, on-brand copy for campaigns, websites, advertisements and customer communications.
+- name: Editorial Planning
+  category: Management
+  description: Plan publishing calendars, responsibilities, review cycles and dependencies across content programs.
+- name: SEO
+  category: Marketing
+  description: Improve organic search visibility through content, technical and authority-building practices.
+- name: Technical SEO
+  category: Web Development
+  description: Identify and resolve crawl, indexing, structured-data, performance and site-architecture issues affecting
+    search.
+- name: Keyword Research
+  category: Business Analytics
+  description: Research search demand, intent, competition and topic opportunities to guide content and paid campaigns.
+- name: Search Engine Marketing
+  category: Marketing
+  description: Plan and optimize paid search programs across keywords, audiences, bidding and landing experiences.
+- name: Google Ads
+  category: Marketing
+  description: Build and optimize campaigns using Google Ads targeting, bidding, creative and measurement features.
+- name: Paid Search
+  category: Marketing
+  description: Manage search advertising strategy, queries, keywords, bids, budgets and conversion performance.
+- name: Paid Social
+  category: Marketing
+  description: Plan and optimize advertising on social platforms using audiences, creative, budgets and performance
+    data.
+- name: Meta Ads
+  category: Marketing
+  description: Build and optimize paid campaigns across Meta advertising products.
+- name: LinkedIn Ads
+  category: Marketing
+  description: Build and optimize professional and B2B advertising campaigns using LinkedIn.
+- name: Programmatic Advertising
+  category: Marketing
+  description: Plan and manage automated digital media buying using audience, inventory and bidding technologies.
+- name: Media Planning
+  category: Marketing
+  description: Allocate channel mix, reach, frequency, timing and budget to meet communication objectives.
+- name: Media Buying
+  category: Marketing
+  description: Negotiate and purchase advertising inventory while managing cost, placement and delivery.
+- name: Video Marketing
+  category: Marketing
+  description: Plan, produce and distribute video content for brand, demand and performance objectives.
+- name: Social Media Marketing
+  category: Marketing
+  description: Plan platform-specific social content, engagement and paid or organic distribution.
+- name: Community Management
+  category: Marketing
+  description: Build and moderate brand communities, respond to audiences and surface customer insight.
+- name: Influencer Marketing
+  category: Marketing
+  description: Identify, contract and manage creators or influencers against brand, audience and campaign objectives.
+- name: Email Marketing
+  category: Marketing
+  description: Design and optimize permission-based email campaigns, segmentation, automation and measurement.
+- name: Lifecycle Marketing
+  category: Marketing
+  description: Design communications across acquisition, onboarding, activation, retention and re-engagement stages.
+- name: Marketing Automation
+  category: Hard Skills
+  description: Implement triggered journeys, lead routing, segmentation and campaign operations in marketing platforms.
+- name: Account-Based Marketing
+  category: Marketing
+  description: Coordinate targeted marketing and sales activity around high-value accounts and buying groups.
+- name: Lead Generation
+  category: Marketing
+  description: Design and operate programs that create qualified interest and measurable pipeline contribution.
+- name: Conversion Rate Optimization
+  category: Business Analytics
+  description: Use research, analytics and experiments to improve conversion through digital journeys.
+- name: Landing Page Optimization
+  category: Web Development
+  description: Design and test landing pages for message clarity, usability, speed and conversion.
+- name: A/B Testing
+  category: Quality Assurance
+  description: Design controlled experiments, define success metrics and interpret results without misleading conclusions.
+- name: Marketing Analytics
+  category: Business Analytics
+  description: Analyze campaign, customer and channel data to evaluate performance and guide decisions.
+- name: Google Analytics 4
+  category: Business Analytics
+  description: Implement and use GA4 events, audiences, explorations, attribution and reporting.
+- name: Google Tag Manager
+  category: Hard Skills
+  description: Implement and govern analytics and marketing tags using Google Tag Manager.
+- name: Conversion Tracking
+  category: Hard Skills
+  description: Implement reliable measurement of meaningful customer actions across advertising and digital properties.
+- name: Attribution Analysis
+  category: Business Analytics
+  description: Evaluate how channels and touchpoints contribute to customer outcomes under different attribution
+    models.
+- name: Marketing Mix Modeling
+  category: Business Analytics
+  description: Estimate incremental marketing contribution and channel effects using aggregated statistical analysis.
+- name: Funnel Analysis
+  category: Business Analytics
+  description: Analyze progression, drop-off and conversion across customer journey stages.
+- name: Customer Segmentation
+  category: Business Analytics
+  description: Group customers or prospects using behavioral, demographic or value-based characteristics.
+- name: Customer Lifetime Value
+  category: Business Analytics
+  description: Estimate the economic value of customer relationships over time.
+- name: Customer Acquisition Cost
+  category: Business Analytics
+  description: Measure acquisition spend relative to new-customer or new-account outcomes.
+- name: Market Research
+  category: Business Analytics
+  description: Collect and analyze market, customer and competitor information to support marketing decisions.
+- name: Competitive Analysis
+  category: Business Analytics
+  description: Assess competitor positioning, offers, channels and messaging to identify market opportunities.
+- name: Brand Tracking
+  category: Business Analytics
+  description: Measure awareness, consideration, preference and brand associations over time.
+- name: Campaign Reporting
+  category: Business Analytics
+  description: Build clear performance reporting connecting activities, spend, outputs and outcomes.
+- name: Dashboard Design
+  category: Design
+  description: Design understandable marketing dashboards that prioritize actionable measures and appropriate context.
+- name: Graphic Design
+  category: Design
+  description: Create visual communication for campaigns, brands, digital channels and client deliverables.
+- name: Art Direction
+  category: Design
+  description: Define and guide visual concepts, aesthetics and execution across creative campaigns.
+- name: Brand Identity Design
+  category: Design
+  description: Develop coherent identity systems including typography, color, imagery and application rules.
+- name: Presentation Design
+  category: Design
+  description: Create clear, persuasive and visually coherent presentations for pitches, strategy and reporting.
+- name: Motion Design
+  category: Design
+  description: Create animated visual assets for digital campaigns, social media and video.
+- name: Video Editing
+  category: Design
+  description: Edit footage, audio, graphics and pacing into effective campaign or brand video.
+- name: Photography Direction
+  category: Design
+  description: Plan and direct photography to meet brand, campaign and production requirements.
+- name: Figma
+  category: Design
+  description: Design interfaces, campaign assets and collaborative visual systems using Figma.
+- name: Adobe Creative Cloud
+  category: Design
+  description: Use professional creative applications for image, layout, video and visual production.
+- name: UX Design
+  category: Design
+  description: Design digital experiences around user goals, usability, information architecture and conversion
+    needs.
+- name: Web Design
+  category: Design
+  description: Design responsive websites and pages balancing brand, content, usability and performance.
+- name: WordPress
+  category: Web Development
+  description: Build and maintain websites and content workflows using WordPress.
+- name: Webflow
+  category: Web Development
+  description: Build responsive marketing websites and interactions using Webflow.
+- name: HTML
+  category: Web Development
+  description: Create semantic page structures and marketing content using HTML.
+- name: CSS
+  category: Web Development
+  description: Style responsive digital experiences using modern CSS.
+- name: JavaScript
+  category: Programming Languages
+  description: Implement interactive marketing-site behavior and measurement integrations using JavaScript.
+- name: CRM
+  category: Hard Skills
+  description: Use customer relationship management systems to manage contacts, opportunities, segmentation and
+    campaign handoffs.
+- name: CRM Integration
+  category: Backend Development
+  description: Integrate CRM, marketing automation, forms and data platforms through APIs and workflows.
+- name: Marketing API Integration
+  category: Backend Development
+  description: Connect advertising, analytics and marketing systems for controlled data exchange and automation.
+- name: Client Discovery
+  category: Sales
+  description: Elicit client goals, constraints, audiences, positioning and success criteria before proposing work.
+- name: Proposal Development
+  category: Sales
+  description: Develop clear agency proposals covering objectives, scope, deliverables, approach, team and pricing.
+- name: Pitching
+  category: Sales
+  description: Present creative or strategic recommendations persuasively to prospective or existing clients.
+- name: Account Management
+  category: Sales
+  description: Manage client relationships, expectations, priorities, commercial health and ongoing opportunities.
+- name: Client Retention
+  category: Sales
+  description: Strengthen client satisfaction, trust and value to support long-term relationships.
+- name: Scope Management
+  category: Management
+  description: Define, track and control agency scope, assumptions, changes and out-of-scope work.
+- name: Creative Project Management
+  category: Management
+  description: Coordinate briefs, creative tasks, reviews, production, deadlines and approvals.
+- name: Agency Resource Planning
+  category: Management
+  description: Balance people, skills, utilization and project demand across client work.
+- name: Creative Operations
+  category: Management
+  description: Design repeatable workflows, templates, asset governance and production practices for creative teams.
+- name: Campaign Operations
+  category: Management
+  description: Coordinate trafficking, launch, QA, pacing, changes and issue management across campaigns.
+- name: Production Management
+  category: Management
+  description: Coordinate vendors, assets, schedules, budgets and logistics for creative production.
+- name: Approval Workflow Management
+  category: Management
+  description: Design and manage internal and client review, feedback and sign-off processes.
+- name: Agency Budget Management
+  category: Business Analytics
+  description: Track client budgets, burn, media spend, fees and forecasted financial performance.
+- name: Vendor and Freelancer Management
+  category: Management
+  description: Source, brief, contract and coordinate external creative and production resources.
+- name: Brand Safety
+  category: Hard Skills
+  description: Protect brands from unsuitable advertising placements, contexts and partner practices.
+- name: Ad Fraud Awareness
+  category: Hard Skills
+  description: Recognize and mitigate invalid traffic, fraudulent inventory and manipulated advertising metrics.
+- name: Advertising Measurement Standards
+  category: Hard Skills
+  description: Apply accepted definitions and measurement practices when reporting advertising delivery and outcomes.
+- name: Marketing Data Privacy
+  category: Hard Skills
+  description: Apply privacy, consent and data-minimization requirements to marketing data and audience activation.
+- name: Consent Management
+  category: Hard Skills
+  description: Implement and govern consent signals and preferences across websites, analytics and marketing systems.
+- name: Content Quality Assurance
+  category: Quality Assurance
+  description: Review content for accuracy, links, formatting, brand alignment and publication readiness.
+- name: Campaign QA
+  category: Quality Assurance
+  description: Verify targeting, creative, tracking, URLs, budgets and settings before campaign launch.
+- name: Analytics QA
+  category: Quality Assurance
+  description: Verify event collection, tags, conversions and reporting logic before relying on marketing data.
+- name: Client Communication
+  category: Soft Skills
+  description: Communicate progress, tradeoffs, decisions and performance clearly with agency clients.
+- name: Creative Collaboration
+  category: Soft Skills
+  description: Work constructively across strategy, copy, design, media, development and account teams.
+- name: Presentation Skills
+  category: Soft Skills
+  description: Present creative and analytical work confidently, clearly and responsively.
+- name: Feedback Facilitation
+  category: Soft Skills
+  description: Gather, clarify and resolve creative feedback without losing objectives or accountability.
+- name: Storytelling
+  category: Soft Skills
+  description: Structure messages and narratives that make strategy, insight and creative concepts memorable.

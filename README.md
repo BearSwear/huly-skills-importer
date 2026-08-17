@@ -34,7 +34,7 @@ So pre-materializing a controlled taxonomy is useful even when the same names al
 
 See [`docs/RECRUITING-SKILL-MODEL.md`](docs/RECRUITING-SKILL-MODEL.md) for the model and observed workflow in more detail.
 
-## What v0.3.0 does
+## What v0.4.0 does
 
 - discovers Recruiting categories and distinguishes built-in suggestions from materialized skills;
 - validates YAML skill catalogues locally;
@@ -47,7 +47,9 @@ See [`docs/RECRUITING-SKILL-MODEL.md`](docs/RECRUITING-SKILL-MODEL.md) for the m
 - highlights low-reference skills in the default `Other` category that may be affected by Huly's Skills Optimizer;
 - inspects and exports Huly's built-in suggestion vocabulary;
 - never deletes skills or candidate references;
-- includes an editable broad example catalogue in `skills/import-skills.yaml`.
+- includes an editable broad example catalogue in `skills/import-skills.yaml`;
+- bundles 11 industry-specific example catalogues under `skills/industries/`;
+- lists bundled industry catalogues and their validated skill/category counts with the `catalogues` command.
 
 ## Requirements
 
@@ -59,7 +61,7 @@ See [`docs/RECRUITING-SKILL-MODEL.md`](docs/RECRUITING-SKILL-MODEL.md) for the m
 ## Install
 
 ```bash
-git clone https://github.com/YOUR-GITHUB-USER/huly-skills-importer.git
+git clone https://github.com/BearSwear/huly-skills-importer.git
 cd huly-skills-importer
 cp .env.example .env
 npm install
@@ -197,7 +199,7 @@ Huly's Skills Optimizer treats skills in named Recruiting categories differently
 
 For that reason:
 
-- the bundled v0.3.0 catalogue intentionally contains **zero** `Other` skills;
+- the bundled v0.4.0 catalogues intentionally contain **zero** `Other` skills;
 - `check` warns when a custom catalogue uses `Other`;
 - `inspect` reports low-reference `Other` skills as optimizer-risk indicators;
 - this CLI never applies the Huly optimizer or deletes anything itself.
@@ -323,13 +325,57 @@ Supported skill fields:
 
 > An example skill catalogue for importing into Huly Recruiting module. Categories map to the built-in Huly Recruiting skill categories. Edit this file to suit your needs :)
 
-v0.3.0 intentionally restores overlap with Huly's built-in suggestions. A suggestion string is not the same thing as a materialized workspace skill, and pre-materializing recognized terms is the behavior that enables controlled CV mapping with automatic skill creation disabled.
+The broad catalogue intentionally overlaps with Huly's built-in suggestions. A suggestion string is not the same thing as a materialized workspace skill, and pre-materializing recognized terms is the behavior that enables controlled CV mapping with automatic skill creation disabled.
 
 The example contains 382 materialized-skill definitions across the 18 built-in Recruiting category keys. `Other` is retained as a resolvable category but contains no bundled skills. The catalogue includes conventional Huly-recognized terms such as Python, Linux, Kubernetes, Docker, Terraform, PostgreSQL, AWS, Redis, RabbitMQ, Node.js, TypeScript and REST, plus more modern platform, security, AI, product and professional skills.
 
 A smaller two-skill catalogue is available at `skills/example.yaml` for an initial write/idempotency test.
 
 See `skills/CATALOG.md` for statistics and design notes.
+
+
+## Bundled industry catalogues
+
+v0.4.0 includes 11 research-informed industry examples under `skills/industries/`. They supplement the broad `skills/import-skills.yaml` catalogue and can be imported independently or in combination.
+
+List them locally:
+
+```bash
+npm run catalogues
+# or
+huly-skills-importer catalogues
+```
+
+The command validates each bundled YAML file while loading it and reports skill counts, used-category counts and `Other` usage. JSON output is also available:
+
+```bash
+huly-skills-importer catalogues --json
+```
+
+Bundled sectors:
+
+- accounting, audit, finance and advisory;
+- architecture, engineering, construction and BIM;
+- clinical research, biotech and healthtech;
+- cybersecurity services, SOC and DFIR;
+- environmental consulting, water and wastewater;
+- facilities, property and corporate real estate;
+- legal services, compliance and eDiscovery;
+- management consulting and professional services;
+- manufacturing, industrial engineering and OT;
+- digital marketing and creative agencies;
+- public sector and municipalities.
+
+Example:
+
+```bash
+huly-skills-importer check skills/industries/environmental-water-skills.yaml
+huly-skills-importer import skills/industries/environmental-water-skills.yaml --dry-run
+```
+
+Overlap between industry files is intentional and is handled by the importer's title-level idempotency. Review `--update-existing` carefully when combining catalogues because two industries can reasonably describe the same transferable skill differently.
+
+See [`skills/industries/README.md`](skills/industries/README.md) for the catalogue index and [`docs/INDUSTRY-CATALOGUES.md`](docs/INDUSTRY-CATALOGUES.md) for research/design notes.
 
 ## Recommended Recruiting workflow
 
@@ -431,14 +477,19 @@ Repository layout:
 huly-skills-importer/
 ├── .github/workflows/ci.yml
 ├── docs/
+│   ├── INDUSTRY-CATALOGUES.md
 │   ├── RECRUITING-SKILL-MODEL.md
 │   └── UPSTREAM.md
 ├── skills/
 │   ├── CATALOG.md
 │   ├── example.yaml
-│   └── import-skills.yaml
+│   ├── import-skills.yaml
+│   └── industries/
+│       ├── README.md
+│       └── *-skills.yaml
 ├── src/
 │   ├── catalog.ts
+│   ├── catalogues.ts
 │   ├── category-resolver.ts
 │   ├── config.ts
 │   ├── huly.ts
@@ -448,6 +499,7 @@ huly-skills-importer/
 │   ├── suggestions.ts
 │   └── types.ts
 ├── tests/
+│   ├── catalogues.test.ts
 │   ├── category-resolver.test.ts
 │   ├── importer.test.ts
 │   ├── inspector.test.ts
@@ -455,17 +507,18 @@ huly-skills-importer/
 └── ...
 ```
 
-## Before publishing
+## Release checklist
 
-1. replace `YOUR-GITHUB-USER` in `package.json` and README examples;
-2. run `npm install`;
-3. run `npm run check` and `npm run build`;
+Before publishing a release:
+
+1. run `npm install`;
+2. run `npm run check` and `npm run build`;
+3. run `npm run catalogues` to validate bundled industry catalogues;
 4. run `discover`, `suggestions`, and `inspect` against a test workspace;
-5. run an import dry-run;
-6. import `skills/example.yaml` first;
-7. verify the created skills in Recruiting → Skills;
-8. rerun the same import to prove idempotency;
-9. only then use a larger catalogue.
+5. dry-run any catalogue intended for a live workspace;
+6. verify idempotency after import.
+
+Repository: `BearSwear/huly-skills-importer`.
 
 ## Licence
 

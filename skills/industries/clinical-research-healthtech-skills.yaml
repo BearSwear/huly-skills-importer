@@ -1,0 +1,351 @@
+# Community-maintained example catalogue for huly-skills-importer.
+# Research-informed, not an official taxonomy or certification standard.
+# Research basis: ICH E6(R3) Good Clinical Practice; CDISC foundational/data-exchange standards; HL7 FHIR R5 and common health-informatics interoperability practice.
+# Edit this catalogue to match your organization, jurisdiction and recruiting needs.
+
+version: 1
+name: Clinical Research and Health Technology Recruiting Skills
+description: An example skill catalogue for clinical research organizations, pharmaceutical and biotech teams, health-data
+  companies and digital-health organizations using Huly Recruiting.
+categories:
+  Backend Development:
+    aliases:
+    - Backend development
+    - Backend Development
+  Business Analytics:
+    aliases:
+    - Business Analytics
+    - Bussines analytics
+    - Bussines Analytics
+  Database Development:
+    aliases:
+    - Database Development
+    - Database development
+  Data Structures:
+    aliases:
+    - Data Structures
+  Design:
+    aliases:
+    - Design
+  Desktop Application Development:
+    aliases:
+    - Desktop Application Development
+  DevOps:
+    aliases:
+    - DevOps
+  Hard Skills:
+    aliases:
+    - Hard Skills
+  Management:
+    aliases:
+    - Management
+  Marketing:
+    aliases:
+    - Marketing
+  Mobile Development:
+    aliases:
+    - Mobile Development
+  Networking:
+    aliases:
+    - Networking
+  Programming Languages:
+    aliases:
+    - Programming Languages
+  Quality Assurance:
+    aliases:
+    - Quality Assurance
+  Sales:
+    aliases:
+    - Sales
+  Soft Skills:
+    aliases:
+    - Soft Skills
+  Web Development:
+    aliases:
+    - Web Development
+  Other:
+    aliases:
+    - Other
+skills:
+- name: Good Clinical Practice / GCP
+  category: Hard Skills
+  description: Apply internationally recognized ethical, scientific and quality principles for conducting clinical
+    trials.
+- name: ICH E6(R3)
+  category: Hard Skills
+  description: Apply ICH E6(R3) principles including quality by design, proportionality and risk-based trial conduct.
+- name: Clinical Trial Protocol Development
+  category: Hard Skills
+  description: Develop scientifically sound, operationally feasible clinical trial protocols and supporting procedures.
+- name: Clinical Trial Operations
+  category: Management
+  description: Coordinate trial activities, sites, vendors, milestones, issues and operational delivery.
+- name: Study Start-Up
+  category: Management
+  description: Coordinate country and site activation activities, essential documents, contracts and approvals.
+- name: Site Feasibility
+  category: Business Analytics
+  description: Assess investigator sites for patient availability, capabilities, competing studies and operational
+    fit.
+- name: Site Selection
+  category: Management
+  description: Select and approve investigator sites based on evidence, capability, risk and study needs.
+- name: Site Monitoring
+  category: Quality Assurance
+  description: Monitor trial sites for participant protection, protocol compliance, data quality and issue resolution.
+- name: Risk-Based Monitoring
+  category: Quality Assurance
+  description: Use risk indicators and critical data/processes to focus clinical monitoring effort proportionately.
+- name: Source Data Verification
+  category: Quality Assurance
+  description: Verify selected clinical data against source records according to monitoring strategy.
+- name: Informed Consent
+  category: Hard Skills
+  description: Manage ethically valid participant information, consent documentation and consent-process compliance.
+- name: Ethics Committee / IRB Submissions
+  category: Hard Skills
+  description: Prepare and manage research ethics submissions, amendments, responses and approvals.
+- name: Patient Recruitment
+  category: Management
+  description: Plan and monitor strategies for identifying and enrolling eligible participants.
+- name: Patient Enrollment Management
+  category: Business Analytics
+  description: Track recruitment funnel, screening, enrollment, retention and site performance.
+- name: Trial Master File / TMF
+  category: Management
+  description: Maintain complete, timely and inspection-ready essential trial documentation.
+- name: Electronic Trial Master File / eTMF
+  category: Hard Skills
+  description: Operate eTMF systems, document taxonomy, completeness checks and inspection readiness.
+- name: Clinical Trial Management Systems / CTMS
+  category: Hard Skills
+  description: Use CTMS platforms for study planning, site tracking, milestones, payments and operational oversight.
+- name: Electronic Data Capture / EDC
+  category: Hard Skills
+  description: Configure and operate systems for controlled collection and review of clinical study data.
+- name: Case Report Form Design
+  category: Design
+  description: Design clear, protocol-aligned case report forms that collect necessary study data efficiently.
+- name: Clinical Data Management
+  category: Hard Skills
+  description: Plan, collect, clean, reconcile and lock clinical data with traceable quality controls.
+- name: Clinical Database Design
+  category: Database Development
+  description: Design study databases, forms, validation rules, metadata and controlled structures.
+- name: Data Cleaning
+  category: Quality Assurance
+  description: Identify and resolve inconsistent, missing, implausible or noncompliant clinical data.
+- name: Clinical Data Validation
+  category: Quality Assurance
+  description: Define and execute checks that verify data quality, consistency and protocol compliance.
+- name: Medical Coding
+  category: Hard Skills
+  description: Code clinical terms using controlled medical dictionaries and maintain coding consistency.
+- name: CDISC Standards
+  category: Hard Skills
+  description: Apply CDISC standards to structure clinical and non-clinical research data.
+- name: CDASH
+  category: Hard Skills
+  description: Use CDASH standards to design consistent clinical data collection and traceability to downstream
+    datasets.
+- name: SDTM
+  category: Hard Skills
+  description: Organize clinical study tabulation data according to the CDISC Study Data Tabulation Model.
+- name: ADaM
+  category: Hard Skills
+  description: Structure analysis-ready clinical datasets according to the CDISC Analysis Data Model.
+- name: SEND
+  category: Hard Skills
+  description: Structure non-clinical study data according to the Standard for Exchange of Nonclinical Data.
+- name: CDISC ODM
+  category: Hard Skills
+  description: Exchange clinical study data, metadata and audit information using the Operational Data Model.
+- name: Clinical Data Standards Governance
+  category: Management
+  description: Govern controlled terminology, standards adoption, exceptions and study implementation.
+- name: Biostatistics
+  category: Hard Skills
+  description: Apply statistical methods to clinical study design, analysis and interpretation.
+- name: Statistical Analysis Plan
+  category: Hard Skills
+  description: Define prespecified statistical analyses, populations, endpoints and handling conventions.
+- name: Clinical Statistical Programming
+  category: Programming Languages
+  description: Implement reproducible clinical analyses, tables, listings and figures in validated programs.
+- name: SAS
+  category: Programming Languages
+  description: Use SAS for clinical data management, statistical programming and regulated reporting.
+- name: R
+  category: Programming Languages
+  description: Use R for statistical analysis, visualization and reproducible clinical research workflows.
+- name: Python
+  category: Programming Languages
+  description: Use Python for health-data processing, analytics, automation and research tooling.
+- name: SQL
+  category: Programming Languages
+  description: Query structured clinical and operational databases for analysis and reconciliation.
+- name: Clinical Data Visualization
+  category: Business Analytics
+  description: Visualize safety, efficacy, operational and quality data to support review and decisions.
+- name: Safety Monitoring
+  category: Hard Skills
+  description: Monitor emerging safety information and coordinate appropriate clinical and regulatory actions.
+- name: Pharmacovigilance
+  category: Hard Skills
+  description: Detect, assess, understand and prevent adverse effects and other medicine-related safety issues.
+- name: Adverse Event Management
+  category: Hard Skills
+  description: Collect, assess, document and follow adverse events according to protocol and regulatory requirements.
+- name: Serious Adverse Event Management
+  category: Hard Skills
+  description: Manage expedited serious adverse-event reporting, follow-up and reconciliation.
+- name: Safety Signal Management
+  category: Hard Skills
+  description: Detect, validate, assess and communicate potential safety signals.
+- name: Regulatory Affairs
+  category: Hard Skills
+  description: Plan and manage regulatory interactions, submissions, commitments and product-development requirements.
+- name: Clinical Regulatory Submissions
+  category: Management
+  description: Coordinate clinical content, datasets, documents and responses for regulatory submissions.
+- name: Inspection Readiness
+  category: Quality Assurance
+  description: Maintain systems, evidence and staff preparedness for regulatory inspection.
+- name: Clinical Quality Management Systems
+  category: Management
+  description: Operate quality governance, controlled procedures, audits, CAPA and continuous improvement.
+- name: CAPA
+  category: Quality Assurance
+  description: Investigate root causes and manage corrective and preventive actions through verified completion.
+- name: Clinical Audit
+  category: Quality Assurance
+  description: Independently assess clinical processes, sites, vendors and systems for compliance and effectiveness.
+- name: Protocol Deviation Management
+  category: Quality Assurance
+  description: Identify, assess, trend and remediate deviations from approved trial procedures.
+- name: Vendor Qualification
+  category: Quality Assurance
+  description: Assess clinical vendors for capability, compliance, quality systems and risk before engagement.
+- name: Clinical Vendor Management
+  category: Management
+  description: Manage CROs, laboratories, technology providers and other vendors against scope, quality and performance.
+- name: Clinical Project Management
+  category: Management
+  description: Manage trial scope, timelines, budget, quality, risk, vendors and stakeholders.
+- name: Clinical Programme Management
+  category: Management
+  description: Coordinate multiple studies or development activities toward broader clinical objectives.
+- name: Clinical Trial Budgeting
+  category: Business Analytics
+  description: Plan and monitor study costs, site payments, vendor spend and forecast changes.
+- name: Clinical Supply Management
+  category: Management
+  description: Plan, label, distribute, reconcile and control investigational-product supply.
+- name: Medical Writing
+  category: Soft Skills
+  description: Prepare protocols, clinical reports, summaries and regulatory documents with scientific clarity and
+    traceability.
+- name: Clinical Study Report Writing
+  category: Soft Skills
+  description: Develop structured, evidence-based clinical study reports consistent with applicable guidance.
+- name: Health Informatics
+  category: Hard Skills
+  description: Apply information science and technology to healthcare data, workflows and clinical decision support.
+- name: HL7 FHIR
+  category: Hard Skills
+  description: Model and exchange healthcare information using HL7 Fast Healthcare Interoperability Resources.
+- name: HL7 v2
+  category: Hard Skills
+  description: Implement and troubleshoot event-driven healthcare messaging using HL7 Version 2.
+- name: SMART on FHIR
+  category: Hard Skills
+  description: Build interoperable applications using FHIR APIs with standardized authorization patterns.
+- name: FHIR API Development
+  category: Backend Development
+  description: Implement healthcare APIs using FHIR resources, search, validation and secure exchange.
+- name: FHIR Profiling
+  category: Data Structures
+  description: Define implementation constraints, profiles, extensions and terminology bindings for FHIR resources.
+- name: Healthcare Interoperability
+  category: Hard Skills
+  description: Design reliable exchange of clinical and administrative information across heterogeneous health systems.
+- name: SNOMED CT
+  category: Hard Skills
+  description: Use SNOMED CT concepts and mappings for consistent clinical terminology and semantic interoperability.
+- name: LOINC
+  category: Hard Skills
+  description: Use LOINC identifiers for laboratory, observation and clinical measurement concepts.
+- name: ICD Coding
+  category: Hard Skills
+  description: Apply ICD classification for diagnoses, reporting, analytics and reimbursement contexts.
+- name: DICOM
+  category: Hard Skills
+  description: Manage interoperable medical imaging objects, metadata and exchange workflows.
+- name: Electronic Health Records
+  category: Hard Skills
+  description: Understand EHR data structures, clinical workflows, configuration and integration.
+- name: Clinical Terminology Management
+  category: Data Structures
+  description: Govern clinical terminology, value sets, code systems and mapping across applications.
+- name: Healthcare Master Data
+  category: Database Development
+  description: Govern core patient, provider, organization and reference data used across health systems.
+- name: Patient Identity Management
+  category: Hard Skills
+  description: Manage patient identifiers, matching, deduplication and identity-quality risks.
+- name: Health Data Integration
+  category: Backend Development
+  description: Integrate EHR, laboratory, imaging, device and research systems through controlled interfaces.
+- name: Healthcare API Integration
+  category: Backend Development
+  description: Integrate health applications using secure APIs, messaging and event-driven workflows.
+- name: Health Data Privacy
+  category: Hard Skills
+  description: Apply confidentiality, minimization and lawful-use principles to sensitive health information.
+- name: Health Data De-Identification
+  category: Hard Skills
+  description: Reduce re-identification risk in datasets while preserving appropriate analytical utility.
+- name: Healthcare Cybersecurity
+  category: Hard Skills
+  description: Protect clinical systems, connected devices, health data and critical care workflows.
+- name: Clinical Data Governance
+  category: Management
+  description: Define ownership, quality, access, lineage and permitted use for clinical and health data.
+- name: Healthcare Workflow Analysis
+  category: Business Analytics
+  description: Analyze clinical workflows, handoffs and system interactions to identify requirements and improvement
+    opportunities.
+- name: Clinical Decision Support
+  category: Hard Skills
+  description: Design and evaluate rules, alerts and knowledge interventions supporting clinical decisions.
+- name: Usability in Health Technology
+  category: Design
+  description: Design health software around clinician and patient workflows, cognitive load and safety.
+- name: Human Factors Engineering
+  category: Design
+  description: Apply human-factors methods to reduce use error and improve safety in health technologies.
+- name: Health Technology Requirements
+  category: Management
+  description: Capture, trace and validate clinical, technical, regulatory and user requirements.
+- name: Medical Device Software Lifecycle
+  category: Hard Skills
+  description: Manage software development and maintenance activities in regulated medical-device contexts.
+- name: Computer System Validation
+  category: Quality Assurance
+  description: Demonstrate that regulated computerized systems consistently meet intended use and requirements.
+- name: Clinical Software Testing
+  category: Quality Assurance
+  description: Test clinical systems for functional correctness, data integrity, workflow and regulatory requirements.
+- name: Data Integrity / ALCOA+
+  category: Quality Assurance
+  description: Apply attributable, legible, contemporaneous, original, accurate and extended data-integrity principles.
+- name: Clinical Stakeholder Management
+  category: Soft Skills
+  description: Coordinate investigators, sites, sponsors, regulators, vendors, clinicians and technical teams.
+- name: Scientific Communication
+  category: Soft Skills
+  description: Communicate scientific methods, evidence, uncertainty and conclusions accurately to varied audiences.
+- name: Patient-Centered Communication
+  category: Soft Skills
+  description: Communicate research and health-technology information clearly with participant needs and understanding
+    in mind.

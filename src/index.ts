@@ -2,6 +2,7 @@
 import { Command } from 'commander'
 import { catalogWarnings, loadCatalog, summarizeCatalog } from './catalog.js'
 import { categoryDiagnostics } from './category-resolver.js'
+import { listBundledCatalogues } from './catalogues.js'
 import { hulyConnectionFromEnv } from './config.js'
 import { connectHuly } from './huly.js'
 import { inspectWorkspace } from './inspector.js'
@@ -26,7 +27,41 @@ function printCatalogWarnings(warnings: string[]): void {
 const program = new Command()
   .name('huly-skills-importer')
   .description('Community CLI for materializing and inspecting controlled Huly Recruiting skill taxonomies.')
-  .version('0.3.0')
+  .version('0.4.0')
+
+program
+  .command('catalogues')
+  .description('List bundled industry skill catalogues and validate their basic statistics.')
+  .option('--json', 'print machine-readable JSON')
+  .action(async (options: { json?: boolean }) => {
+    const result = await listBundledCatalogues()
+
+    if (options.json) {
+      console.log(JSON.stringify(result, null, 2))
+      return
+    }
+
+    console.log('Bundled industry skill catalogues')
+    console.log('---------------------------------')
+    console.log(`Catalogues:             ${result.catalogues.length}`)
+    console.log(`Total skill entries:    ${result.totalSkillEntries}`)
+    console.log(`Unique normalized names:${result.uniqueNormalizedSkills}`)
+    console.log('')
+
+    const width = Math.max(...result.catalogues.map((catalog) => catalog.file.length), 4)
+    for (const catalog of result.catalogues) {
+      console.log(
+        `${catalog.file.padEnd(width)}  ` +
+        `${String(catalog.skills).padStart(3)} skills  ` +
+        `${String(catalog.usedCategories).padStart(2)} categories  ` +
+        `${String(catalog.otherSkills).padStart(2)} Other`
+      )
+    }
+
+    console.log('\nUse any catalogue with:')
+    console.log('  huly-skills-importer check skills/industries/<file>.yaml')
+    console.log('  huly-skills-importer import skills/industries/<file>.yaml --dry-run')
+  })
 
 program
   .command('check')

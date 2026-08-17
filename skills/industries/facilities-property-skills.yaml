@@ -1,0 +1,342 @@
+# Community-maintained example catalogue for huly-skills-importer.
+# Research-informed, not an official taxonomy or certification standard.
+# Research basis: ISO 41001 facility-management systems; IFMA facility-management knowledge domains and competencies; ISO 50001 energy management; ISO 55001 asset-management concepts.
+# Edit this catalogue to match your organization, jurisdiction and recruiting needs.
+
+version: 1
+name: Facilities and Property Management Recruiting Skills
+description: An example skill catalogue for facility management providers, property managers, corporate real-estate
+  teams and building operations organizations using Huly Recruiting.
+categories:
+  Backend Development:
+    aliases:
+    - Backend development
+    - Backend Development
+  Business Analytics:
+    aliases:
+    - Business Analytics
+    - Bussines analytics
+    - Bussines Analytics
+  Database Development:
+    aliases:
+    - Database Development
+    - Database development
+  Data Structures:
+    aliases:
+    - Data Structures
+  Design:
+    aliases:
+    - Design
+  Desktop Application Development:
+    aliases:
+    - Desktop Application Development
+  DevOps:
+    aliases:
+    - DevOps
+  Hard Skills:
+    aliases:
+    - Hard Skills
+  Management:
+    aliases:
+    - Management
+  Marketing:
+    aliases:
+    - Marketing
+  Mobile Development:
+    aliases:
+    - Mobile Development
+  Networking:
+    aliases:
+    - Networking
+  Programming Languages:
+    aliases:
+    - Programming Languages
+  Quality Assurance:
+    aliases:
+    - Quality Assurance
+  Sales:
+    aliases:
+    - Sales
+  Soft Skills:
+    aliases:
+    - Soft Skills
+  Web Development:
+    aliases:
+    - Web Development
+  Other:
+    aliases:
+    - Other
+skills:
+- name: Facility Management
+  category: Hard Skills
+  description: Coordinate people, place, process and technology to support effective operation of built environments.
+- name: ISO 41001
+  category: Hard Skills
+  description: Apply ISO 41001 requirements and guidance to facility-management systems and service delivery.
+- name: Facility Operations
+  category: Management
+  description: Coordinate daily building services, operational priorities, incidents and service-provider activities.
+- name: Building Systems Management
+  category: Hard Skills
+  description: Understand and coordinate integrated building mechanical, electrical, plumbing and control systems.
+- name: HVAC Operations
+  category: Hard Skills
+  description: Operate and troubleshoot heating, ventilation and air-conditioning systems for comfort, efficiency
+    and reliability.
+- name: Electrical Systems Operations
+  category: Hard Skills
+  description: Operate and coordinate building electrical distribution, lighting, backup power and electrical maintenance.
+- name: Plumbing Systems Operations
+  category: Hard Skills
+  description: Operate and maintain water, sanitary, drainage and plumbing systems within facilities.
+- name: Fire and Life Safety Systems
+  category: Hard Skills
+  description: Manage inspection, maintenance and readiness of fire detection, suppression and life-safety systems.
+- name: Building Automation Systems
+  category: Hard Skills
+  description: Operate building automation controls, schedules, alarms, trends and system integrations.
+- name: Building Management Systems
+  category: Hard Skills
+  description: Use BMS platforms to monitor, control and optimize building services.
+- name: Preventive Maintenance
+  category: Management
+  description: Plan and execute recurring maintenance intended to prevent avoidable failures and degradation.
+- name: Corrective Maintenance
+  category: Management
+  description: Prioritize, coordinate and close repairs following failures, defects or service requests.
+- name: Predictive Maintenance
+  category: Business Analytics
+  description: Use condition and trend information to forecast failures and optimize maintenance timing.
+- name: Condition-Based Maintenance
+  category: Hard Skills
+  description: Trigger maintenance based on measured equipment condition rather than fixed intervals alone.
+- name: Facility Condition Assessment
+  category: Hard Skills
+  description: Inspect buildings and systems to assess condition, remaining life, risk and capital needs.
+- name: Asset Register Management
+  category: Database Development
+  description: Maintain accurate asset identifiers, attributes, locations, ownership and lifecycle information.
+- name: Asset Hierarchy Design
+  category: Data Structures
+  description: Structure facilities, systems, equipment and components into useful maintenance and reporting hierarchies.
+- name: Maintenance History Analysis
+  category: Business Analytics
+  description: Analyze work history, failures and costs to improve maintenance strategy and investment decisions.
+- name: CMMS
+  category: Hard Skills
+  description: Use computerized maintenance management systems for assets, work orders, preventive maintenance and
+    history.
+- name: IWMS
+  category: Hard Skills
+  description: Use integrated workplace management systems for facilities, space, assets, leases and service workflows.
+- name: CAFM
+  category: Hard Skills
+  description: Use computer-aided facility management systems for space, maintenance, assets and workplace services.
+- name: Work Order Management
+  category: Management
+  description: Capture, prioritize, assign, track and close maintenance and service work with traceable outcomes.
+- name: Maintenance Planning and Scheduling
+  category: Management
+  description: Plan labor, materials, access, permits and timing for maintenance activities.
+- name: Spare Parts Management
+  category: Management
+  description: Control critical spares, inventory levels, replenishment and storage for building assets.
+- name: Vendor Management
+  category: Management
+  description: Select, coordinate and review contractors and service providers against requirements and performance.
+- name: Service Level Agreement Management
+  category: Management
+  description: Define, monitor and manage service performance against measurable contractual commitments.
+- name: Facility Budgeting
+  category: Business Analytics
+  description: Develop and monitor operating and maintenance budgets based on services, assets and expected demand.
+- name: Lifecycle Cost Analysis
+  category: Business Analytics
+  description: Compare asset alternatives using acquisition, operation, maintenance, energy and replacement costs.
+- name: Capital Planning
+  category: Management
+  description: Prioritize and phase renewal, refurbishment and improvement investments based on condition and risk.
+- name: Asset Management
+  category: Management
+  description: Coordinate asset lifecycle value, risk, performance and investment decisions across facilities.
+- name: ISO 55001 Asset Management
+  category: Hard Skills
+  description: Apply asset-management-system principles to facility and property portfolios.
+- name: Energy Management
+  category: Hard Skills
+  description: Manage energy use, efficiency, procurement and improvement across buildings and systems.
+- name: ISO 50001
+  category: Hard Skills
+  description: Apply ISO 50001 energy-management principles for systematic improvement of energy performance.
+- name: Energy Auditing
+  category: Hard Skills
+  description: Assess building energy use, systems and opportunities for efficiency improvement.
+- name: Energy Performance Indicators
+  category: Business Analytics
+  description: Define and monitor meaningful EnPIs and baselines for facility energy performance.
+- name: Utility Management
+  category: Management
+  description: Manage electricity, heating, cooling, water and other utility services, contracts and consumption.
+- name: Carbon Management
+  category: Hard Skills
+  description: Quantify and reduce operational greenhouse-gas emissions from buildings and services.
+- name: Decarbonization Planning
+  category: Management
+  description: Develop phased strategies for reducing building emissions through efficiency, electrification and
+    renewables.
+- name: Sustainability in Facilities
+  category: Hard Skills
+  description: Integrate environmental and social performance into facility operations and investment decisions.
+- name: Waste Management
+  category: Hard Skills
+  description: Plan waste prevention, segregation, collection, recovery and compliant disposal for facilities.
+- name: Water Efficiency
+  category: Hard Skills
+  description: Monitor and reduce building water consumption, leakage and avoidable losses.
+- name: Indoor Environmental Quality
+  category: Hard Skills
+  description: Manage thermal comfort, air quality, lighting, acoustics and other occupant-environment conditions.
+- name: Space Management
+  category: Management
+  description: Maintain space inventories, allocations, standards and workplace capacity.
+- name: Occupancy Analytics
+  category: Business Analytics
+  description: Analyze occupancy and utilization data to support workplace and portfolio decisions.
+- name: Workplace Strategy
+  category: Management
+  description: Align workplace design, services and policies with organizational needs and ways of working.
+- name: Move Management
+  category: Management
+  description: Plan and coordinate employee, team and equipment moves with minimal operational disruption.
+- name: Corporate Real Estate
+  category: Hard Skills
+  description: Manage property strategy, ownership, leasing and portfolio decisions in support of organizational
+    objectives.
+- name: Lease Administration
+  category: Management
+  description: Track lease terms, dates, obligations, options, payments and critical notices.
+- name: Property Management
+  category: Management
+  description: Coordinate tenancy, services, maintenance, compliance, budgets and stakeholder relationships for
+    property assets.
+- name: Tenant Relationship Management
+  category: Soft Skills
+  description: Manage communication, service requests, expectations and issues with tenants or occupiers.
+- name: Service Charge Management
+  category: Business Analytics
+  description: Plan, allocate, reconcile and explain shared property operating costs.
+- name: Portfolio Performance Analysis
+  category: Business Analytics
+  description: Analyze property and facility portfolio cost, utilization, condition and service performance.
+- name: Facility KPI Design
+  category: Business Analytics
+  description: Define measures for maintenance, energy, service quality, space and asset performance.
+- name: Risk Management
+  category: Management
+  description: Identify and manage facility risks affecting safety, continuity, compliance, cost and service.
+- name: Emergency Preparedness
+  category: Management
+  description: Prepare building emergency plans, roles, procedures, communications and exercises.
+- name: Business Continuity
+  category: Management
+  description: Maintain facility and service arrangements supporting continuity of critical organizational activities.
+- name: Occupational Health and Safety
+  category: Hard Skills
+  description: Manage workplace hazards, safe systems of work, incidents and occupational health requirements.
+- name: ISO 45001
+  category: Hard Skills
+  description: Apply occupational health and safety management-system principles to facility operations.
+- name: Permit to Work
+  category: Hard Skills
+  description: Control hazardous maintenance and contractor activities through formal permits, isolation and authorization.
+- name: Contractor Safety Management
+  category: Management
+  description: Qualify, brief, supervise and review contractor safety performance in occupied or operational facilities.
+- name: Regulatory Compliance
+  category: Hard Skills
+  description: Identify and maintain evidence of property, building, safety and environmental compliance obligations.
+- name: Accessibility Management
+  category: Hard Skills
+  description: Identify and remove physical and service barriers to accessible use of facilities.
+- name: Physical Security
+  category: Hard Skills
+  description: Manage building security controls, guarding, procedures, incidents and protective measures.
+- name: Access Control Systems
+  category: Hard Skills
+  description: Administer electronic access credentials, permissions, doors, events and security integrations.
+- name: CCTV Operations
+  category: Hard Skills
+  description: Manage video-surveillance systems, retention, access and operational use within legal and policy
+    constraints.
+- name: Cleaning Services Management
+  category: Management
+  description: Specify, schedule and monitor cleaning services, hygiene standards and performance.
+- name: Grounds Maintenance
+  category: Management
+  description: Plan and supervise landscaping, external areas and seasonal grounds services.
+- name: Minor Works Management
+  category: Management
+  description: Plan and deliver small construction, refurbishment and repair projects in operational facilities.
+- name: Facility Project Management
+  category: Management
+  description: Deliver facility changes and upgrades while controlling scope, cost, schedule, risk and operational
+    impact.
+- name: Commissioning and Handover
+  category: Quality Assurance
+  description: Verify building-system function, documentation and operational readiness before acceptance.
+- name: Maintenance Quality Assurance
+  category: Quality Assurance
+  description: Review maintenance completion, evidence, workmanship and recurring service quality.
+- name: Facility Inspection
+  category: Quality Assurance
+  description: Perform systematic inspections of condition, housekeeping, safety and compliance.
+- name: BIM for Facilities Management
+  category: Hard Skills
+  description: Use building information models to support asset information, maintenance and facility operations.
+- name: COBie
+  category: Hard Skills
+  description: Use structured asset handover information to populate and maintain facility-management systems.
+- name: Digital Twins for Facilities
+  category: Hard Skills
+  description: Connect asset models and operational data to support monitoring, maintenance and lifecycle decisions.
+- name: IoT Building Sensors
+  category: Hard Skills
+  description: Deploy and use connected sensors for occupancy, environment, energy and equipment condition.
+- name: BACnet
+  category: Networking
+  description: Configure and troubleshoot BACnet communication used by building automation systems.
+- name: Modbus
+  category: Networking
+  description: Integrate and troubleshoot Modbus-connected meters, controllers and building equipment.
+- name: Building Network Segmentation
+  category: Networking
+  description: Separate operational building systems from enterprise and public networks to reduce risk.
+- name: Facility Data Governance
+  category: Management
+  description: Define ownership, quality, retention and access rules for facility and asset information.
+- name: Facility Data Analysis
+  category: Business Analytics
+  description: Analyze work orders, energy, occupancy, asset and service data to support decisions.
+- name: Facility Documentation Management
+  category: Management
+  description: Maintain current drawings, manuals, certificates, procedures and asset documentation.
+- name: Technical Specification Writing
+  category: Soft Skills
+  description: Write clear service, maintenance and technical requirements for contractors and suppliers.
+- name: Facility Stakeholder Management
+  category: Soft Skills
+  description: Coordinate occupants, leadership, contractors, landlords, authorities and service providers.
+- name: Service Communication
+  category: Soft Skills
+  description: Communicate planned work, outages, incidents and service expectations clearly to occupants.
+- name: Facility Incident Reporting
+  category: Soft Skills
+  description: Document facility incidents, impacts, response actions and lessons learned consistently.
+- name: Procurement for Facilities
+  category: Management
+  description: Source facility services, maintenance contracts, equipment and works using structured requirements
+    and evaluation.
+- name: Facility Service Tendering
+  category: Sales
+  description: Develop or evaluate service tenders, scopes, pricing and delivery models for facility-management
+    contracts.

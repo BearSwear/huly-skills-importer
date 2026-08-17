@@ -1,0 +1,325 @@
+# Community-maintained example catalogue for huly-skills-importer.
+# Research-informed, not an official taxonomy or certification standard.
+# Research basis: AICPA/CIMA foundational and CGMA competency frameworks; IFRS accounting and sustainability standards; COSO internal-control and enterprise-risk concepts; modern finance transformation practice.
+# Edit this catalogue to match your organization, jurisdiction and recruiting needs.
+
+version: 1
+name: Accounting and Finance Recruiting Skills
+description: An example skill catalogue for accounting firms, finance teams, audit practices, outsourced finance
+  providers and financial advisory organizations using Huly Recruiting.
+categories:
+  Backend Development:
+    aliases:
+    - Backend development
+    - Backend Development
+  Business Analytics:
+    aliases:
+    - Business Analytics
+    - Bussines analytics
+    - Bussines Analytics
+  Database Development:
+    aliases:
+    - Database Development
+    - Database development
+  Data Structures:
+    aliases:
+    - Data Structures
+  Design:
+    aliases:
+    - Design
+  Desktop Application Development:
+    aliases:
+    - Desktop Application Development
+  DevOps:
+    aliases:
+    - DevOps
+  Hard Skills:
+    aliases:
+    - Hard Skills
+  Management:
+    aliases:
+    - Management
+  Marketing:
+    aliases:
+    - Marketing
+  Mobile Development:
+    aliases:
+    - Mobile Development
+  Networking:
+    aliases:
+    - Networking
+  Programming Languages:
+    aliases:
+    - Programming Languages
+  Quality Assurance:
+    aliases:
+    - Quality Assurance
+  Sales:
+    aliases:
+    - Sales
+  Soft Skills:
+    aliases:
+    - Soft Skills
+  Web Development:
+    aliases:
+    - Web Development
+  Other:
+    aliases:
+    - Other
+skills:
+- name: Financial Accounting
+  category: Hard Skills
+  description: Record, classify and report financial transactions according to applicable accounting principles
+    and policies.
+- name: Management Accounting
+  category: Hard Skills
+  description: Provide internal cost, performance and decision-support information to managers and business leaders.
+- name: Bookkeeping
+  category: Hard Skills
+  description: Maintain accurate day-to-day accounting records, ledgers and supporting documentation.
+- name: General Ledger
+  category: Hard Skills
+  description: Maintain the chart of accounts, journal entries, balances and controls supporting financial statements.
+- name: Accounts Payable
+  category: Hard Skills
+  description: Process supplier invoices, approvals, payments, reconciliations and payable controls.
+- name: Accounts Receivable
+  category: Hard Skills
+  description: Manage customer invoicing, receipts, credit, collections and receivable reconciliations.
+- name: Payroll Accounting
+  category: Hard Skills
+  description: Account for payroll, benefits, taxes, accruals and related balance-sheet accounts.
+- name: Bank Reconciliation
+  category: Hard Skills
+  description: Reconcile bank transactions and balances to accounting records and investigate differences.
+- name: Balance Sheet Reconciliation
+  category: Hard Skills
+  description: Reconcile balance-sheet accounts with supporting records and resolve unexplained items.
+- name: Month-End Close
+  category: Management
+  description: Coordinate recurring close tasks, cutoffs, reconciliations, reviews and reporting deadlines.
+- name: Year-End Close
+  category: Management
+  description: Coordinate annual closing, audit support, adjustments and statutory reporting activities.
+- name: Financial Statements
+  category: Hard Skills
+  description: Prepare and interpret income statements, balance sheets, cash-flow statements and disclosures.
+- name: IFRS
+  category: Hard Skills
+  description: Apply International Financial Reporting Standards to recognition, measurement, presentation and disclosure.
+- name: Local GAAP
+  category: Hard Skills
+  description: Apply relevant national generally accepted accounting principles and statutory requirements.
+- name: Revenue Recognition
+  category: Hard Skills
+  description: Assess contracts and account for revenue recognition, timing, variable consideration and disclosures.
+- name: Lease Accounting
+  category: Hard Skills
+  description: Account for leases, right-of-use assets, liabilities, reassessments and disclosures.
+- name: Consolidation
+  category: Hard Skills
+  description: Prepare group accounts including eliminations, ownership changes and consolidation adjustments.
+- name: Intercompany Accounting
+  category: Hard Skills
+  description: Record, reconcile and eliminate transactions and balances between group entities.
+- name: Fixed Asset Accounting
+  category: Hard Skills
+  description: Manage capitalization, depreciation, impairment, disposals and fixed-asset records.
+- name: Inventory Accounting
+  category: Hard Skills
+  description: Account for inventory valuation, movements, provisions, costing and reconciliations.
+- name: Cost Accounting
+  category: Hard Skills
+  description: Measure and analyze product, service and process costs to support control and pricing decisions.
+- name: Tax Accounting
+  category: Hard Skills
+  description: Account for current and deferred tax positions and support tax reporting requirements.
+- name: Corporate Tax
+  category: Hard Skills
+  description: Prepare and review corporate tax calculations, filings and supporting documentation.
+- name: VAT / GST
+  category: Hard Skills
+  description: Apply indirect-tax rules to transactions, returns, reconciliations and compliance controls.
+- name: Transfer Pricing
+  category: Hard Skills
+  description: Support intercompany pricing policies, documentation and financial analysis for tax compliance.
+- name: Statutory Reporting
+  category: Hard Skills
+  description: Prepare financial reports and disclosures required by company law and regulators.
+- name: Audit and Assurance
+  category: Hard Skills
+  description: Plan and perform evidence-based assurance engagements over financial or non-financial information.
+- name: External Audit
+  category: Hard Skills
+  description: Perform independent financial-statement audit procedures and evaluate material misstatement risk.
+- name: Internal Audit
+  category: Hard Skills
+  description: Provide independent assurance over governance, risk management and internal controls.
+- name: Audit Planning
+  category: Management
+  description: Define audit scope, materiality, risk assessment, staffing, timetable and required evidence.
+- name: Audit Evidence
+  category: Quality Assurance
+  description: Obtain, evaluate and document sufficient appropriate evidence to support audit conclusions.
+- name: Audit Sampling
+  category: Quality Assurance
+  description: Design and evaluate representative samples for control and substantive audit procedures.
+- name: Substantive Testing
+  category: Quality Assurance
+  description: Perform detailed analytical and transaction-level procedures to test reported balances and assertions.
+- name: Controls Testing
+  category: Quality Assurance
+  description: Test design and operating effectiveness of internal controls and document exceptions.
+- name: Internal Controls
+  category: Hard Skills
+  description: Design, document, operate and evaluate controls that reduce financial and operational risk.
+- name: COSO Internal Control
+  category: Hard Skills
+  description: Apply the COSO framework to control environment, risk assessment, activities, information and monitoring.
+- name: Enterprise Risk Management
+  category: Hard Skills
+  description: Identify, assess and manage risks affecting strategic, operational, reporting and compliance objectives.
+- name: Fraud Risk Management
+  category: Hard Skills
+  description: Identify fraud risks and design preventive, detective and response controls.
+- name: Forensic Accounting
+  category: Hard Skills
+  description: Analyze financial records and transactions in support of investigations, disputes or fraud matters.
+- name: Financial Planning and Analysis
+  category: Business Analytics
+  description: Provide budgeting, forecasting, scenario analysis and business performance insight.
+- name: Budgeting
+  category: Business Analytics
+  description: Develop budgets from business drivers, assumptions, commitments and organizational priorities.
+- name: Forecasting
+  category: Business Analytics
+  description: Produce rolling or periodic forecasts reflecting current performance and expected future conditions.
+- name: Variance Analysis
+  category: Business Analytics
+  description: Explain differences between actual, budget and forecast results and identify underlying drivers.
+- name: Cash Flow Forecasting
+  category: Business Analytics
+  description: Forecast cash receipts, payments, funding needs and liquidity over relevant time horizons.
+- name: Financial Modeling
+  category: Business Analytics
+  description: Build structured models for forecasting, valuation, investment and strategic decision making.
+- name: Scenario Analysis
+  category: Business Analytics
+  description: Evaluate financial outcomes under alternative assumptions, risks and strategic choices.
+- name: Profitability Analysis
+  category: Business Analytics
+  description: Analyze margins and profitability by product, customer, channel, project or business unit.
+- name: Working Capital Analysis
+  category: Business Analytics
+  description: Analyze receivables, payables and inventory drivers to improve cash conversion.
+- name: Treasury Management
+  category: Hard Skills
+  description: Manage liquidity, funding, banking, cash, financial risk and treasury controls.
+- name: Foreign Exchange Risk
+  category: Hard Skills
+  description: Assess and manage transaction and translation exposure to currency movements.
+- name: Investment Appraisal
+  category: Business Analytics
+  description: Evaluate capital investments using cash-flow, return and risk measures.
+- name: Business Valuation
+  category: Business Analytics
+  description: Estimate enterprise, equity or asset value using appropriate valuation methods.
+- name: Due Diligence
+  category: Hard Skills
+  description: Analyze financial, commercial and control information to identify transaction or investment risks.
+- name: Mergers and Acquisitions Finance
+  category: Hard Skills
+  description: Support transaction modeling, due diligence, valuation, integration and accounting considerations.
+- name: IFRS Sustainability Disclosure Standards
+  category: Hard Skills
+  description: Apply IFRS S1 and S2 concepts to sustainability-related financial disclosures.
+- name: Sustainability Reporting
+  category: Hard Skills
+  description: Prepare and control non-financial and sustainability information for stakeholder and regulatory reporting.
+- name: XBRL / Digital Financial Reporting
+  category: Hard Skills
+  description: Prepare or validate machine-readable financial disclosures using structured reporting taxonomies.
+- name: Finance Data Governance
+  category: Hard Skills
+  description: Establish ownership, definitions, controls and quality requirements for finance data.
+- name: Master Data Management
+  category: Database Development
+  description: Govern chart-of-account, customer, supplier and other core finance master data.
+- name: Finance Data Modeling
+  category: Data Structures
+  description: Structure finance dimensions, hierarchies, mappings and measures for reporting and analysis.
+- name: ERP Finance
+  category: Hard Skills
+  description: Use enterprise resource planning systems to operate integrated accounting and finance processes.
+- name: Microsoft Excel
+  category: Desktop Application Development
+  description: Build controlled financial analysis, reconciliation and reporting models in Excel.
+- name: Power BI
+  category: Business Analytics
+  description: Build finance dashboards, semantic models and management reporting using Power BI.
+- name: SQL
+  category: Programming Languages
+  description: Query finance and operational databases for reconciliation, analysis and reporting.
+- name: Python for Finance
+  category: Programming Languages
+  description: Automate financial data processing, controls and analysis using Python.
+- name: Robotic Process Automation
+  category: DevOps
+  description: Automate repetitive finance operations while maintaining controls, auditability and exception handling.
+- name: Finance Systems Integration
+  category: Hard Skills
+  description: Integrate ERP, billing, banking, payroll and reporting systems with controlled data flows.
+- name: Finance Transformation
+  category: Management
+  description: Redesign finance operating models, processes, systems and controls to improve effectiveness and insight.
+- name: Close Process Improvement
+  category: Management
+  description: Standardize, automate and shorten closing activities while preserving financial control.
+- name: Process Documentation
+  category: Soft Skills
+  description: Document finance processes, controls, roles and handoffs in an understandable and auditable form.
+- name: Accounting Policy Development
+  category: Management
+  description: Develop and maintain accounting policies that translate standards into consistent organizational
+    practice.
+- name: Audit Engagement Management
+  category: Management
+  description: Coordinate scope, staffing, evidence requests, review, issues and client communication for assurance
+    engagements.
+- name: Client Accounting Services
+  category: Management
+  description: Deliver recurring bookkeeping, reporting, payroll and advisory services to external clients.
+- name: Regulatory Reporting
+  category: Management
+  description: Coordinate recurring financial or prudential reports and maintain traceable evidence supporting submissions.
+- name: Financial Controls Documentation
+  category: Quality Assurance
+  description: Document control objectives, procedures, owners, evidence and testing results.
+- name: Financial Data Quality
+  category: Quality Assurance
+  description: Validate completeness, accuracy, consistency and reconciliation of financial datasets.
+- name: Financial Reporting Review
+  category: Quality Assurance
+  description: Perform structured review of reports, disclosures, calculations and supporting evidence.
+- name: Professional Ethics
+  category: Soft Skills
+  description: Apply integrity, objectivity, confidentiality and professional judgment to finance and assurance
+    work.
+- name: Accounting Research
+  category: Hard Skills
+  description: Research accounting standards, interpretations and precedent to support technical conclusions.
+- name: Technical Accounting Memo Writing
+  category: Soft Skills
+  description: Document accounting issues, analysis, judgments and conclusions in a clear reviewable format.
+- name: Executive Finance Communication
+  category: Soft Skills
+  description: Present financial performance, risk and recommendations clearly to non-financial leaders.
+- name: Finance Business Partnering
+  category: Soft Skills
+  description: Work with operational leaders to translate financial insight into practical business decisions.
+- name: Client Relationship Management
+  category: Sales
+  description: Build trusted advisory relationships with accounting, audit and finance clients.
+- name: Advisory Proposal Development
+  category: Sales
+  description: Develop scoped, priced and outcome-oriented proposals for finance and advisory services.

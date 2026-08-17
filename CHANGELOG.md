@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.4.0 - 2026-08-17
+
+### Added
+
+- 11 bundled research-informed industry Recruiting catalogues under `skills/industries/`, covering accounting/finance, AEC/BIM, clinical research/healthtech, cybersecurity services, environmental/water, facilities/property, legal services, management consulting, manufacturing/OT, marketing agencies, and public-sector/municipal work.
+- `catalogues` command for listing and validating bundled industry catalogues with skill counts, used-category counts and `Other` usage.
+- `catalogues --json` for machine-readable catalogue inventory.
+- `skills/industries/README.md` catalogue index and usage guidance.
+- `docs/INDUSTRY-CATALOGUES.md` with research basis and design principles for the industry examples.
+- Automated tests for bundled-catalogue discovery and cross-catalogue normalized-name counting.
+
+### Changed
+
+- Package/repository metadata now points to `BearSwear/huly-skills-importer`.
+- README documents combining the broad catalogue with industry-specific catalogues and cautions about authoritative updates across overlapping taxonomies.
+- Published package file list now includes `skills/industries`.
+
+### Catalogue data
+
+- 11 industry files contain 1,006 skill entries in total.
+- Industry catalogue overlap is intentional; importing multiple files relies on existing title-level idempotency.
+- All bundled industry examples avoid assigning skills to Huly's default `Other` category.
+
 ## 0.3.0 - 2026-08-16
 
 ### Changed

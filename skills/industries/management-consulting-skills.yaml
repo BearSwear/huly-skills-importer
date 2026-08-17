@@ -1,0 +1,355 @@
+# Community-maintained example catalogue for huly-skills-importer.
+# Research-informed, not an official taxonomy or certification standard.
+# Research basis: ISO 20700 management-consultancy guidance; PMI Talent Triangle; IIBA BABOK knowledge areas; common strategy, transformation, project and client-delivery practice.
+# Edit this catalogue to match your organization, jurisdiction and recruiting needs.
+
+version: 1
+name: Management Consulting and Professional Services Recruiting Skills
+description: An example skill catalogue for management consultancies, business advisory firms, transformation practices
+  and multidisciplinary professional-services organizations using Huly Recruiting.
+categories:
+  Backend Development:
+    aliases:
+    - Backend development
+    - Backend Development
+  Business Analytics:
+    aliases:
+    - Business Analytics
+    - Bussines analytics
+    - Bussines Analytics
+  Database Development:
+    aliases:
+    - Database Development
+    - Database development
+  Data Structures:
+    aliases:
+    - Data Structures
+  Design:
+    aliases:
+    - Design
+  Desktop Application Development:
+    aliases:
+    - Desktop Application Development
+  DevOps:
+    aliases:
+    - DevOps
+  Hard Skills:
+    aliases:
+    - Hard Skills
+  Management:
+    aliases:
+    - Management
+  Marketing:
+    aliases:
+    - Marketing
+  Mobile Development:
+    aliases:
+    - Mobile Development
+  Networking:
+    aliases:
+    - Networking
+  Programming Languages:
+    aliases:
+    - Programming Languages
+  Quality Assurance:
+    aliases:
+    - Quality Assurance
+  Sales:
+    aliases:
+    - Sales
+  Soft Skills:
+    aliases:
+    - Soft Skills
+  Web Development:
+    aliases:
+    - Web Development
+  Other:
+    aliases:
+    - Other
+skills:
+- name: Management Consulting
+  category: Hard Skills
+  description: Structure and deliver advisory engagements that create practical, evidence-based value for clients.
+- name: ISO 20700
+  category: Hard Skills
+  description: Apply ISO 20700 guidance to transparent and effective management-consultancy service delivery.
+- name: Consulting Engagement Design
+  category: Management
+  description: Define engagement objectives, scope, approach, governance, deliverables and client responsibilities.
+- name: Problem Structuring
+  category: Business Analytics
+  description: Break ambiguous business problems into testable questions, workstreams and decision-relevant analyses.
+- name: Hypothesis-Driven Problem Solving
+  category: Business Analytics
+  description: Form hypotheses early and focus analysis on evidence needed to confirm, refine or reject them.
+- name: Strategy Development
+  category: Management
+  description: Develop coherent choices about markets, capabilities, priorities and resource allocation.
+- name: Corporate Strategy
+  category: Management
+  description: Advise on portfolio, growth, capital allocation and enterprise-level strategic direction.
+- name: Business Unit Strategy
+  category: Management
+  description: Develop competitive direction and operating priorities for a defined business or service area.
+- name: Operating Model Design
+  category: Management
+  description: Define organizational capabilities, processes, governance, technology and roles needed to execute
+    strategy.
+- name: Business Model Design
+  category: Business Analytics
+  description: Analyze and design value propositions, customers, channels, economics and operating mechanisms.
+- name: Market Analysis
+  category: Business Analytics
+  description: Assess market size, structure, trends, demand, regulation and strategic attractiveness.
+- name: Competitive Analysis
+  category: Business Analytics
+  description: Evaluate competitor positions, capabilities, economics and likely responses to strategic moves.
+- name: Customer Analysis
+  category: Business Analytics
+  description: Analyze customer needs, behavior, segmentation and value drivers to support strategic decisions.
+- name: Benchmarking
+  category: Business Analytics
+  description: Compare performance, practices or capabilities against peers and relevant reference groups.
+- name: Financial Analysis
+  category: Business Analytics
+  description: Analyze revenue, cost, profitability, cash and financial drivers supporting client decisions.
+- name: Business Case Development
+  category: Business Analytics
+  description: Build evidence, assumptions, economics, risks and benefits supporting proposed investments or changes.
+- name: Cost-Benefit Analysis
+  category: Business Analytics
+  description: Compare alternative actions using relevant costs, benefits, timing and uncertainty.
+- name: Scenario Planning
+  category: Business Analytics
+  description: Develop plausible alternative futures and evaluate strategic resilience under uncertainty.
+- name: Sensitivity Analysis
+  category: Business Analytics
+  description: Test how conclusions change when key assumptions or variables move.
+- name: Data Analysis
+  category: Business Analytics
+  description: Clean, analyze and interpret quantitative data to answer client questions and support recommendations.
+- name: Data Visualization
+  category: Business Analytics
+  description: Present analytical findings using clear visual forms suited to the decision being made.
+- name: KPI Design
+  category: Business Analytics
+  description: Define measures that reflect strategic objectives, operational performance and decision needs.
+- name: Performance Management
+  category: Management
+  description: Establish goals, measures, review routines and interventions to improve organizational results.
+- name: Process Analysis
+  category: Business Analytics
+  description: Analyze process steps, handoffs, controls, queues and failure points to identify improvement opportunities.
+- name: Process Mapping
+  category: Business Analytics
+  description: Document current and future process flows, actors, decisions, information and systems.
+- name: Business Process Improvement
+  category: Management
+  description: Redesign processes to improve quality, speed, cost, control and customer outcomes.
+- name: Business Analysis
+  category: Hard Skills
+  description: Apply structured analysis to understand needs, define change and evaluate solutions.
+- name: Business Analysis Planning
+  category: Management
+  description: Plan business-analysis activities, stakeholders, governance, information and deliverables.
+- name: Requirements Elicitation
+  category: Soft Skills
+  description: Gather needs and constraints through interviews, workshops, observation and document analysis.
+- name: Requirements Management
+  category: Management
+  description: Trace, prioritize, maintain and govern requirements and design information through change.
+- name: Strategy Analysis
+  category: Business Analytics
+  description: Assess current state, future state, risks and change strategy according to organizational objectives.
+- name: Solution Evaluation
+  category: Business Analytics
+  description: Assess delivered solutions against intended value, requirements and observed performance.
+- name: Stakeholder Analysis
+  category: Business Analytics
+  description: Identify stakeholders, interests, influence, concerns and engagement needs.
+- name: Organizational Design
+  category: Management
+  description: Design structures, spans, roles, responsibilities and interfaces aligned with strategy and work.
+- name: Role and Responsibility Design
+  category: Management
+  description: Define decision rights, accountability, responsibilities and collaboration across roles.
+- name: Governance Design
+  category: Management
+  description: Design forums, authorities, escalation paths, controls and information needed for effective governance.
+- name: Transformation Strategy
+  category: Management
+  description: Define objectives, roadmap, capabilities and sequencing for significant organizational transformation.
+- name: Digital Transformation
+  category: Management
+  description: Integrate technology, data, process and operating-model changes to improve business outcomes.
+- name: Change Management
+  category: Management
+  description: Prepare, engage and support people through changes in roles, processes, systems and behaviors.
+- name: Change Impact Assessment
+  category: Business Analytics
+  description: Assess how proposed changes affect roles, processes, skills, systems and stakeholders.
+- name: Organizational Readiness Assessment
+  category: Business Analytics
+  description: Evaluate whether leadership, capability, capacity and culture are ready for planned change.
+- name: Benefits Management
+  category: Management
+  description: Define, track and realize measurable benefits from projects, programmes and transformations.
+- name: Programme Management
+  category: Management
+  description: Coordinate related projects, dependencies, governance and benefits toward strategic outcomes.
+- name: Project Management
+  category: Management
+  description: Manage scope, schedule, cost, quality, risk, stakeholders and delivery outcomes.
+- name: Portfolio Management
+  category: Management
+  description: Prioritize and govern investments against strategy, capacity, risk and expected value.
+- name: PMO Design and Operations
+  category: Management
+  description: Establish portfolio standards, reporting, governance, methods and delivery support.
+- name: Agile Delivery
+  category: Management
+  description: Use iterative planning, prioritization and feedback to deliver value under changing conditions.
+- name: Hybrid Project Delivery
+  category: Management
+  description: Combine predictive and adaptive delivery practices according to context and risk.
+- name: Risk Management
+  category: Management
+  description: Identify, analyze, treat and monitor risks affecting client objectives and delivery.
+- name: Issue Management
+  category: Management
+  description: Capture, assign, escalate and resolve issues that threaten engagement or programme outcomes.
+- name: Decision Management
+  category: Management
+  description: Structure significant decisions, options, criteria, evidence, owners and follow-up.
+- name: Workshop Design
+  category: Soft Skills
+  description: Design collaborative sessions with clear objectives, activities, outputs and participant roles.
+- name: Workshop Facilitation
+  category: Soft Skills
+  description: Guide groups through structured discussion, analysis and decision making.
+- name: Stakeholder Management
+  category: Soft Skills
+  description: Build alignment and maintain effective relationships across client sponsors, teams and partners.
+- name: Consultative Selling
+  category: Sales
+  description: Explore client needs and shape advisory opportunities around outcomes rather than predetermined services.
+- name: Client Discovery
+  category: Sales
+  description: Elicit strategic context, pain points, constraints and decision criteria in early client conversations.
+- name: Proposal Development
+  category: Sales
+  description: Develop persuasive proposals covering outcomes, scope, approach, team, assumptions and commercial
+    terms.
+- name: Statement of Work Development
+  category: Sales
+  description: Define contractual scope, deliverables, responsibilities, acceptance and change conditions for engagements.
+- name: Pitching
+  category: Sales
+  description: Present consulting value propositions and approaches clearly to prospective clients and decision
+    makers.
+- name: Account Management
+  category: Sales
+  description: Manage long-term client relationships, delivery satisfaction and future opportunity development.
+- name: Opportunity Qualification
+  category: Sales
+  description: Assess whether opportunities fit capabilities, strategic priorities, economics and likelihood of
+    success.
+- name: Professional Services Pricing
+  category: Business Analytics
+  description: Develop fees and commercial models considering effort, value, risk and market position.
+- name: Resource Planning
+  category: Management
+  description: Match consultants, skills and capacity to engagements and forecast demand.
+- name: Utilization Management
+  category: Business Analytics
+  description: Track productive capacity, chargeability and staffing balance across a professional-services organization.
+- name: Engagement Economics
+  category: Business Analytics
+  description: Monitor revenue, margin, cost, effort and forecast performance for consulting engagements.
+- name: Pipeline Forecasting
+  category: Business Analytics
+  description: Forecast likely sales and delivery demand from qualified professional-services opportunities.
+- name: Knowledge Management
+  category: Management
+  description: Capture, organize and reuse methods, assets, research and lessons across consulting work.
+- name: Research Design
+  category: Hard Skills
+  description: Plan research questions, sources, methods and evidence needed to support advisory conclusions.
+- name: Executive Interviewing
+  category: Soft Skills
+  description: Elicit insight and priorities from senior stakeholders through concise structured interviews.
+- name: Survey Design
+  category: Hard Skills
+  description: Design unbiased surveys, response scales and sampling approaches that produce useful evidence.
+- name: Presentation Design
+  category: Design
+  description: Create clear executive presentations that communicate logic, evidence and decisions visually.
+- name: Storylining
+  category: Soft Skills
+  description: Structure consulting narratives so evidence and recommendations follow a clear decision-oriented
+    logic.
+- name: Executive Communication
+  category: Soft Skills
+  description: Communicate complex findings, implications and recommendations concisely to senior decision makers.
+- name: Problem Solving
+  category: Soft Skills
+  description: Approach ambiguous problems systematically, combining logic, evidence, creativity and pragmatism.
+- name: Critical Thinking
+  category: Soft Skills
+  description: Evaluate assumptions, evidence, causal claims and alternatives before accepting conclusions.
+- name: Strategic Thinking
+  category: Soft Skills
+  description: Connect immediate decisions with longer-term competitive, organizational and market implications.
+- name: Collaboration
+  category: Soft Skills
+  description: Work effectively across disciplines, client teams and organizational boundaries.
+- name: Team Leadership
+  category: Soft Skills
+  description: Set direction, coach team members, manage quality and create an effective delivery environment.
+- name: Negotiation
+  category: Soft Skills
+  description: Reach workable agreements on scope, priorities, responsibilities, resources and commercial terms.
+- name: Business Acumen
+  category: Soft Skills
+  description: Understand business models, economics, operations and market context when developing recommendations.
+- name: Professional Ethics
+  category: Soft Skills
+  description: Maintain independence, confidentiality, integrity and appropriate handling of conflicts or sensitive
+    information.
+- name: Client Relationship Management
+  category: Soft Skills
+  description: Build trust through reliability, transparency, commercial understanding and responsiveness.
+- name: Consulting Quality Assurance
+  category: Quality Assurance
+  description: Review analyses, evidence, deliverables and recommendations for logic, accuracy and professional
+    quality.
+- name: Data Quality Assurance
+  category: Quality Assurance
+  description: Validate source data, assumptions, transformations and calculations supporting client analyses.
+- name: Deliverable Review
+  category: Quality Assurance
+  description: Perform structured peer and senior review of consulting outputs before client delivery.
+- name: Benefits Tracking
+  category: Business Analytics
+  description: Measure realized outcomes against business-case assumptions and transformation commitments.
+- name: Decision Analytics
+  category: Business Analytics
+  description: Use structured criteria, quantitative evidence and scenario comparison to support complex decisions.
+- name: Excel Modeling
+  category: Desktop Application Development
+  description: Build controlled analytical and financial models using spreadsheet techniques.
+- name: Power BI
+  category: Business Analytics
+  description: Develop interactive dashboards and semantic models for consulting analysis and client reporting.
+- name: SQL
+  category: Programming Languages
+  description: Query relational data sources to support consulting analysis and validation.
+- name: Python
+  category: Programming Languages
+  description: Use Python for data analysis, automation, modeling and repeatable consulting workflows.
+- name: AI-Assisted Research
+  category: Hard Skills
+  description: Use AI tools to accelerate research while validating sources, claims and relevance.
+- name: AI-Assisted Analysis
+  category: Hard Skills
+  description: Use AI tools to support synthesis and analysis while retaining human judgment and evidence checking.

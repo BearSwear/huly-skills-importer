@@ -1,17 +1,17 @@
 {
   "name": "huly-skills-importer",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Community CLI for materializing and inspecting controlled Huly Recruiting skill taxonomies.",
   "type": "module",
   "license": "MIT",
-  "author": "huly-skills-importer contributors",
+  "author": "BearSwear and huly-skills-importer contributors",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR-GITHUB-USER/huly-skills-importer.git"
+    "url": "https://github.com/BearSwear/huly-skills-importer.git"
   },
-  "homepage": "https://github.com/YOUR-GITHUB-USER/huly-skills-importer#readme",
+  "homepage": "https://github.com/BearSwear/huly-skills-importer#readme",
   "bugs": {
-    "url": "https://github.com/YOUR-GITHUB-USER/huly-skills-importer/issues"
+    "url": "https://github.com/BearSwear/huly-skills-importer/issues"
   },
   "keywords": [
     "huly",
@@ -22,7 +22,8 @@
     "rekoni",
     "ats",
     "hr",
-    "cli"
+    "cli",
+    "industry"
   ],
   "engines": {
     "node": ">=20.11"
@@ -35,6 +36,7 @@
     "skills/import-skills.yaml",
     "skills/example.yaml",
     "skills/CATALOG.md",
+    "skills/industries",
     "docs",
     "README.md",
     "LICENSE",
@@ -52,7 +54,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "check": "npm run typecheck && npm test"
+    "check": "npm run typecheck && npm test",
+    "catalogues": "tsx src/index.ts catalogues"
   },
   "dependencies": {
     "@hcengineering/api-client": "0.7.423",

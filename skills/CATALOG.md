@@ -80,3 +80,11 @@ huly-skills-importer suggestions --export huly-native-suggestions.yaml
 ```
 
 Review that file before importing it because Huly's built-in vocabulary can contain legacy terms, synonyms and cross-category duplicates.
+
+## Industry catalogues
+
+v0.4.0 also bundles independent sector-specific examples under `skills/industries/`. These are supplements to the broad catalogue above; they are not merged into `import-skills.yaml` automatically.
+
+Use `huly-skills-importer catalogues` to list and validate the bundled files. See `skills/industries/README.md` for counts and `docs/INDUSTRY-CATALOGUES.md` for the research/design basis.
+
+Cross-catalogue overlap is intentional. The same transferable skill can appear in several sectors, and title-level idempotency prevents duplicate materialization. If combining catalogues with `--update-existing`, review field-level changes because descriptions or preferred categories may differ between industry contexts.

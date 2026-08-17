@@ -1,0 +1,403 @@
+# Community-maintained example catalogue for huly-skills-importer.
+# Research-informed, not an official taxonomy or certification standard.
+# Research basis: NIST NICE Workforce Framework Components v2.2.0; NIST Cybersecurity Framework; MITRE ATT&CK; ISO/IEC 27001 family; CIS Controls; common SOC, DFIR and offensive-security practice.
+# Edit this catalogue to match your organization, jurisdiction and recruiting needs.
+
+version: 1
+name: Cybersecurity Services Recruiting Skills
+description: An example skill catalogue for cybersecurity consultancies, managed security providers, SOC/DFIR teams
+  and security engineering organizations using Huly Recruiting.
+categories:
+  Backend Development:
+    aliases:
+    - Backend development
+    - Backend Development
+  Business Analytics:
+    aliases:
+    - Business Analytics
+    - Bussines analytics
+    - Bussines Analytics
+  Database Development:
+    aliases:
+    - Database Development
+    - Database development
+  Data Structures:
+    aliases:
+    - Data Structures
+  Design:
+    aliases:
+    - Design
+  Desktop Application Development:
+    aliases:
+    - Desktop Application Development
+  DevOps:
+    aliases:
+    - DevOps
+  Hard Skills:
+    aliases:
+    - Hard Skills
+  Management:
+    aliases:
+    - Management
+  Marketing:
+    aliases:
+    - Marketing
+  Mobile Development:
+    aliases:
+    - Mobile Development
+  Networking:
+    aliases:
+    - Networking
+  Programming Languages:
+    aliases:
+    - Programming Languages
+  Quality Assurance:
+    aliases:
+    - Quality Assurance
+  Sales:
+    aliases:
+    - Sales
+  Soft Skills:
+    aliases:
+    - Soft Skills
+  Web Development:
+    aliases:
+    - Web Development
+  Other:
+    aliases:
+    - Other
+skills:
+- name: Security Architecture
+  category: Hard Skills
+  description: Design security controls, trust boundaries and defense-in-depth architectures across systems and
+    services.
+- name: Security Engineering
+  category: Hard Skills
+  description: Implement and operate technical security controls across applications, endpoints, networks and cloud
+    platforms.
+- name: Security Operations / SOC
+  category: Hard Skills
+  description: Operate security monitoring, triage, escalation and incident-handling workflows in a security operations
+    center.
+- name: Incident Response
+  category: Hard Skills
+  description: Prepare for, contain, eradicate and recover from cybersecurity incidents using documented response
+    procedures.
+- name: Digital Forensics
+  category: Hard Skills
+  description: Acquire, preserve and analyze digital evidence from endpoints, servers, cloud services and other
+    systems.
+- name: Forensic Readiness
+  category: Hard Skills
+  description: Design logging, retention and evidence-handling practices so investigations can be performed effectively.
+- name: Threat Hunting
+  category: Hard Skills
+  description: Form hypotheses and proactively search telemetry for adversary activity that evades existing detections.
+- name: Threat Intelligence
+  category: Hard Skills
+  description: Collect, analyze and operationalize information about threat actors, campaigns, infrastructure and
+    tactics.
+- name: Detection Engineering
+  category: Hard Skills
+  description: Develop, test, tune and maintain detections mapped to adversary behavior and available telemetry.
+- name: SIEM
+  category: Hard Skills
+  description: Design and operate centralized security event collection, correlation, alerting and investigation
+    workflows.
+- name: SOAR
+  category: Hard Skills
+  description: Automate repeatable security operations workflows, enrichment, response actions and case handling.
+- name: EDR / XDR
+  category: Hard Skills
+  description: Deploy and operate endpoint or cross-domain detection and response platforms.
+- name: Log Analysis
+  category: Hard Skills
+  description: Interpret security-relevant logs to identify anomalies, attack evidence and root causes.
+- name: Security Monitoring
+  category: Hard Skills
+  description: Continuously monitor systems and services for security events, suspicious behavior and control failures.
+- name: File Integrity Monitoring
+  category: Hard Skills
+  description: Monitor sensitive files and configurations for unauthorized or unexpected change.
+- name: Vulnerability Management
+  category: Hard Skills
+  description: Discover, prioritize, remediate and verify vulnerabilities across infrastructure and applications.
+- name: Vulnerability Assessment
+  category: Hard Skills
+  description: Assess systems for security weaknesses using scanning, configuration review and manual validation.
+- name: Penetration Testing
+  category: Hard Skills
+  description: Conduct authorized security testing to identify exploitable weaknesses and demonstrate impact.
+- name: Red Teaming
+  category: Hard Skills
+  description: Emulate realistic adversaries to assess preventive, detective and response capabilities.
+- name: Purple Teaming
+  category: Hard Skills
+  description: Coordinate offensive and defensive teams to validate and improve detections and controls.
+- name: Ethical Hacking
+  category: Hard Skills
+  description: Apply offensive security techniques within authorized scopes to identify and demonstrate weaknesses.
+- name: Web Application Security
+  category: Hard Skills
+  description: Assess and secure web applications against common design, implementation and configuration flaws.
+- name: API Security
+  category: Hard Skills
+  description: Assess and secure APIs including authentication, authorization, input handling and abuse resistance.
+- name: Mobile Application Security
+  category: Hard Skills
+  description: Assess and harden mobile applications, storage, communication and platform integrations.
+- name: Cloud Security
+  category: Hard Skills
+  description: Design and assess security controls for public-cloud identities, networks, workloads, data and services.
+- name: Container Security
+  category: Hard Skills
+  description: Secure container images, runtimes, registries, orchestration and build pipelines.
+- name: Kubernetes Security
+  category: Hard Skills
+  description: Harden Kubernetes identities, admission controls, network policies, workloads and cluster configuration.
+- name: Linux Hardening
+  category: Hard Skills
+  description: Reduce Linux attack surface through secure configuration, access controls, patching and auditing.
+- name: Windows Security
+  category: Hard Skills
+  description: Secure Windows endpoints and servers through identity, policy, logging, patching and endpoint controls.
+- name: Active Directory Security
+  category: Hard Skills
+  description: Assess and protect Active Directory identities, trusts, privilege paths and authentication services.
+- name: Identity and Access Management
+  category: Hard Skills
+  description: Design and operate identity lifecycle, authentication, authorization and access governance.
+- name: Privileged Access Management
+  category: Hard Skills
+  description: Control, monitor and review privileged accounts, sessions and administrative access.
+- name: Multi-Factor Authentication
+  category: Hard Skills
+  description: Design and implement strong multi-factor authentication for users and privileged access.
+- name: Zero Trust Architecture
+  category: Hard Skills
+  description: Apply explicit verification, least privilege and segmentation principles across users, devices and
+    workloads.
+- name: PKI / Certificate Management
+  category: Hard Skills
+  description: Operate certificate authorities, certificate lifecycles, trust chains and cryptographic identity.
+- name: Secrets Management
+  category: Hard Skills
+  description: Protect application credentials, keys and tokens using controlled storage, rotation and access policies.
+- name: Cryptography Fundamentals
+  category: Hard Skills
+  description: Apply cryptographic primitives and protocols appropriately for confidentiality, integrity and authenticity.
+- name: Data Loss Prevention
+  category: Hard Skills
+  description: Design and operate controls to identify and reduce unauthorized disclosure of sensitive data.
+- name: Email Security
+  category: Hard Skills
+  description: Protect email systems against phishing, spoofing, malware and account compromise.
+- name: Phishing Analysis
+  category: Hard Skills
+  description: Analyze phishing messages, infrastructure, payloads and user impact to support response and prevention.
+- name: Malware Analysis
+  category: Hard Skills
+  description: Analyze malicious software behavior, artifacts and indicators using static and dynamic techniques.
+- name: Ransomware Response
+  category: Hard Skills
+  description: Investigate, contain and recover from ransomware incidents while preserving evidence and business
+    continuity.
+- name: Supply Chain Security
+  category: Hard Skills
+  description: Assess and reduce security risks introduced by software, dependencies, vendors and delivery pipelines.
+- name: Secure SDLC
+  category: Hard Skills
+  description: Integrate security requirements, reviews, testing and remediation into software delivery lifecycles.
+- name: Threat Modeling
+  category: Hard Skills
+  description: Identify assets, trust boundaries, threats and mitigations during system and application design.
+- name: Security Testing
+  category: Quality Assurance
+  description: Plan and execute repeatable security tests as part of product and platform quality assurance.
+- name: SAST
+  category: Quality Assurance
+  description: Use static application security testing to identify weaknesses in source code and build artifacts.
+- name: DAST
+  category: Quality Assurance
+  description: Use dynamic application security testing against running applications and exposed interfaces.
+- name: Software Composition Analysis
+  category: Quality Assurance
+  description: Identify vulnerable or risky third-party libraries and open-source dependencies.
+- name: Security Regression Testing
+  category: Quality Assurance
+  description: Retest security controls and previously remediated findings after software or configuration change.
+- name: NIST Cybersecurity Framework
+  category: Hard Skills
+  description: Apply NIST CSF functions and outcomes to organize cybersecurity risk management and improvement.
+- name: NIST NICE Framework
+  category: Hard Skills
+  description: Use NICE work roles, competency areas and task/knowledge/skill statements for workforce planning.
+- name: NIST SP 800-53
+  category: Hard Skills
+  description: Apply NIST security and privacy controls to system design, assessment and governance.
+- name: CIS Controls
+  category: Hard Skills
+  description: Use CIS Critical Security Controls as a prioritized set of defensive safeguards.
+- name: ISO/IEC 27001
+  category: Hard Skills
+  description: Implement and assess an information security management system based on ISO/IEC 27001.
+- name: ISO/IEC 27002
+  category: Hard Skills
+  description: Interpret and apply information security controls and implementation guidance from ISO/IEC 27002.
+- name: MITRE ATT&CK
+  category: Hard Skills
+  description: Use MITRE ATT&CK tactics, techniques and procedures for threat analysis, detection and testing.
+- name: Security Risk Assessment
+  category: Hard Skills
+  description: Identify threats, vulnerabilities, likelihood and impact to evaluate cybersecurity risk.
+- name: Third-Party Security Risk
+  category: Hard Skills
+  description: Assess and monitor security risk from suppliers, SaaS providers and other external parties.
+- name: Security Governance
+  category: Hard Skills
+  description: Establish policies, decision rights, accountability and oversight for cybersecurity.
+- name: Information Security Policy
+  category: Hard Skills
+  description: Develop and maintain clear security policies, standards and supporting procedures.
+- name: Security Compliance
+  category: Hard Skills
+  description: Translate legal, regulatory and contractual requirements into security controls and evidence.
+- name: Security Awareness
+  category: Hard Skills
+  description: Design and operate programs that improve secure behavior and reduce human-factor risk.
+- name: Privacy Engineering
+  category: Hard Skills
+  description: Embed privacy requirements, minimization and protective controls into systems and processes.
+- name: GDPR
+  category: Hard Skills
+  description: Apply GDPR principles and obligations in security, incident handling and data-processing activities.
+- name: Data Protection Impact Assessment
+  category: Hard Skills
+  description: Assess privacy risks and safeguards for processing activities that may create high risk.
+- name: Business Continuity
+  category: Management
+  description: Plan and coordinate continuity arrangements for critical services and organizational capabilities.
+- name: Disaster Recovery
+  category: DevOps
+  description: Design and validate technology recovery strategies, backup dependencies and recovery procedures.
+- name: Incident Command
+  category: Management
+  description: Coordinate roles, decisions, communications and escalation during high-severity security incidents.
+- name: Crisis Management
+  category: Management
+  description: Manage cross-functional response to incidents that create significant business, legal or reputational
+    impact.
+- name: Security Program Management
+  category: Management
+  description: Plan, prioritize and govern a portfolio of cybersecurity initiatives, controls and improvements.
+- name: Security Project Management
+  category: Management
+  description: Deliver security implementations and assessments within scope, budget, schedule and risk constraints.
+- name: Security Metrics and KPIs
+  category: Business Analytics
+  description: Define and interpret meaningful security metrics, trends, control performance and operational KPIs.
+- name: Risk Quantification
+  category: Business Analytics
+  description: Translate cybersecurity scenarios into comparable likelihood, impact and financial risk estimates.
+- name: Security Data Analysis
+  category: Business Analytics
+  description: Analyze security datasets to find patterns, trends, anomalies and operational improvement opportunities.
+- name: SOC Capacity Planning
+  category: Business Analytics
+  description: Estimate analyst workload, queue capacity, coverage requirements and staffing needs for security
+    operations.
+- name: Security Architecture Documentation
+  category: Soft Skills
+  description: Communicate security designs, assumptions, trust boundaries and control decisions clearly.
+- name: Incident Report Writing
+  category: Soft Skills
+  description: Produce clear factual incident reports for technical, management, legal and customer audiences.
+- name: Executive Security Communication
+  category: Soft Skills
+  description: Explain cyber risk, incidents and investment needs to senior decision makers without unnecessary
+    jargon.
+- name: Security Consulting
+  category: Soft Skills
+  description: Structure advisory work, gather evidence and give practical risk-based recommendations to clients.
+- name: Security Stakeholder Management
+  category: Soft Skills
+  description: Coordinate technical, business, legal, privacy and leadership stakeholders around security outcomes.
+- name: Security Workshop Facilitation
+  category: Soft Skills
+  description: Facilitate threat modeling, incident exercises, risk workshops and control-design sessions.
+- name: Tabletop Exercise Facilitation
+  category: Soft Skills
+  description: Plan and facilitate realistic incident-response and crisis-management exercises.
+- name: Splunk
+  category: Hard Skills
+  description: Search, correlate and investigate security telemetry using Splunk.
+- name: Microsoft Sentinel
+  category: Hard Skills
+  description: Operate Microsoft Sentinel for cloud SIEM analytics, incidents and automation.
+- name: Wazuh
+  category: Hard Skills
+  description: Operate Wazuh agents, manager, rules, vulnerability detection and file-integrity monitoring.
+- name: Elastic Security
+  category: Hard Skills
+  description: Use the Elastic Stack for security telemetry, detection, investigation and dashboards.
+- name: CrowdSec
+  category: Hard Skills
+  description: Use collaborative behavioral detection and remediation to protect Internet-facing services.
+- name: YARA
+  category: Programming Languages
+  description: Write YARA rules for classifying and detecting malware and suspicious files.
+- name: Sigma
+  category: Programming Languages
+  description: Write portable Sigma detection rules for log-based security analytics.
+- name: Python
+  category: Programming Languages
+  description: Use Python for security automation, enrichment, analysis and tooling.
+- name: PowerShell
+  category: Programming Languages
+  description: Use PowerShell for Windows administration, investigation and security automation.
+- name: Bash
+  category: Programming Languages
+  description: Use shell scripting for Unix and Linux administration, investigation and automation.
+- name: SQL
+  category: Programming Languages
+  description: Query relational security and operational datasets for investigation and reporting.
+- name: Network Security Architecture
+  category: Networking
+  description: Design secure network zones, traffic controls, trust boundaries and inspection points.
+- name: Firewall Policy Design
+  category: Networking
+  description: Design, review and maintain firewall rules according to least privilege and documented service needs.
+- name: Network Segmentation
+  category: Networking
+  description: Separate systems and trust zones to constrain lateral movement and reduce attack paths.
+- name: TCP/IP
+  category: Networking
+  description: Understand IP addressing, routing, transport protocols and common network behavior for security analysis.
+- name: DNS Security
+  category: Networking
+  description: Analyze and protect DNS infrastructure, resolution behavior and domain-based attack paths.
+- name: TLS / PKI
+  category: Networking
+  description: Understand TLS, certificates and trust relationships for secure network communication.
+- name: VPN Security
+  category: Networking
+  description: Design and assess secure remote and site-to-site network access.
+- name: Wireshark
+  category: Networking
+  description: Capture and analyze packet-level network traffic for troubleshooting and investigations.
+- name: Cloud Network Security
+  category: Networking
+  description: Secure cloud virtual networks, routing, security groups, private connectivity and ingress/egress
+    paths.
+- name: Security Automation
+  category: DevOps
+  description: Automate repeatable security operations, deployment and validation tasks safely.
+- name: Infrastructure as Code Security
+  category: DevOps
+  description: Review and test infrastructure definitions for security misconfiguration and policy violations.
+- name: CI/CD Security
+  category: DevOps
+  description: Secure build, test and deployment pipelines, credentials, artifacts and release permissions.
+- name: DevSecOps
+  category: DevOps
+  description: Integrate security controls and feedback into engineering and operations workflows.

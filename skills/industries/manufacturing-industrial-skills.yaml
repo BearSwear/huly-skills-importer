@@ -1,0 +1,360 @@
+# Community-maintained example catalogue for huly-skills-importer.
+# Research-informed, not an official taxonomy or certification standard.
+# Research basis: ISA-95 / IEC 62264 enterprise-control integration; OPC UA interoperability; ISA/IEC 62443 industrial cybersecurity; ISO 55001 asset management; Lean and quality-engineering practice.
+# Edit this catalogue to match your organization, jurisdiction and recruiting needs.
+
+version: 1
+name: Manufacturing and Industrial Operations Recruiting Skills
+description: An example skill catalogue for manufacturers, industrial engineering teams, automation integrators,
+  plant operations and Industry 4.0 organizations using Huly Recruiting.
+categories:
+  Backend Development:
+    aliases:
+    - Backend development
+    - Backend Development
+  Business Analytics:
+    aliases:
+    - Business Analytics
+    - Bussines analytics
+    - Bussines Analytics
+  Database Development:
+    aliases:
+    - Database Development
+    - Database development
+  Data Structures:
+    aliases:
+    - Data Structures
+  Design:
+    aliases:
+    - Design
+  Desktop Application Development:
+    aliases:
+    - Desktop Application Development
+  DevOps:
+    aliases:
+    - DevOps
+  Hard Skills:
+    aliases:
+    - Hard Skills
+  Management:
+    aliases:
+    - Management
+  Marketing:
+    aliases:
+    - Marketing
+  Mobile Development:
+    aliases:
+    - Mobile Development
+  Networking:
+    aliases:
+    - Networking
+  Programming Languages:
+    aliases:
+    - Programming Languages
+  Quality Assurance:
+    aliases:
+    - Quality Assurance
+  Sales:
+    aliases:
+    - Sales
+  Soft Skills:
+    aliases:
+    - Soft Skills
+  Web Development:
+    aliases:
+    - Web Development
+  Other:
+    aliases:
+    - Other
+skills:
+- name: Manufacturing Engineering
+  category: Hard Skills
+  description: Design, improve and sustain manufacturing processes, equipment, layouts and production systems.
+- name: Industrial Engineering
+  category: Hard Skills
+  description: Optimize processes, resources, flow, ergonomics, capacity and productivity across industrial operations.
+- name: Process Engineering
+  category: Hard Skills
+  description: Design, control and improve industrial processes using material, energy, quality and safety requirements.
+- name: Production Engineering
+  category: Hard Skills
+  description: Support production readiness, process capability, tooling, work instructions and operational problem
+    solving.
+- name: Design for Manufacturability
+  category: Hard Skills
+  description: Evaluate product designs for efficient, reliable and cost-effective manufacturing.
+- name: Lean Manufacturing
+  category: Hard Skills
+  description: Eliminate waste and improve flow, quality and responsiveness using Lean principles.
+- name: Six Sigma
+  category: Hard Skills
+  description: Reduce variation and defects using statistical, structured improvement methods.
+- name: DMAIC
+  category: Hard Skills
+  description: Apply Define, Measure, Analyze, Improve and Control to process-improvement problems.
+- name: 5S
+  category: Hard Skills
+  description: Organize workplaces for visual control, cleanliness, safety and repeatable efficient work.
+- name: Value Stream Mapping
+  category: Business Analytics
+  description: Visualize material and information flow to identify delays, waste and improvement opportunities.
+- name: Kaizen
+  category: Management
+  description: Facilitate incremental continuous improvement involving frontline teams and measurable follow-through.
+- name: SMED
+  category: Hard Skills
+  description: Reduce equipment setup and changeover time through systematic separation and simplification of activities.
+- name: Overall Equipment Effectiveness
+  category: Business Analytics
+  description: Measure availability, performance and quality losses to improve production equipment effectiveness.
+- name: Statistical Process Control
+  category: Quality Assurance
+  description: Monitor process variation with control charts and react appropriately to special causes.
+- name: Process Capability Analysis
+  category: Quality Assurance
+  description: Evaluate whether stable processes can consistently meet specification requirements.
+- name: Root Cause Analysis
+  category: Quality Assurance
+  description: Identify underlying causes of failures or defects and validate corrective actions.
+- name: 5 Whys
+  category: Quality Assurance
+  description: Use iterative questioning to identify underlying causes behind operational problems.
+- name: Fishbone Analysis
+  category: Quality Assurance
+  description: Structure potential causes across people, methods, machines, materials and environment.
+- name: 8D Problem Solving
+  category: Quality Assurance
+  description: Use a disciplined team-based method to contain, investigate and permanently correct quality problems.
+- name: FMEA
+  category: Quality Assurance
+  description: Identify potential failure modes, effects, causes and risk-reduction actions before failures occur.
+- name: Control Plans
+  category: Quality Assurance
+  description: Define process controls, measurements, reaction plans and ownership for critical product characteristics.
+- name: CAPA
+  category: Quality Assurance
+  description: Manage corrective and preventive actions from investigation through implementation and effectiveness
+    verification.
+- name: Nonconformance Management
+  category: Quality Assurance
+  description: Control, disposition and learn from products or processes that fail requirements.
+- name: Quality Management Systems
+  category: Management
+  description: Operate documented quality processes, responsibilities, records, audits and improvement mechanisms.
+- name: ISO 9001
+  category: Hard Skills
+  description: Apply ISO 9001 quality-management requirements to organizational processes and evidence.
+- name: Supplier Quality Management
+  category: Management
+  description: Qualify, monitor and improve supplier quality, capability and corrective-action performance.
+- name: PPAP
+  category: Quality Assurance
+  description: Prepare production part approval evidence demonstrating manufacturing readiness and process control.
+- name: APQP
+  category: Management
+  description: Plan product and process quality activities from development through production launch.
+- name: Measurement System Analysis
+  category: Quality Assurance
+  description: Assess measurement-system repeatability, reproducibility, bias, stability and adequacy.
+- name: Metrology
+  category: Hard Skills
+  description: Select and use measurement methods, calibration and traceability for dimensional and process verification.
+- name: PLC Programming
+  category: Hard Skills
+  description: Develop, troubleshoot and maintain programmable logic controller logic for industrial automation.
+- name: IEC 61131-3
+  category: Programming Languages
+  description: Use standardized PLC programming languages and software structures defined by IEC 61131-3.
+- name: SCADA
+  category: Hard Skills
+  description: Design and operate supervisory monitoring, control, alarm and historian systems.
+- name: Distributed Control Systems
+  category: Hard Skills
+  description: Design and operate process-control architectures using distributed controllers and operator systems.
+- name: HMI Design
+  category: Design
+  description: Design clear, safe and actionable human-machine interfaces for industrial operators.
+- name: Industrial Robotics
+  category: Hard Skills
+  description: Program, integrate and maintain industrial robots, cells and safety interfaces.
+- name: Motion Control
+  category: Hard Skills
+  description: Configure and tune servo, drive and positioning systems for automated machinery.
+- name: Machine Vision
+  category: Hard Skills
+  description: Apply cameras, optics and image processing for inspection, guidance and automation.
+- name: Industrial Instrumentation
+  category: Hard Skills
+  description: Select, install and troubleshoot sensors, transmitters, analyzers and measurement loops.
+- name: Process Control
+  category: Hard Skills
+  description: Design and tune feedback, feedforward and advanced control strategies for industrial processes.
+- name: Safety Instrumented Systems
+  category: Hard Skills
+  description: Design and manage instrumented protective functions for hazardous process risk reduction.
+- name: Functional Safety
+  category: Hard Skills
+  description: Apply lifecycle-based risk reduction to safety-related electrical and control systems.
+- name: Machine Safety
+  category: Hard Skills
+  description: Assess machinery hazards and implement guarding, interlocks, safe control and procedures.
+- name: Manufacturing Execution Systems
+  category: Hard Skills
+  description: Implement and operate systems coordinating production execution, genealogy, status and performance.
+- name: ISA-95 / IEC 62264
+  category: Hard Skills
+  description: Use ISA-95 models to structure integration between enterprise systems and manufacturing operations.
+- name: OPC UA
+  category: Hard Skills
+  description: Use OPC Unified Architecture for secure, platform-independent industrial data interoperability.
+- name: Industrial Ethernet
+  category: Networking
+  description: Design and troubleshoot Ethernet-based industrial communications under plant reliability constraints.
+- name: PROFINET
+  category: Networking
+  description: Configure and troubleshoot PROFINET communications for industrial control and automation.
+- name: EtherNet/IP
+  category: Networking
+  description: Configure and troubleshoot EtherNet/IP industrial networks and device integration.
+- name: Modbus
+  category: Networking
+  description: Implement and troubleshoot Modbus TCP or serial communications in industrial systems.
+- name: Industrial Network Segmentation
+  category: Networking
+  description: Separate control zones and conduits to improve resilience, safety and cybersecurity.
+- name: ISA/IEC 62443
+  category: Hard Skills
+  description: Apply industrial automation and control-system cybersecurity requirements and lifecycle practices.
+- name: OT Cybersecurity
+  category: Hard Skills
+  description: Protect operational technology assets, networks, control systems and engineering workstations.
+- name: OT Risk Assessment
+  category: Hard Skills
+  description: Assess cyber threats and consequences affecting industrial safety, availability and production.
+- name: Industrial Asset Inventory
+  category: Hard Skills
+  description: Maintain authoritative inventories of controllers, workstations, network devices and industrial software.
+- name: Industrial Data Collection
+  category: Data Structures
+  description: Collect and contextualize machine, process and production data with reliable timestamps and identifiers.
+- name: Industrial Data Modeling
+  category: Data Structures
+  description: Model equipment hierarchies, process context, states and production relationships for analytics and
+    integration.
+- name: Time-Series Data
+  category: Database Development
+  description: Store and query high-frequency timestamped industrial measurements efficiently.
+- name: Historian Systems
+  category: Database Development
+  description: Operate industrial data historians for process values, events, trends and traceability.
+- name: IIoT
+  category: Hard Skills
+  description: Connect industrial assets and sensors to scalable data and application platforms safely.
+- name: Edge Computing
+  category: Hard Skills
+  description: Deploy computation near industrial assets for low-latency processing, protocol translation and resilience.
+- name: Digital Twins
+  category: Hard Skills
+  description: Represent physical assets and processes digitally for simulation, monitoring and lifecycle decisions.
+- name: Predictive Maintenance
+  category: Business Analytics
+  description: Use condition and historical data to anticipate failures and optimize maintenance timing.
+- name: Condition Monitoring
+  category: Hard Skills
+  description: Monitor vibration, temperature, oil, electrical or process indicators to identify equipment degradation.
+- name: Reliability Engineering
+  category: Hard Skills
+  description: Improve asset reliability using failure analysis, maintenance strategy and lifecycle engineering.
+- name: Reliability-Centered Maintenance
+  category: Hard Skills
+  description: Select maintenance tasks based on equipment functions, failure modes and consequences.
+- name: Total Productive Maintenance
+  category: Management
+  description: Engage operations and maintenance in structured practices that maximize equipment effectiveness.
+- name: CMMS
+  category: Hard Skills
+  description: Use computerized maintenance management systems for assets, work orders, preventive maintenance and
+    history.
+- name: ISO 55001 Asset Management
+  category: Hard Skills
+  description: Apply asset-management-system principles to lifecycle value, risk, performance and decision making.
+- name: Maintenance Planning
+  category: Management
+  description: Plan preventive and corrective maintenance work, labor, materials, permits and equipment access.
+- name: Shutdown / Turnaround Planning
+  category: Management
+  description: Plan complex plant outages with scope control, sequencing, safety, resources and restart readiness.
+- name: Production Planning
+  category: Management
+  description: Plan manufacturing quantities, sequences and timing based on demand, capacity and constraints.
+- name: Production Scheduling
+  category: Management
+  description: Build and adjust detailed production schedules considering resources, setups and delivery commitments.
+- name: Capacity Planning
+  category: Business Analytics
+  description: Analyze equipment and labor capacity against demand, bottlenecks and investment options.
+- name: Inventory Management
+  category: Management
+  description: Control raw materials, work in process and finished goods to balance service, cost and risk.
+- name: Material Requirements Planning
+  category: Hard Skills
+  description: Plan component and material requirements from demand, bills of material and inventory.
+- name: Bill of Materials Management
+  category: Data Structures
+  description: Maintain product structures, revisions and material relationships used in planning and production.
+- name: Product Lifecycle Management
+  category: Management
+  description: Control product definitions, documents, revisions and engineering changes across the lifecycle.
+- name: Engineering Change Management
+  category: Management
+  description: Assess, approve, implement and trace changes to product and manufacturing definitions.
+- name: Configuration Management
+  category: Management
+  description: Maintain approved product and system configurations, versions and change traceability.
+- name: Supply Chain Management
+  category: Management
+  description: Coordinate suppliers, materials, logistics, inventory and demand to support reliable production.
+- name: Sales and Operations Planning
+  category: Management
+  description: Balance demand, supply, inventory and capacity through cross-functional planning.
+- name: Manufacturing Cost Analysis
+  category: Business Analytics
+  description: Analyze material, labor, overhead, scrap and equipment costs to support improvement and pricing.
+- name: Downtime Analysis
+  category: Business Analytics
+  description: Analyze stops, duration, causes and patterns to reduce lost production time.
+- name: Yield Analysis
+  category: Business Analytics
+  description: Analyze good output, scrap, rework and defect patterns to improve process performance.
+- name: Manufacturing Data Analytics
+  category: Business Analytics
+  description: Analyze industrial and production data to improve quality, throughput, reliability and cost.
+- name: Industrial Project Management
+  category: Management
+  description: Deliver equipment, automation and process projects within scope, schedule, cost, safety and quality
+    constraints.
+- name: Commissioning
+  category: Quality Assurance
+  description: Verify installation, controls, safety, performance and documentation before production handover.
+- name: Factory Acceptance Testing
+  category: Quality Assurance
+  description: Verify equipment and systems against agreed requirements before shipment or installation.
+- name: Site Acceptance Testing
+  category: Quality Assurance
+  description: Verify installed equipment and integrations under actual site conditions before operational acceptance.
+- name: Standard Work
+  category: Management
+  description: Define and maintain the current best-known safe and effective method for recurring production tasks.
+- name: Work Instruction Development
+  category: Soft Skills
+  description: Create clear visual and written instructions enabling repeatable industrial work.
+- name: Technical Troubleshooting
+  category: Soft Skills
+  description: Systematically diagnose equipment, process and automation problems using evidence and controlled
+    tests.
+- name: Production Team Leadership
+  category: Soft Skills
+  description: Lead frontline production teams with clear priorities, safety focus and performance feedback.
+- name: Continuous Improvement Facilitation
+  category: Soft Skills
+  description: Facilitate cross-functional improvement workshops, experiments and action follow-up.
