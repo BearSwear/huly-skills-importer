@@ -1,12 +1,11 @@
-# Community-maintained example catalogue for huly-skills-importer.
-# Research-informed, not an official taxonomy or certification standard.
-# Research basis: OECD digital-government policy and public-sector skills work; ISO 18091 local-government quality guidance; public procurement, service design, policy and administrative practice.
-# Edit this catalogue to match your organization, jurisdiction and recruiting needs.
+# Community-maintained industry example for huly-skills-importer.
+# See docs/INDUSTRY-CATALOGUES.md for research basis and design notes.
+# Adapt this catalogue to your organization, jurisdiction and Recruiting practice.
 
 version: 1
 name: Public Sector and Municipal Recruiting Skills
-description: An example skill catalogue for municipalities, public agencies, public-service transformation teams
-  and government consulting organizations using Huly Recruiting.
+description: An example skill catalogue for municipalities, public agencies, public-service transformation teams and government
+  consulting organizations using Huly Recruiting.
 categories:
   Backend Development:
     aliases:
@@ -78,16 +77,16 @@ skills:
   description: Coordinate policy objectives, evidence, consultation, drafting, approvals and implementation planning.
 - name: Regulatory Analysis
   category: Hard Skills
-  description: Assess regulatory requirements, impacts, enforcement mechanisms and implementation options.
+  description: Interpretation of industry-specific operational and compliance requirements.
 - name: Administrative Law
   category: Hard Skills
-  description: Apply legal principles governing public powers, decisions, procedures, rights and review.
+  description: Apply administrative-law principles to lawful public decision making, procedure, powers, review and appeals.
 - name: Public Procurement
   category: Hard Skills
   description: Plan and conduct transparent, competitive and compliant procurement of goods, services and works.
 - name: Tender Management
   category: Management
-  description: Prepare procurement documents, manage clarification, evaluation, award and contract transition.
+  description: Prepare tender documents and manage clarification, evaluation, award and contract-transition activities.
 - name: Contract Management
   category: Management
   description: Manage public contracts, obligations, performance, change, risk and supplier relationships.
@@ -102,7 +101,7 @@ skills:
   description: Plan and monitor public resources against appropriations, services, commitments and expected outcomes.
 - name: Cost-Benefit Analysis
   category: Business Analytics
-  description: Compare public-policy or investment options using economic, social and financial costs and benefits.
+  description: Compare alternative actions using relevant costs, benefits, timing, uncertainty and distributional effects.
 - name: Impact Assessment
   category: Business Analytics
   description: Assess likely or observed social, economic, environmental and distributional effects of public interventions.
@@ -110,8 +109,8 @@ skills:
   category: Business Analytics
   description: Evaluate public programmes using objectives, evidence, outcomes and appropriate evaluation methods.
 - name: Performance Management
-  category: Business Analytics
-  description: Define and monitor service, programme and organizational performance indicators.
+  category: Management
+  description: Set goals, define measures, review performance and coordinate interventions to improve organizational results.
 - name: Benefits Realization
   category: Business Analytics
   description: Track whether programmes and investments deliver intended public value and measurable outcomes.
@@ -120,23 +119,19 @@ skills:
   description: Design public services around user needs, end-to-end journeys, accessibility and operational feasibility.
 - name: Citizen Journey Mapping
   category: Design
-  description: Map user interactions across agencies, channels and life events to identify friction and improvement
-    opportunities.
+  description: Map user interactions across agencies, channels and life events to identify friction and improvement opportunities.
 - name: Service Accessibility
   category: Design
-  description: Design public services that can be used effectively by people with disabilities and diverse access
-    needs.
+  description: Design public services that can be used effectively by people with disabilities and diverse access needs.
 - name: Inclusive Design
   category: Design
-  description: Design services and communications for varied language, ability, digital confidence and socioeconomic
-    contexts.
+  description: Design services and communications for varied language, ability, digital confidence and socioeconomic contexts.
 - name: Digital Government
   category: Hard Skills
   description: Use digital technology and data to improve policy, public services and government operations.
 - name: Digital by Design
   category: Hard Skills
-  description: Embed digital approaches into service and policy design rather than adding technology after processes
-    are fixed.
+  description: Embed digital approaches into service and policy design rather than adding technology after processes are fixed.
 - name: Government Service Transformation
   category: Management
   description: Redesign public services, processes, technology and operating models around measurable outcomes.
@@ -157,18 +152,16 @@ skills:
   description: Define ownership, stewardship, access, quality and responsible use of government data.
 - name: Master Data Management
   category: Database Development
-  description: Govern authoritative records for people, organizations, locations, assets or other shared public
-    data.
+  description: Govern authoritative master data definitions, ownership, quality, identifiers, change and synchronization.
 - name: Records Management
   category: Management
-  description: Control classification, retention, disposition and access to public records.
+  description: Structured retention, classification and lifecycle management of records.
 - name: Case Management
   category: Management
-  description: Manage citizen or regulatory cases through intake, assessment, actions, decisions, correspondence
-    and closure.
+  description: Manage citizen or regulatory cases through intake, assessment, actions, decisions, correspondence and closure.
 - name: Information Governance
   category: Management
-  description: Coordinate information lifecycle, privacy, security, records, access and accountability obligations.
+  description: Govern information lifecycle, ownership, quality, access, privacy, security, retention and accountability.
 - name: Freedom of Information
   category: Hard Skills
   description: Manage access-to-information requests, searches, exemptions, review and disclosure processes.
@@ -177,11 +170,10 @@ skills:
   description: Apply privacy and data-protection requirements to public services, records and data sharing.
 - name: Cybersecurity in Government
   category: Hard Skills
-  description: Protect public information systems and services while maintaining operational resilience and public
-    trust.
+  description: Protect public information systems and services while maintaining operational resilience and public trust.
 - name: Business Continuity
   category: Management
-  description: Plan continuity arrangements for critical public services, facilities and dependencies.
+  description: Plan and maintain continuity arrangements for critical services, facilities, people and technology dependencies.
 - name: Emergency Management
   category: Management
   description: Prepare and coordinate public-sector response to disruptive events and emergencies.
@@ -189,17 +181,17 @@ skills:
   category: Soft Skills
   description: Communicate timely, accurate and actionable information during public incidents and crises.
 - name: Risk Management
-  category: Management
-  description: Identify, assess and manage strategic, operational, service, project and compliance risks.
+  category: Hard Skills
+  description: Identification, evaluation, treatment and tracking of business and technical risks.
 - name: Quality Management
   category: Quality Assurance
-  description: Establish consistent public-service processes, review mechanisms and continuous improvement.
+  description: Establish, monitor and improve processes, controls, responsibilities and evidence needed for consistent quality.
 - name: ISO 18091
   category: Hard Skills
   description: Apply ISO 18091 guidance for quality-management principles in local government.
 - name: Process Mapping
   category: Business Analytics
-  description: Document public-service processes, decisions and handoffs to support analysis and redesign.
+  description: Document current and future process flows, actors, decisions, information, handoffs and supporting systems.
 - name: Process Improvement
   category: Management
   description: Improve public processes by reducing delay, ambiguity, duplication and avoidable administrative burden.
@@ -223,8 +215,7 @@ skills:
   description: Assess development proposals, zoning, plans and spatial policy against community objectives.
 - name: GIS
   category: Hard Skills
-  description: Use geospatial information to support planning, infrastructure, environmental and public-service
-    decisions.
+  description: Manage, analyze and communicate geospatial information for planning, assets, operations and decision support.
 - name: Spatial Data Management
   category: Database Development
   description: Maintain geospatial datasets, identifiers, geometry, metadata and data quality for public use.
@@ -236,7 +227,7 @@ skills:
   description: Coordinate portfolios of public infrastructure investments, dependencies, funding and delivery.
 - name: Climate Adaptation
   category: Hard Skills
-  description: Integrate climate hazards, vulnerability and resilience into public planning and service delivery.
+  description: Assess climate hazards and vulnerability and integrate resilience measures into plans, assets and services.
 - name: Environmental Management
   category: Hard Skills
   description: Manage environmental obligations, impacts, monitoring and improvement in public operations and projects.
@@ -245,17 +236,16 @@ skills:
   description: Translate environmental and social commitments into prioritized public-sector programmes and measures.
 - name: Public Consultation
   category: Soft Skills
-  description: Plan and conduct transparent consultation that records input and explains how it informed decisions.
+  description: Plan and conduct transparent engagement with communities and stakeholders to gather input and support decisions.
 - name: Community Engagement
   category: Soft Skills
   description: Build ongoing relationships with communities, associations and affected groups beyond formal consultation.
 - name: Stakeholder Management
   category: Soft Skills
-  description: Coordinate elected officials, administration, residents, businesses, agencies and delivery partners.
+  description: Managing expectations, priorities and communication across stakeholders.
 - name: Political-Administrative Interface
   category: Soft Skills
-  description: Work effectively across elected leadership and professional administration while respecting roles
-    and accountability.
+  description: Work effectively across elected leadership and professional administration while respecting roles and accountability.
 - name: Council Decision Support
   category: Soft Skills
   description: Prepare clear evidence, options and recommendations for formal political or administrative decisions.
@@ -267,7 +257,7 @@ skills:
   description: Write public information and administrative communication in clear, accessible language.
 - name: Workshop Facilitation
   category: Soft Skills
-  description: Facilitate collaborative sessions for policy, service design, planning and problem solving.
+  description: Guide groups through structured discussion, analysis, prioritization and decision making.
 - name: Conflict Resolution
   category: Soft Skills
   description: Manage disagreements among stakeholders and identify workable paths forward.
@@ -276,19 +266,20 @@ skills:
   description: Deliver public projects within governance, procurement, budget, quality, risk and stakeholder requirements.
 - name: Programme Management
   category: Management
-  description: Coordinate related public initiatives, outcomes, dependencies, governance and benefits.
+  description: Coordinate related projects and initiatives to manage outcomes, dependencies, governance, resources and benefits.
 - name: Portfolio Management
   category: Management
-  description: Prioritize projects and programmes against strategy, capacity, risk and available funding.
+  description: Prioritize and govern a portfolio of investments or initiatives against strategy, capacity, risk and expected
+    value.
 - name: PMO Operations
   category: Management
   description: Support consistent planning, reporting, governance, risk and methods across public projects.
 - name: Change Management
   category: Management
-  description: Prepare people, processes and organizations for changes in public services, systems and responsibilities.
+  description: Planning and managing organizational or technical change.
 - name: Digital Transformation
   category: Management
-  description: Coordinate technology, process, data and capability changes to modernize public-sector operations.
+  description: Integrate technology, data, process and operating-model changes to improve organizational outcomes.
 - name: Interagency Coordination
   category: Management
   description: Coordinate responsibilities, information and delivery across multiple public bodies.
@@ -300,8 +291,7 @@ skills:
   description: Analyze supplier markets, competition, capacity and commercial models before procurement.
 - name: Public Value Analysis
   category: Business Analytics
-  description: Assess how options create value for citizens, communities and public objectives beyond financial
-    return.
+  description: Assess how options create value for citizens, communities and public objectives beyond financial return.
 - name: Citizen Satisfaction Analysis
   category: Business Analytics
   description: Analyze service feedback and satisfaction data to identify improvement priorities.

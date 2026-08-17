@@ -1,7 +1,6 @@
-# Community-maintained example catalogue for huly-skills-importer.
-# Research-informed, not an official taxonomy or certification standard.
-# Research basis: ICH E6(R3) Good Clinical Practice; CDISC foundational/data-exchange standards; HL7 FHIR R5 and common health-informatics interoperability practice.
-# Edit this catalogue to match your organization, jurisdiction and recruiting needs.
+# Community-maintained industry example for huly-skills-importer.
+# See docs/INDUSTRY-CATALOGUES.md for research basis and design notes.
+# Adapt this catalogue to your organization, jurisdiction and Recruiting practice.
 
 version: 1
 name: Clinical Research and Health Technology Recruiting Skills
@@ -69,8 +68,7 @@ categories:
 skills:
 - name: Good Clinical Practice / GCP
   category: Hard Skills
-  description: Apply internationally recognized ethical, scientific and quality principles for conducting clinical
-    trials.
+  description: Apply internationally recognized ethical, scientific and quality principles for conducting clinical trials.
 - name: ICH E6(R3)
   category: Hard Skills
   description: Apply ICH E6(R3) principles including quality by design, proportionality and risk-based trial conduct.
@@ -85,8 +83,7 @@ skills:
   description: Coordinate country and site activation activities, essential documents, contracts and approvals.
 - name: Site Feasibility
   category: Business Analytics
-  description: Assess investigator sites for patient availability, capabilities, competing studies and operational
-    fit.
+  description: Assess investigator sites for patient availability, capabilities, competing studies and operational fit.
 - name: Site Selection
   category: Management
   description: Select and approve investigator sites based on evidence, capability, risk and study needs.
@@ -146,8 +143,7 @@ skills:
   description: Apply CDISC standards to structure clinical and non-clinical research data.
 - name: CDASH
   category: Hard Skills
-  description: Use CDASH standards to design consistent clinical data collection and traceability to downstream
-    datasets.
+  description: Use CDASH standards to design consistent clinical data collection and traceability to downstream datasets.
 - name: SDTM
   category: Hard Skills
   description: Organize clinical study tabulation data according to the CDISC Study Data Tabulation Model.
@@ -177,13 +173,13 @@ skills:
   description: Use SAS for clinical data management, statistical programming and regulated reporting.
 - name: R
   category: Programming Languages
-  description: Use R for statistical analysis, visualization and reproducible clinical research workflows.
+  description: Data analysis and software development using R.
 - name: Python
   category: Programming Languages
-  description: Use Python for health-data processing, analytics, automation and research tooling.
+  description: Python development for backend services, automation, security and integrations.
 - name: SQL
   category: Programming Languages
-  description: Query structured clinical and operational databases for analysis and reconciliation.
+  description: SQL querying and data manipulation for relational databases.
 - name: Clinical Data Visualization
   category: Business Analytics
   description: Visualize safety, efficacy, operational and quality data to support review and decisions.
@@ -243,8 +239,7 @@ skills:
   description: Plan, label, distribute, reconcile and control investigational-product supply.
 - name: Medical Writing
   category: Soft Skills
-  description: Prepare protocols, clinical reports, summaries and regulatory documents with scientific clarity and
-    traceability.
+  description: Prepare protocols, clinical reports, summaries and regulatory documents with scientific clarity and traceability.
 - name: Clinical Study Report Writing
   category: Soft Skills
   description: Develop structured, evidence-based clinical study reports consistent with applicable guidance.
@@ -313,8 +308,7 @@ skills:
   description: Define ownership, quality, access, lineage and permitted use for clinical and health data.
 - name: Healthcare Workflow Analysis
   category: Business Analytics
-  description: Analyze clinical workflows, handoffs and system interactions to identify requirements and improvement
-    opportunities.
+  description: Analyze clinical workflows, handoffs and system interactions to identify requirements and improvement opportunities.
 - name: Clinical Decision Support
   category: Hard Skills
   description: Design and evaluate rules, alerts and knowledge interventions supporting clinical decisions.
@@ -347,5 +341,5 @@ skills:
   description: Communicate scientific methods, evidence, uncertainty and conclusions accurately to varied audiences.
 - name: Patient-Centered Communication
   category: Soft Skills
-  description: Communicate research and health-technology information clearly with participant needs and understanding
-    in mind.
+  description: Communicate research and health-technology information clearly with participant needs and understanding in
+    mind.

@@ -1,7 +1,6 @@
-# Community-maintained example catalogue for huly-skills-importer.
-# Research-informed, not an official taxonomy or certification standard.
-# Research basis: buildingSMART IFC 4.3 / ISO 16739, BCF and IDS; ISO 19650 information management practice; multidisciplinary AEC design, delivery, construction and commissioning workflows.
-# Edit this catalogue to match your organization, jurisdiction and recruiting needs.
+# Community-maintained industry example for huly-skills-importer.
+# See docs/INDUSTRY-CATALOGUES.md for research basis and design notes.
+# Adapt this catalogue to your organization, jurisdiction and Recruiting practice.
 
 version: 1
 name: Architecture, Engineering and Construction Recruiting Skills
@@ -69,19 +68,18 @@ categories:
 skills:
 - name: Architectural Design
   category: Design
-  description: Develop building concepts, spatial arrangements, form, materiality and design solutions from brief
-    through delivery.
+  description: Develop building concepts, spatial arrangements, form, materiality and design solutions from brief through
+    delivery.
 - name: Interior Design
   category: Design
-  description: Design interior environments, finishes, layouts, furniture and user experience to meet functional
-    and aesthetic needs.
+  description: Design interior environments, finishes, layouts, furniture and user experience to meet functional and aesthetic
+    needs.
 - name: Landscape Architecture
   category: Design
   description: Design external spaces, landscapes, public realm and site interfaces with ecological and user considerations.
 - name: Urban Design
   category: Design
-  description: Shape streets, neighborhoods and public spaces through integrated spatial, mobility and place-making
-    design.
+  description: Shape streets, neighborhoods and public spaces through integrated spatial, mobility and place-making design.
 - name: Design Development
   category: Design
   description: Develop approved concepts into coordinated, buildable and documented design solutions.
@@ -99,8 +97,7 @@ skills:
   description: Establish BIM execution approaches, responsibilities, standards, model delivery and quality processes.
 - name: Information Management / ISO 19650
   category: Management
-  description: Manage project information requirements, containers, status, approval and delivery using ISO 19650
-    principles.
+  description: Manage project information requirements, containers, status, approval and delivery using ISO 19650 principles.
 - name: OpenBIM
   category: Hard Skills
   description: Use vendor-neutral open standards and workflows for built-asset information exchange and collaboration.
@@ -115,14 +112,13 @@ skills:
   description: Define and validate machine-readable information requirements for IFC-based deliveries.
 - name: COBie
   category: Hard Skills
-  description: Structure asset and facility handover information using COBie-oriented data requirements.
+  description: Structure asset and facility handover information using COBie-oriented data requirements and exchange workflows.
 - name: Common Data Environment
   category: Hard Skills
   description: Configure and use controlled project information environments for shared documents and models.
 - name: BIM Execution Planning
   category: Management
-  description: Define project BIM objectives, responsibilities, deliverables, software, exchange and coordination
-    procedures.
+  description: Define project BIM objectives, responsibilities, deliverables, software, exchange and coordination procedures.
 - name: Asset Information Requirements
   category: Management
   description: Define information needed by asset owners and operators for effective downstream use.
@@ -212,8 +208,7 @@ skills:
   description: Coordinate mechanical, electrical and plumbing systems within multidisciplinary building designs.
 - name: HVAC Design
   category: Hard Skills
-  description: Size and design heating, ventilation and air-conditioning systems for comfort, energy and indoor
-    environment.
+  description: Size and design heating, ventilation and air-conditioning systems for comfort, energy and indoor environment.
 - name: Electrical Building Services
   category: Hard Skills
   description: Design building power distribution, lighting, earthing, emergency power and electrical systems.
@@ -243,7 +238,7 @@ skills:
   description: Integrate low-energy, low-impact and resilient design strategies into buildings and infrastructure.
 - name: Life Cycle Assessment
   category: Hard Skills
-  description: Quantify environmental impacts across material, construction, use and end-of-life stages.
+  description: Assess environmental impacts across the life cycle of a product, asset, process or service.
 - name: Embodied Carbon Assessment
   category: Hard Skills
   description: Quantify and reduce greenhouse-gas emissions associated with construction materials and products.
@@ -255,8 +250,7 @@ skills:
   description: Select and assess construction materials based on performance, durability, sustainability and constructability.
 - name: Specification Writing
   category: Soft Skills
-  description: Prepare coordinated technical specifications that clearly define products, workmanship and performance
-    requirements.
+  description: Prepare coordinated technical specifications that clearly define products, workmanship and performance requirements.
 - name: Site Inspection
   category: Quality Assurance
   description: Inspect construction work against drawings, specifications, quality requirements and approved changes.
@@ -268,7 +262,7 @@ skills:
   description: Evaluate designs for practical, safe and efficient construction and sequencing.
 - name: Commissioning
   category: Quality Assurance
-  description: Plan, verify and document functional testing and acceptance of building and infrastructure systems.
+  description: Verify that systems and assets are installed, configured, tested, documented and ready for intended operation.
 - name: Building Performance Verification
   category: Quality Assurance
   description: Verify delivered asset performance against design intent and specified criteria.
@@ -283,16 +277,17 @@ skills:
   description: Use photogrammetry, scanning and related methods to create digital records of physical assets.
 - name: GIS
   category: Hard Skills
-  description: Manage and analyze geospatial information for planning, infrastructure and asset contexts.
+  description: Manage, analyze and communicate geospatial information for planning, assets, operations and decision support.
 - name: ArcGIS
   category: Desktop Application Development
   description: Create, analyze and manage geospatial datasets, maps and workflows using ArcGIS.
 - name: QGIS
   category: Desktop Application Development
-  description: Create and analyze geospatial information using the open-source QGIS platform.
+  description: Create, manage, analyze and communicate geospatial information using QGIS.
 - name: Digital Twins
   category: Hard Skills
-  description: Connect asset information, models and operational data to support lifecycle decision making.
+  description: Connect asset or system information, models and operational data to support lifecycle analysis and decision
+    making.
 - name: 4D BIM
   category: Hard Skills
   description: Link model elements with construction schedules to visualize and analyze sequencing.
@@ -322,10 +317,10 @@ skills:
   description: Plan and coordinate multidisciplinary design activities, reviews, dependencies and deliverables.
 - name: Project Management
   category: Management
-  description: Manage scope, schedule, cost, quality, risk, resources, communications and delivery outcomes.
+  description: Planning, coordination, risk and delivery management.
 - name: Programme Management
   category: Management
-  description: Coordinate multiple related projects, dependencies, benefits and governance across a programme.
+  description: Coordinate related projects and initiatives to manage outcomes, dependencies, governance, resources and benefits.
 - name: Contract Administration
   category: Management
   description: Administer construction contracts, instructions, changes, notices, payment and compliance obligations.
@@ -334,7 +329,7 @@ skills:
   description: Plan procurement strategy, tendering, evaluation, contracting and supplier coordination.
 - name: Tender Management
   category: Management
-  description: Prepare, issue, evaluate and clarify tenders for design, construction and professional services.
+  description: Prepare tender documents and manage clarification, evaluation, award and contract-transition activities.
 - name: RFI Management
   category: Management
   description: Manage requests for information, responses, responsibility and impact during delivery.
@@ -367,5 +362,4 @@ skills:
   description: Produce clear engineering and design reports that document assumptions, analyses, decisions and recommendations.
 - name: Design Presentation
   category: Soft Skills
-  description: Communicate design intent and technical decisions effectively through drawings, models, visuals and
-    presentations.
+  description: Communicate design intent and technical decisions effectively through drawings, models, visuals and presentations.

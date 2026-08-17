@@ -1,12 +1,11 @@
-# Community-maintained example catalogue for huly-skills-importer.
-# Research-informed, not an official taxonomy or certification standard.
-# Research basis: ISA-95 / IEC 62264 enterprise-control integration; OPC UA interoperability; ISA/IEC 62443 industrial cybersecurity; ISO 55001 asset management; Lean and quality-engineering practice.
-# Edit this catalogue to match your organization, jurisdiction and recruiting needs.
+# Community-maintained industry example for huly-skills-importer.
+# See docs/INDUSTRY-CATALOGUES.md for research basis and design notes.
+# Adapt this catalogue to your organization, jurisdiction and Recruiting practice.
 
 version: 1
 name: Manufacturing and Industrial Operations Recruiting Skills
-description: An example skill catalogue for manufacturers, industrial engineering teams, automation integrators,
-  plant operations and Industry 4.0 organizations using Huly Recruiting.
+description: An example skill catalogue for manufacturers, industrial engineering teams, automation integrators, plant operations
+  and Industry 4.0 organizations using Huly Recruiting.
 categories:
   Backend Development:
     aliases:
@@ -78,8 +77,7 @@ skills:
   description: Design, control and improve industrial processes using material, energy, quality and safety requirements.
 - name: Production Engineering
   category: Hard Skills
-  description: Support production readiness, process capability, tooling, work instructions and operational problem
-    solving.
+  description: Support production readiness, process capability, tooling, work instructions and operational problem solving.
 - name: Design for Manufacturability
   category: Hard Skills
   description: Evaluate product designs for efficient, reliable and cost-effective manufacturing.
@@ -133,14 +131,13 @@ skills:
   description: Define process controls, measurements, reaction plans and ownership for critical product characteristics.
 - name: CAPA
   category: Quality Assurance
-  description: Manage corrective and preventive actions from investigation through implementation and effectiveness
-    verification.
+  description: Investigate root causes and manage corrective and preventive actions through verified completion.
 - name: Nonconformance Management
   category: Quality Assurance
   description: Control, disposition and learn from products or processes that fail requirements.
 - name: Quality Management Systems
   category: Management
-  description: Operate documented quality processes, responsibilities, records, audits and improvement mechanisms.
+  description: Process, evidence and controlled-document concepts used in quality systems.
 - name: ISO 9001
   category: Hard Skills
   description: Apply ISO 9001 quality-management requirements to organizational processes and evidence.
@@ -188,7 +185,7 @@ skills:
   description: Select, install and troubleshoot sensors, transmitters, analyzers and measurement loops.
 - name: Process Control
   category: Hard Skills
-  description: Design and tune feedback, feedforward and advanced control strategies for industrial processes.
+  description: Design, configure and tune feedback, feedforward and advanced control strategies for industrial processes.
 - name: Safety Instrumented Systems
   category: Hard Skills
   description: Design and manage instrumented protective functions for hazardous process risk reduction.
@@ -218,7 +215,7 @@ skills:
   description: Configure and troubleshoot EtherNet/IP industrial networks and device integration.
 - name: Modbus
   category: Networking
-  description: Implement and troubleshoot Modbus TCP or serial communications in industrial systems.
+  description: Implement and troubleshoot Modbus TCP and serial communications between industrial devices and control systems.
 - name: Industrial Network Segmentation
   category: Networking
   description: Separate control zones and conduits to improve resilience, safety and cybersecurity.
@@ -239,8 +236,7 @@ skills:
   description: Collect and contextualize machine, process and production data with reliable timestamps and identifiers.
 - name: Industrial Data Modeling
   category: Data Structures
-  description: Model equipment hierarchies, process context, states and production relationships for analytics and
-    integration.
+  description: Model equipment hierarchies, process context, states and production relationships for analytics and integration.
 - name: Time-Series Data
   category: Database Development
   description: Store and query high-frequency timestamped industrial measurements efficiently.
@@ -255,10 +251,11 @@ skills:
   description: Deploy computation near industrial assets for low-latency processing, protocol translation and resilience.
 - name: Digital Twins
   category: Hard Skills
-  description: Represent physical assets and processes digitally for simulation, monitoring and lifecycle decisions.
+  description: Connect asset or system information, models and operational data to support lifecycle analysis and decision
+    making.
 - name: Predictive Maintenance
   category: Business Analytics
-  description: Use condition and historical data to anticipate failures and optimize maintenance timing.
+  description: Use condition, history and trend information to forecast failures and optimize maintenance timing.
 - name: Condition Monitoring
   category: Hard Skills
   description: Monitor vibration, temperature, oil, electrical or process indicators to identify equipment degradation.
@@ -273,11 +270,11 @@ skills:
   description: Engage operations and maintenance in structured practices that maximize equipment effectiveness.
 - name: CMMS
   category: Hard Skills
-  description: Use computerized maintenance management systems for assets, work orders, preventive maintenance and
-    history.
+  description: Use computerized maintenance management systems for assets, work orders, preventive maintenance, history and
+    reporting.
 - name: ISO 55001 Asset Management
   category: Hard Skills
-  description: Apply asset-management-system principles to lifecycle value, risk, performance and decision making.
+  description: Apply ISO 55001 asset-management-system principles to lifecycle value, risk, performance and governance.
 - name: Maintenance Planning
   category: Management
   description: Plan preventive and corrective maintenance work, labor, materials, permits and equipment access.
@@ -292,7 +289,7 @@ skills:
   description: Build and adjust detailed production schedules considering resources, setups and delivery commitments.
 - name: Capacity Planning
   category: Business Analytics
-  description: Analyze equipment and labor capacity against demand, bottlenecks and investment options.
+  description: Forecasting compute, memory, storage, backup and operational capacity.
 - name: Inventory Management
   category: Management
   description: Control raw materials, work in process and finished goods to balance service, cost and risk.
@@ -309,8 +306,8 @@ skills:
   category: Management
   description: Assess, approve, implement and trace changes to product and manufacturing definitions.
 - name: Configuration Management
-  category: Management
-  description: Maintain approved product and system configurations, versions and change traceability.
+  category: DevOps
+  description: Repeatable management of configuration across hosts and tenants.
 - name: Supply Chain Management
   category: Management
   description: Coordinate suppliers, materials, logistics, inventory and demand to support reliable production.
@@ -331,11 +328,10 @@ skills:
   description: Analyze industrial and production data to improve quality, throughput, reliability and cost.
 - name: Industrial Project Management
   category: Management
-  description: Deliver equipment, automation and process projects within scope, schedule, cost, safety and quality
-    constraints.
+  description: Deliver equipment, automation and process projects within scope, schedule, cost, safety and quality constraints.
 - name: Commissioning
   category: Quality Assurance
-  description: Verify installation, controls, safety, performance and documentation before production handover.
+  description: Verify that systems and assets are installed, configured, tested, documented and ready for intended operation.
 - name: Factory Acceptance Testing
   category: Quality Assurance
   description: Verify equipment and systems against agreed requirements before shipment or installation.
@@ -350,8 +346,7 @@ skills:
   description: Create clear visual and written instructions enabling repeatable industrial work.
 - name: Technical Troubleshooting
   category: Soft Skills
-  description: Systematically diagnose equipment, process and automation problems using evidence and controlled
-    tests.
+  description: Systematically diagnose equipment, process and automation problems using evidence and controlled tests.
 - name: Production Team Leadership
   category: Soft Skills
   description: Lead frontline production teams with clear priorities, safety focus and performance feedback.

@@ -1,13 +1,15 @@
 # Contributing
 
-Contributions are welcome.
+Contributions are welcome when they stay focused on Huly Recruiting skills, taxonomy management, candidate skill inspection, compatibility and safe catalogue workflows.
 
 ## Development
 
 1. Use Node.js 20.11 or newer.
-2. Run `npm install`.
+2. Run `npm ci` for a clean checkout.
 3. Copy `.env.example` to `.env` only when testing against a Huly workspace.
-4. Run `npm run check` before opening a pull request.
+4. Run `npm run check`, `npm run build`, `npm run catalogues:check` and `npm run package:smoke` before opening a pull request.
+
+When changing dependencies, run `npm install` and commit the resulting `package-lock.json`.
 
 No GitHub Packages token is required for the current dependency set.
 
@@ -16,33 +18,80 @@ No GitHub Packages token is required for the current dependency set.
 Good contributions include:
 
 - compatibility fixes for supported Huly releases;
-- safer category discovery and matching;
-- `inspect` and suggestion-vocabulary diagnostics;
+- safer Recruiting category discovery and matching;
+- taxonomy audit/export/merge improvements;
+- candidate skill-reference diagnostics that remain read-only;
+- suggestion-vocabulary diagnostics;
 - additional tests;
 - documentation improvements;
-- generic example catalogues;
+- generic or industry Recruiting catalogues;
 - validation and dry-run improvements.
 
-Please avoid adding organisation-specific secrets, internal URLs, personal candidate data, or proprietary skill taxonomies without permission.
+Please avoid unrelated project-management functionality, organization-specific secrets, private instance URLs, personal candidate data, or proprietary taxonomies without permission.
 
-## Catalogue changes
+## Catalogue rules
 
-Keep skill names concise and descriptions useful for recruiting. Avoid duplicate skills that differ only by punctuation or capitalization.
+Keep skill names concise and descriptions useful for Recruiting. Avoid duplicates that differ only by punctuation, casing or whitespace.
 
-The bundled catalogue should prefer named Recruiting categories over the default `Other` category because Huly's Skills Optimizer can treat low-reference `Other` skills differently. If `Other` is genuinely the best fit, document why.
+A normalized skill title is a shared identity across bundled catalogues. If the same normalized title appears in multiple bundled YAML files, all occurrences must use the same:
+
+- title/casing;
+- category;
+- description;
+- optional explicit color.
+
+Run:
+
+```bash
+npm run catalogues:check
+```
+
+A non-zero definition-conflict count is a repository error and should not be committed.
+
+The bundled catalogues prefer named Recruiting categories over the default `Other` category because the tested Huly Skills Optimizer treated low-reference `Other` skills differently. If `Other` is genuinely the best fit in a custom catalogue, document and review that choice.
 
 Do not remove a skill merely because the same text appears in Huly's built-in suggestion vocabulary. Suggestions and materialized workspace skills are separate objects.
 
-## Contributing industry catalogues
+## Industry catalogues
 
-Industry catalogues belong under `skills/industries/` and should follow `<industryname>-skills.yaml` naming. Keep them useful for individual Recruiting assignments rather than filling them with job titles. Prefer named Huly Recruiting categories over `Other`, include concise original descriptions, and document the primary research/framework basis in `docs/INDUSTRY-CATALOGUES.md` when adding a new sector.
+Industry files belong under `skills/industries/` and should follow `<industryname>-skills.yaml` naming.
 
-Before proposing a catalogue change, run:
+Keep them focused on capabilities assignable to individual talents rather than job titles. Put research/framework references in `docs/INDUSTRY-CATALOGUES.md`, not in the YAML files or top-level README.
+
+When adding or changing a sector:
 
 ```bash
-npm run catalogues
 huly-skills-importer check skills/industries/<file>.yaml
+npm run catalogues:check
 npm run check
 ```
 
-Overlap with another industry file is acceptable when the capability is genuinely transferable. Duplicate normalized names within a single catalogue are not.
+## Live compatibility testing
+
+Do not use a production workspace for first-write tests. A suitable sequence is:
+
+```bash
+npm run discover
+npm run suggestions
+npm run inspect
+huly-skills-importer audit skills/example.yaml
+huly-skills-importer import skills/example.yaml --dry-run
+```
+
+Then test writes only in a disposable/test workspace.
+
+## Release checklist
+
+Before tagging a release:
+
+1. ensure `git status` is clean;
+2. ensure `package-lock.json` is committed and current;
+3. run `npm ci` from a clean dependency state;
+4. run `npm run check`;
+5. run `npm run build`;
+6. run `npm run catalogues:check` and verify zero definition conflicts;
+7. run `npm run package:smoke`;
+8. run `discover`, `suggestions`, `inspect` and `audit` against a test Huly workspace;
+9. dry-run any catalogue intended for a live workspace;
+10. verify idempotency after a test import;
+11. review `README.md`, `CHANGELOG.md`, `SECURITY.md` and `NOTICE.md` for public-release suitability.

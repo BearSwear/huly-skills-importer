@@ -17,7 +17,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20.11'
+          cache: npm
 
-      - run: npm install
+      - run: npm ci
       - run: npm run check
       - run: npm run build
+      - run: npm run catalogues:check
+      - run: npm run package:smoke

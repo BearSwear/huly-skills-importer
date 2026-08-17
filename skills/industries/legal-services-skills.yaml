@@ -1,12 +1,11 @@
-# Community-maintained example catalogue for huly-skills-importer.
-# Research-informed, not an official taxonomy or certification standard.
-# Research basis: ISO 37301 compliance management; EDRM eDiscovery frameworks; legal operations, matter management, contract and dispute-resolution practice.
-# Edit this catalogue to match your organization, jurisdiction and recruiting needs.
+# Community-maintained industry example for huly-skills-importer.
+# See docs/INDUSTRY-CATALOGUES.md for research basis and design notes.
+# Adapt this catalogue to your organization, jurisdiction and Recruiting practice.
 
 version: 1
 name: Legal Services Recruiting Skills
-description: An example skill catalogue for law firms, in-house legal teams, legal operations, compliance practices
-  and eDiscovery providers using Huly Recruiting.
+description: An example skill catalogue for law firms, in-house legal teams, legal operations, compliance practices and eDiscovery
+  providers using Huly Recruiting.
 categories:
   Backend Development:
     aliases:
@@ -69,8 +68,8 @@ categories:
 skills:
 - name: Legal Research
   category: Hard Skills
-  description: Research legislation, case law, regulations, guidance and authoritative legal sources to support
-    advice and decisions.
+  description: Research legislation, case law, regulations, guidance and authoritative legal sources to support advice and
+    decisions.
 - name: Legal Analysis
   category: Hard Skills
   description: Identify legal issues, apply authorities to facts and develop reasoned conclusions and options.
@@ -79,8 +78,7 @@ skills:
   description: Draft precise, structured and audience-appropriate legal advice, memoranda and correspondence.
 - name: Contract Drafting
   category: Hard Skills
-  description: Draft contractual rights, obligations, definitions, remedies and risk allocation in clear enforceable
-    language.
+  description: Draft contractual rights, obligations, definitions, remedies and risk allocation in clear enforceable language.
 - name: Contract Review
   category: Hard Skills
   description: Review contracts for legal, commercial, operational and compliance implications.
@@ -92,7 +90,8 @@ skills:
   description: Manage contract intake, drafting, review, approval, execution, obligations, renewal and archive.
 - name: Due Diligence
   category: Hard Skills
-  description: Review legal and business information to identify material risks, obligations and transaction issues.
+  description: Systematically investigate financial, commercial, technical, legal or control information to identify material
+    risks and opportunities.
 - name: Corporate Law
   category: Hard Skills
   description: Advise on company formation, governance, capital, shareholder matters and corporate transactions.
@@ -101,8 +100,7 @@ skills:
   description: Advise on business transactions, commercial relationships, distribution and service arrangements.
 - name: Mergers and Acquisitions
   category: Hard Skills
-  description: Support transaction structuring, due diligence, documentation, signing, completion and integration
-    issues.
+  description: Support transaction structuring, due diligence, documentation, signing, completion and integration issues.
 - name: Employment Law
   category: Hard Skills
   description: Advise on employment contracts, workplace rights, disputes, restructuring and regulatory obligations.
@@ -114,8 +112,7 @@ skills:
   description: Advise on software, digital services, platforms, technology contracting and related regulatory issues.
 - name: Data Protection Law
   category: Hard Skills
-  description: Advise on lawful processing, transparency, rights, security, international transfers and privacy
-    governance.
+  description: Advise on lawful processing, transparency, rights, security, international transfers and privacy governance.
 - name: AI Regulation and Governance
   category: Hard Skills
   description: Assess legal and governance obligations associated with development and use of artificial intelligence.
@@ -157,8 +154,7 @@ skills:
   description: Develop coherent dispute objectives, theories, procedural strategy, evidence plans and decision points.
 - name: Witness Preparation
   category: Soft Skills
-  description: Prepare witnesses for interviews, statements, depositions or hearings without compromising evidence
-    integrity.
+  description: Prepare witnesses for interviews, statements, depositions or hearings without compromising evidence integrity.
 - name: Advocacy
   category: Soft Skills
   description: Present persuasive legal arguments orally and in writing before decision makers.
@@ -182,7 +178,7 @@ skills:
   description: Advise on tendering, competition, award, modification and challenge rules for public contracts.
 - name: Administrative Law
   category: Hard Skills
-  description: Advise on lawful public decision making, procedure, powers, review and appeals.
+  description: Apply administrative-law principles to lawful public decision making, procedure, powers, review and appeals.
 - name: Competition Law
   category: Hard Skills
   description: Assess agreements, conduct and transactions for antitrust and competition-law risks.
@@ -209,8 +205,7 @@ skills:
   description: Plan legal work using scope, milestones, resources, budget, risk and stakeholder expectations.
 - name: Legal Operations
   category: Management
-  description: Improve legal-service delivery through process design, technology, data, sourcing and performance
-    management.
+  description: Improve legal-service delivery through process design, technology, data, sourcing and performance management.
 - name: Outside Counsel Management
   category: Management
   description: Select, instruct, monitor and evaluate external legal providers.
@@ -261,10 +256,10 @@ skills:
   description: Maintain traceable evidence handling and transfer records supporting authenticity and defensibility.
 - name: Records Management
   category: Management
-  description: Control retention, disposition, classification and access to legal and business records.
+  description: Structured retention, classification and lifecycle management of records.
 - name: Information Governance
   category: Management
-  description: Coordinate policies and controls for information value, risk, retention, privacy and legal obligations.
+  description: Govern information lifecycle, ownership, quality, access, privacy, security, retention and accountability.
 - name: Legal Knowledge Management
   category: Management
   description: Capture, organize and reuse precedents, know-how, research and lessons across legal work.
@@ -300,8 +295,7 @@ skills:
   description: Structure parties, obligations, dates, clauses, rights and metadata for contract systems and analytics.
 - name: Matter Data Modeling
   category: Data Structures
-  description: Structure legal matter taxonomy, status, parties, risks, activities and outcomes for operational
-    reporting.
+  description: Structure legal matter taxonomy, status, parties, risks, activities and outcomes for operational reporting.
 - name: Legal Document Taxonomy
   category: Data Structures
   description: Design classifications and metadata that support document retrieval, retention and knowledge reuse.
@@ -325,11 +319,10 @@ skills:
   description: Apply duties of competence, confidentiality, independence, conflicts and professional conduct.
 - name: Client Interviewing
   category: Soft Skills
-  description: Elicit relevant facts, objectives and concerns from clients using structured questioning and active
-    listening.
+  description: Elicit relevant facts, objectives and concerns from clients using structured questioning and active listening.
 - name: Negotiation
-  category: Soft Skills
-  description: Plan and conduct principled negotiations across legal, commercial and dispute contexts.
+  category: Sales
+  description: Commercial negotiation and stakeholder agreement.
 - name: Legal Stakeholder Management
   category: Soft Skills
   description: Coordinate clients, counterparties, experts, regulators and internal business stakeholders.

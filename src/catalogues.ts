@@ -2,6 +2,7 @@ import { readdir } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { loadCatalog, normalize } from './catalog.js'
+import { countSharedNormalizedSkills, findCatalogConflicts, loadCatalogSet } from './catalog-set.js'
 
 export interface BundledCatalogueSummary {
   file: string
@@ -17,11 +18,23 @@ export interface BundledCatalogueCollection {
   catalogues: BundledCatalogueSummary[]
   totalSkillEntries: number
   uniqueNormalizedSkills: number
+  allBundledSkillEntries: number
+  allBundledUniqueNormalizedSkills: number
+  sharedNormalizedSkills: number
+  definitionConflicts: number
+}
+
+function skillsDirectory(): string {
+  const moduleDirectory = dirname(fileURLToPath(import.meta.url))
+  return join(moduleDirectory, '..', 'skills')
 }
 
 export function bundledCataloguesDirectory(): string {
-  const moduleDirectory = dirname(fileURLToPath(import.meta.url))
-  return join(moduleDirectory, '..', 'skills', 'industries')
+  return join(skillsDirectory(), 'industries')
+}
+
+export function broadCataloguePath(): string {
+  return join(skillsDirectory(), 'import-skills.yaml')
 }
 
 export async function listBundledCatalogues(
@@ -57,10 +70,23 @@ export async function listBundledCatalogues(
     })
   }
 
+  const sourcePaths = [broadCataloguePath(), ...files.map((file) => join(directory, file))]
+  const allSources = await loadCatalogSet(sourcePaths)
+  const allNames = new Set<string>()
+  let allBundledSkillEntries = 0
+  for (const source of allSources) {
+    allBundledSkillEntries += source.catalog.skills.length
+    for (const skill of source.catalog.skills) allNames.add(normalize(skill.name))
+  }
+
   return {
     directory,
     catalogues,
     totalSkillEntries: catalogues.reduce((sum, catalog) => sum + catalog.skills, 0),
-    uniqueNormalizedSkills: uniqueSkills.size
+    uniqueNormalizedSkills: uniqueSkills.size,
+    allBundledSkillEntries,
+    allBundledUniqueNormalizedSkills: allNames.size,
+    sharedNormalizedSkills: countSharedNormalizedSkills(allSources),
+    definitionConflicts: findCatalogConflicts(allSources).length
   }
 }

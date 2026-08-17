@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.4.1 - 2026-08-17
+
+### Added
+
+- `audit` command for read-only catalogue-to-workspace comparison, including missing, divergent, workspace-only and duplicate normalized skills plus candidate-reference split counts.
+- `export` command for exporting materialized Recruiting skills as an importable YAML catalogue without candidate data.
+- `merge` command for combining compatible catalogues locally with shared-definition conflict detection.
+- `docs/CATALOGUE-MANAGEMENT.md` describing canonical skill identity, merge, audit and export behavior.
+- `docs/BASE-CATALOGUE.md` for broad-catalogue design/reference material previously kept under `skills/`.
+- Automated tests for catalogue merging/conflicts, taxonomy audit and workspace export.
+- Package smoke-test script that packs and installs the CLI into a temporary clean project before exercising public commands.
+
+### Changed
+
+- Canonicalized all shared normalized skill definitions across the broad catalogue and 11 industry catalogues so bundled files agree on title, category, description and optional color.
+- `catalogues` now validates the entire bundled catalogue set and reports shared normalized names and definition conflicts.
+- Polished `README.md` for public consumption and moved implementation research/reference material into `docs/`.
+- Reduced `skills/industries/README.md` to a usage pointer; research references remain in `docs/INDUSTRY-CATALOGUES.md`.
+- Pinned direct npm dependency versions and added repository `.npmrc` settings to require lockfile generation.
+- GitHub Actions now uses `npm ci`, validates bundled catalogue consistency and runs the package smoke test.
+- Contributor guidance now includes canonical shared-definition rules and a publication-oriented release checklist.
+
+### Safety
+
+- Audit, merge and export do not write candidate references.
+- Workspace export excludes candidate names, skill assignments and proficiency weights.
+- The CLI still implements no skill-delete or Skills Optimizer write operation.
+
 ## 0.4.0 - 2026-08-17
 
 ### Added

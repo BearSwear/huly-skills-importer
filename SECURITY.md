@@ -14,6 +14,8 @@ If the issue is in Huly itself or in an `@hcengineering/*` package, report it th
 - Prefer a scoped Huly token when available.
 - Do not paste live API tokens into issue reports or logs.
 - Treat `inspect --candidates` and `inspect --json` output as potentially sensitive because it can contain candidate names and skill assignments.
+- `export` is designed to contain taxonomy data only; still review exported descriptions for organization-specific information before sharing them.
+- `audit` is read-only but can reveal workspace-only skill names and reference counts.
 - Run `--dry-run` before an import.
 - The CLI never deletes skills or candidate references.
 - Existing skills are not modified unless `--update-existing` is supplied.

@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 import { Command } from 'commander'
-import { catalogWarnings, loadCatalog, summarizeCatalog } from './catalog.js'
+import { auditWorkspace } from './audit.js'
+import { catalogWarnings, loadCatalog, summarizeCatalog, writeCatalog } from './catalog.js'
+import { loadCatalogSet, mergeCatalogs } from './catalog-set.js'
 import { categoryDiagnostics } from './category-resolver.js'
 import { listBundledCatalogues } from './catalogues.js'
 import { hulyConnectionFromEnv } from './config.js'
@@ -8,6 +10,8 @@ import { connectHuly } from './huly.js'
 import { inspectWorkspace } from './inspector.js'
 import { buildImportPlan, executeImportPlan } from './importer.js'
 import { collectSuggestions, exportSuggestionsCatalog, summarizeSuggestions } from './suggestions.js'
+import { exportWorkspaceCatalog } from './workspace-export.js'
+import type { SkillCatalog, SkillUpdateChange } from './types.js'
 
 function printSummary(summary: Record<string, number>): void {
   const rows = Object.entries(summary).sort(([a], [b]) => a.localeCompare(b))
@@ -24,28 +28,49 @@ function printCatalogWarnings(warnings: string[]): void {
   for (const warning of warnings) console.log(`- ${warning}`)
 }
 
+function formatChangeValue(value: string | number): string {
+  return typeof value === 'string' ? JSON.stringify(value) : String(value)
+}
+
+function printChanges(changes: SkillUpdateChange[]): void {
+  for (const change of changes) {
+    console.log(`    ${change.field}: ${formatChangeValue(change.from)} -> ${formatChangeValue(change.to)}`)
+  }
+}
+
+async function loadOneOrMergedCatalog(paths: string[]): Promise<SkillCatalog> {
+  if (paths.length === 1) return await loadCatalog(paths[0]!)
+  const sources = await loadCatalogSet(paths)
+  return mergeCatalogs(sources)
+}
+
 const program = new Command()
   .name('huly-skills-importer')
-  .description('Community CLI for materializing and inspecting controlled Huly Recruiting skill taxonomies.')
-  .version('0.4.0')
+  .description('Community CLI for controlled Huly Recruiting skill taxonomies.')
+  .version('0.4.1')
 
 program
   .command('catalogues')
-  .description('List bundled industry skill catalogues and validate their basic statistics.')
+  .description('List bundled industry catalogues and verify shared skill definitions.')
   .option('--json', 'print machine-readable JSON')
   .action(async (options: { json?: boolean }) => {
     const result = await listBundledCatalogues()
 
     if (options.json) {
       console.log(JSON.stringify(result, null, 2))
+      if (result.definitionConflicts > 0) process.exitCode = 2
       return
     }
 
     console.log('Bundled industry skill catalogues')
     console.log('---------------------------------')
-    console.log(`Catalogues:             ${result.catalogues.length}`)
-    console.log(`Total skill entries:    ${result.totalSkillEntries}`)
-    console.log(`Unique normalized names:${result.uniqueNormalizedSkills}`)
+    console.log(`Industry catalogues:             ${result.catalogues.length}`)
+    console.log(`Industry skill entries:          ${result.totalSkillEntries}`)
+    console.log(`Industry unique normalized names:${result.uniqueNormalizedSkills}`)
+    console.log(`All bundled skill entries:       ${result.allBundledSkillEntries}`)
+    console.log(`All bundled unique names:        ${result.allBundledUniqueNormalizedSkills}`)
+    console.log(`Shared normalized skills:        ${result.sharedNormalizedSkills}`)
+    console.log(`Definition conflicts:            ${result.definitionConflicts}`)
     console.log('')
 
     const width = Math.max(...result.catalogues.map((catalog) => catalog.file.length), 4)
@@ -58,9 +83,10 @@ program
       )
     }
 
-    console.log('\nUse any catalogue with:')
-    console.log('  huly-skills-importer check skills/industries/<file>.yaml')
-    console.log('  huly-skills-importer import skills/industries/<file>.yaml --dry-run')
+    if (result.definitionConflicts > 0) {
+      console.log('\nERROR: bundled catalogues disagree about shared skill definitions.')
+      process.exitCode = 2
+    }
   })
 
 program
@@ -78,8 +104,23 @@ program
   })
 
 program
+  .command('merge')
+  .description('Merge compatible YAML catalogues into one deduplicated catalogue.')
+  .argument('<catalogues...>', 'two or more catalogue YAML files')
+  .requiredOption('-o, --output <file>', 'output YAML file')
+  .option('--name <name>', 'name for the merged catalogue')
+  .action(async (cataloguePaths: string[], options: { output: string; name?: string }) => {
+    if (cataloguePaths.length < 2) throw new Error('merge requires at least two catalogue files')
+    const sources = await loadCatalogSet(cataloguePaths)
+    const catalog = mergeCatalogs(sources, { name: options.name })
+    await writeCatalog(options.output, catalog)
+    console.log(`Merged ${cataloguePaths.length} catalogues into ${options.output}`)
+    console.log(`Unique skills: ${catalog.skills.length}`)
+  })
+
+program
   .command('discover')
-  .description('Discover Huly Recruiting categories, built-in suggestions and materialized skill counts.')
+  .description('Discover Recruiting categories, built-in suggestions and materialized skill counts.')
   .option('--json', 'print JSON instead of human-readable output')
   .action(async (options: { json?: boolean }) => {
     const adapter = await connectHuly(hulyConnectionFromEnv())
@@ -126,7 +167,7 @@ program
 
 program
   .command('suggestions')
-  .description('Inspect or export the built-in Recruiting suggestion vocabulary stored on Huly categories.')
+  .description('Inspect or export the built-in Recruiting suggestion vocabulary.')
   .option('--all', 'print every built-in suggestion grouped by category')
   .option('--json', 'print machine-readable JSON')
   .option('--export <file>', 'export unique built-in suggestions as an importable YAML catalogue')
@@ -146,10 +187,7 @@ program
       }
 
       if (options.json) {
-        console.log(JSON.stringify({
-          summary,
-          records: options.all ? suggestions : undefined
-        }, null, 2))
+        console.log(JSON.stringify({ summary, records: options.all ? suggestions : undefined }, null, 2))
         return
       }
 
@@ -270,11 +308,82 @@ program
   })
 
 program
+  .command('audit')
+  .description('Compare one or more catalogues with the materialized Recruiting taxonomy without writing changes.')
+  .argument('[catalogues...]', 'catalogue YAML files; defaults to skills/import-skills.yaml')
+  .option('--json', 'print machine-readable JSON')
+  .action(async (cataloguePaths: string[], options: { json?: boolean }) => {
+    const paths = cataloguePaths.length > 0 ? cataloguePaths : ['skills/import-skills.yaml']
+    const catalog = await loadOneOrMergedCatalog(paths)
+    const adapter = await connectHuly(hulyConnectionFromEnv())
+    try {
+      const result = await auditWorkspace(adapter, catalog)
+      if (options.json) {
+        console.log(JSON.stringify({ catalogues: paths, ...result }, null, 2))
+        return
+      }
+
+      console.log('Huly Recruiting taxonomy audit')
+      console.log('------------------------------')
+      console.log(`Catalogue skills:                       ${result.summary.catalogSkills}`)
+      console.log(`Materialized workspace skills:          ${result.summary.materializedSkills}`)
+      console.log(`Present and matching:                   ${result.summary.presentMatching}`)
+      console.log(`Missing from workspace:                 ${result.summary.missing}`)
+      console.log(`Divergent from catalogue:               ${result.summary.divergent}`)
+      console.log(`Workspace-only skills:                  ${result.summary.workspaceOnly}`)
+      console.log(`Duplicate normalized workspace names:   ${result.summary.duplicateWorkspaceNames}`)
+      console.log(`Candidate skill references:             ${result.summary.candidateReferences}`)
+      console.log(`References to catalogue skills:         ${result.summary.candidateReferencesToCatalog}`)
+      console.log(`References to workspace-only skills:    ${result.summary.candidateReferencesToWorkspaceOnly}`)
+
+      if (result.missing.length > 0) {
+        console.log('\nMissing skills')
+        for (const row of result.missing) console.log(`- ${row.skill} (${row.category})`)
+      }
+      if (result.divergent.length > 0) {
+        console.log('\nDivergent skills')
+        for (const row of result.divergent) {
+          console.log(`- ${row.skill} (${row.desiredCategory})`)
+          printChanges(row.changes)
+        }
+      }
+      if (result.workspaceOnly.length > 0) {
+        console.log('\nWorkspace-only skills')
+        for (const row of result.workspaceOnly) {
+          console.log(`- ${row.skill} (${row.category}) — ${row.references} reference(s)`)
+        }
+      }
+      if (result.duplicateWorkspaceNames.length > 0) {
+        console.log('\nDuplicate normalized workspace names')
+        for (const row of result.duplicateWorkspaceNames) {
+          console.log(`- ${row.normalizedName}: ${row.skills.join(', ')}`)
+        }
+      }
+    } finally {
+      await adapter.close()
+    }
+  })
+
+program
+  .command('export')
+  .description('Export materialized Huly Recruiting skills as an importable YAML catalogue.')
+  .argument('<file>', 'output YAML file')
+  .action(async (outputPath: string) => {
+    const adapter = await connectHuly(hulyConnectionFromEnv())
+    try {
+      const count = await exportWorkspaceCatalog(adapter, outputPath)
+      console.log(`Exported ${count} materialized Recruiting skills to ${outputPath}`)
+    } finally {
+      await adapter.close()
+    }
+  })
+
+program
   .command('import')
   .description('Materialize missing Recruiting skills from a YAML catalogue.')
   .argument('[catalog]', 'catalogue YAML file', 'skills/import-skills.yaml')
   .option('--dry-run', 'show planned changes without writing to Huly', false)
-  .option('--update-existing', 'synchronize description/category/color for existing skills', false)
+  .option('--update-existing', 'synchronize title, description, category and color for existing skills', false)
   .action(async (
     catalogPath: string,
     options: { dryRun: boolean; updateExisting: boolean }
@@ -284,10 +393,7 @@ program
     const adapter = await connectHuly(hulyConnectionFromEnv())
 
     try {
-      const plan = await buildImportPlan(adapter, catalog, {
-        updateExisting: options.updateExisting
-      })
-
+      const plan = await buildImportPlan(adapter, catalog, { updateExisting: options.updateExisting })
       const createCount = plan.filter((item) => item.action === 'create').length
       const updateCount = plan.filter((item) => item.action === 'update').length
       const skipCount = plan.filter((item) => item.action === 'skip').length

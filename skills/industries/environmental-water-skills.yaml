@@ -1,7 +1,6 @@
-# Community-maintained example catalogue for huly-skills-importer.
-# Research-informed, not an official taxonomy or certification standard.
-# Research basis: US EPA Water and Wastewater Competency Model and water-workforce guidance; ISO 14001 and ISO 45001 management systems; common environmental engineering, water, wastewater and geospatial practice.
-# Edit this catalogue to match your organization, jurisdiction and recruiting needs.
+# Community-maintained industry example for huly-skills-importer.
+# See docs/INDUSTRY-CATALOGUES.md for research basis and design notes.
+# Adapt this catalogue to your organization, jurisdiction and Recruiting practice.
 
 version: 1
 name: Environmental and Water Services Recruiting Skills
@@ -69,8 +68,8 @@ categories:
 skills:
 - name: Environmental Engineering
   category: Hard Skills
-  description: Apply engineering principles to protect environmental quality and manage water, waste, pollution
-    and resource systems.
+  description: Apply engineering principles to protect environmental quality and manage water, waste, pollution and resource
+    systems.
 - name: Water Engineering
   category: Hard Skills
   description: Plan, analyze and design water supply, treatment, storage and distribution infrastructure.
@@ -97,8 +96,7 @@ skills:
   description: Simulate riverine, pluvial or coastal flooding to support planning, design and emergency management.
 - name: Climate Adaptation
   category: Hard Skills
-  description: Assess climate hazards and integrate resilience and adaptation measures into infrastructure and environmental
-    planning.
+  description: Assess climate hazards and vulnerability and integrate resilience measures into plans, assets and services.
 - name: Sustainable Drainage Systems
   category: Hard Skills
   description: Design nature-based and distributed stormwater measures that manage runoff close to source.
@@ -164,7 +162,7 @@ skills:
   description: Use process models to predict treatment performance and test operational or design scenarios.
 - name: Process Control
   category: Hard Skills
-  description: Apply instrumentation, feedback and control strategies to stabilize and optimize treatment processes.
+  description: Design, configure and tune feedback, feedforward and advanced control strategies for industrial processes.
 - name: SCADA for Water Utilities
   category: Hard Skills
   description: Use supervisory control and data acquisition systems for monitoring and operating water infrastructure.
@@ -218,7 +216,7 @@ skills:
   description: Implement and maintain an environmental management system aligned with ISO 14001.
 - name: ISO 45001
   category: Hard Skills
-  description: Apply occupational health and safety management-system principles in field and operational work.
+  description: Apply ISO 45001 occupational health and safety management-system principles and requirements.
 - name: Environmental Management Systems
   category: Management
   description: Establish objectives, controls, monitoring, audits and improvement processes for environmental performance.
@@ -227,11 +225,10 @@ skills:
   description: Quantify greenhouse-gas emissions from organizational activities, projects or products.
 - name: Life Cycle Assessment
   category: Hard Skills
-  description: Assess environmental impacts across product, asset or service life cycles.
+  description: Assess environmental impacts across the life cycle of a product, asset, process or service.
 - name: Circular Economy
   category: Hard Skills
-  description: Design resource loops, reuse, recovery and waste-reduction strategies that reduce virgin resource
-    demand.
+  description: Design resource loops, reuse, recovery and waste-reduction strategies that reduce virgin resource demand.
 - name: Waste Management
   category: Hard Skills
   description: Plan waste prevention, segregation, handling, treatment, recovery and compliant disposal.
@@ -240,13 +237,13 @@ skills:
   description: Design monitoring programs that detect trends, impacts and compliance conditions over time.
 - name: GIS
   category: Hard Skills
-  description: Manage and analyze geospatial information for environmental, utility and planning applications.
+  description: Manage, analyze and communicate geospatial information for planning, assets, operations and decision support.
 - name: ArcGIS Pro
   category: Desktop Application Development
   description: Build geospatial analyses, maps, networks and data-management workflows using ArcGIS Pro.
 - name: QGIS
   category: Desktop Application Development
-  description: Perform open-source geospatial mapping, analysis and data management using QGIS.
+  description: Create, manage, analyze and communicate geospatial information using QGIS.
 - name: Remote Sensing
   category: Hard Skills
   description: Use satellite, aerial and sensor data to characterize land, water and environmental change.
@@ -270,32 +267,31 @@ skills:
   description: Rank infrastructure assets by probability and consequence of failure to prioritize intervention.
 - name: Asset Management
   category: Management
-  description: Coordinate lifecycle planning, risk, maintenance, renewal and investment for infrastructure assets.
+  description: Manage asset lifecycle value, risk, performance, maintenance and investment decisions.
 - name: Capital Planning
   category: Management
-  description: Prioritize and phase infrastructure investments based on need, risk, service and affordability.
+  description: Prioritize and phase capital investments based on need, risk, service outcomes, capacity and affordability.
 - name: Operations and Maintenance Planning
   category: Management
   description: Plan recurring operations, inspection, preventive maintenance and corrective work for utility assets.
 - name: Regulatory Reporting
   category: Management
-  description: Coordinate evidence, data quality and submissions required by environmental and utility regulators.
+  description: Coordinate evidence, data quality, controls and submissions required by regulators or supervisory bodies.
 - name: Water Safety Planning
   category: Management
   description: Apply systematic risk management from catchment to consumer to protect drinking-water safety.
 - name: Emergency Response Planning
   category: Management
-  description: Prepare operational response arrangements for contamination, outages, flooding and infrastructure
-    failures.
+  description: Prepare operational response arrangements for contamination, outages, flooding and infrastructure failures.
 - name: Project Management
   category: Management
-  description: Manage environmental and water projects across scope, schedule, cost, quality, risk and stakeholders.
+  description: Planning, coordination, risk and delivery management.
 - name: Environmental Programme Management
   category: Management
   description: Coordinate multiple environmental initiatives, commitments, monitoring and improvement actions.
 - name: Public Consultation
   category: Soft Skills
-  description: Plan and conduct transparent engagement with communities and stakeholders on environmental projects.
+  description: Plan and conduct transparent engagement with communities and stakeholders to gather input and support decisions.
 - name: Stakeholder Engagement
   category: Soft Skills
   description: Build working relationships with regulators, clients, landowners, communities and technical disciplines.
@@ -313,11 +309,10 @@ skills:
   description: Identify hazards and apply safe systems of work for site inspections, sampling and field investigations.
 - name: Quality Management
   category: Quality Assurance
-  description: Establish review, checking, traceability and continuous-improvement practices for technical deliverables.
+  description: Establish, monitor and improve processes, controls, responsibilities and evidence needed for consistent quality.
 - name: Data Quality Assurance
   category: Quality Assurance
-  description: Validate environmental and utility datasets for completeness, consistency, provenance and fitness
-    for use.
+  description: Validate source data, assumptions, transformations, calculations and outputs used for analysis or reporting.
 - name: Model Verification and Validation
   category: Quality Assurance
   description: Check environmental and hydraulic models against data, assumptions and expected system behavior.

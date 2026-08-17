@@ -1,6 +1,6 @@
-import { readFile } from 'node:fs/promises'
+import { readFile, writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
-import { parse } from 'yaml'
+import { parse, stringify } from 'yaml'
 import { z } from 'zod'
 import type { SkillCatalog } from './types.js'
 
@@ -50,6 +50,13 @@ export async function loadCatalog(path: string): Promise<SkillCatalog> {
   }
 
   return parsed
+}
+
+
+export async function writeCatalog(path: string, catalog: SkillCatalog): Promise<void> {
+  const fullPath = resolve(path)
+  const yaml = stringify(catalog, { lineWidth: 120 })
+  await writeFile(fullPath, yaml, 'utf8')
 }
 
 export function summarizeCatalog(catalog: SkillCatalog): Record<string, number> {

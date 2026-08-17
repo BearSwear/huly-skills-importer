@@ -1,7 +1,7 @@
 {
   "name": "huly-skills-importer",
-  "version": "0.4.0",
-  "description": "Community CLI for materializing and inspecting controlled Huly Recruiting skill taxonomies.",
+  "version": "0.4.1",
+  "description": "Community CLI for controlled Huly Recruiting skill taxonomies, auditing and workspace skill export.",
   "type": "module",
   "license": "MIT",
   "author": "BearSwear and huly-skills-importer contributors",
@@ -35,8 +35,8 @@
     "dist",
     "skills/import-skills.yaml",
     "skills/example.yaml",
-    "skills/CATALOG.md",
     "skills/industries",
+    "scripts/package-smoke.mjs",
     "docs",
     "README.md",
     "LICENSE",
@@ -55,19 +55,22 @@
     "test:watch": "vitest",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "check": "npm run typecheck && npm test",
-    "catalogues": "tsx src/index.ts catalogues"
+    "catalogues": "tsx src/index.ts catalogues",
+    "audit": "tsx src/index.ts audit skills/import-skills.yaml",
+    "catalogues:check": "tsx src/index.ts catalogues",
+    "package:smoke": "node scripts/package-smoke.mjs"
   },
   "dependencies": {
     "@hcengineering/api-client": "0.7.423",
-    "commander": "^14.0.0",
-    "dotenv": "^17.2.1",
-    "yaml": "^2.8.1",
-    "zod": "^4.0.17"
+    "commander": "14.0.0",
+    "dotenv": "17.2.1",
+    "yaml": "2.9.0",
+    "zod": "4.0.17"
   },
   "devDependencies": {
-    "@types/node": "^22.18.1",
-    "tsx": "^4.20.5",
-    "typescript": "^5.9.3",
-    "vitest": "^3.2.4"
+    "@types/node": "22.18.1",
+    "tsx": "4.20.5",
+    "typescript": "5.9.3",
+    "vitest": "3.2.7"
   }
 }

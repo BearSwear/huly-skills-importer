@@ -19,7 +19,7 @@ ${skills}
 `
 
 describe('catalogues', () => {
-  it('summarizes bundled catalogues and global skill overlap', async () => {
+  it('summarizes industry catalogues and reports cross-catalogue definition conflicts', async () => {
     const dir = await mkdtemp(join(tmpdir(), 'huly-catalogues-'))
 
     await writeFile(join(dir, 'alpha-skills.yaml'), template('Alpha', `  - name: Docker
@@ -44,5 +44,6 @@ describe('catalogues', () => {
     expect(result.totalSkillEntries).toBe(4)
     expect(result.uniqueNormalizedSkills).toBe(3)
     expect(result.catalogues[1]?.otherSkills).toBe(1)
+    expect(result.definitionConflicts).toBeGreaterThanOrEqual(1)
   })
 })

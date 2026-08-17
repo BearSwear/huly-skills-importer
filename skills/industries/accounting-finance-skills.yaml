@@ -1,12 +1,11 @@
-# Community-maintained example catalogue for huly-skills-importer.
-# Research-informed, not an official taxonomy or certification standard.
-# Research basis: AICPA/CIMA foundational and CGMA competency frameworks; IFRS accounting and sustainability standards; COSO internal-control and enterprise-risk concepts; modern finance transformation practice.
-# Edit this catalogue to match your organization, jurisdiction and recruiting needs.
+# Community-maintained industry example for huly-skills-importer.
+# See docs/INDUSTRY-CATALOGUES.md for research basis and design notes.
+# Adapt this catalogue to your organization, jurisdiction and Recruiting practice.
 
 version: 1
 name: Accounting and Finance Recruiting Skills
-description: An example skill catalogue for accounting firms, finance teams, audit practices, outsourced finance
-  providers and financial advisory organizations using Huly Recruiting.
+description: An example skill catalogue for accounting firms, finance teams, audit practices, outsourced finance providers
+  and financial advisory organizations using Huly Recruiting.
 categories:
   Backend Development:
     aliases:
@@ -69,8 +68,7 @@ categories:
 skills:
 - name: Financial Accounting
   category: Hard Skills
-  description: Record, classify and report financial transactions according to applicable accounting principles
-    and policies.
+  description: Record, classify and report financial transactions according to applicable accounting principles and policies.
 - name: Management Accounting
   category: Hard Skills
   description: Provide internal cost, performance and decision-support information to managers and business leaders.
@@ -226,7 +224,8 @@ skills:
   description: Estimate enterprise, equity or asset value using appropriate valuation methods.
 - name: Due Diligence
   category: Hard Skills
-  description: Analyze financial, commercial and control information to identify transaction or investment risks.
+  description: Systematically investigate financial, commercial, technical, legal or control information to identify material
+    risks and opportunities.
 - name: Mergers and Acquisitions Finance
   category: Hard Skills
   description: Support transaction modeling, due diligence, valuation, integration and accounting considerations.
@@ -244,7 +243,7 @@ skills:
   description: Establish ownership, definitions, controls and quality requirements for finance data.
 - name: Master Data Management
   category: Database Development
-  description: Govern chart-of-account, customer, supplier and other core finance master data.
+  description: Govern authoritative master data definitions, ownership, quality, identifiers, change and synchronization.
 - name: Finance Data Modeling
   category: Data Structures
   description: Structure finance dimensions, hierarchies, mappings and measures for reporting and analysis.
@@ -256,10 +255,10 @@ skills:
   description: Build controlled financial analysis, reconciliation and reporting models in Excel.
 - name: Power BI
   category: Business Analytics
-  description: Build finance dashboards, semantic models and management reporting using Power BI.
+  description: Build analytical models, dashboards and interactive reporting solutions using Microsoft Power BI.
 - name: SQL
   category: Programming Languages
-  description: Query finance and operational databases for reconciliation, analysis and reporting.
+  description: SQL querying and data manipulation for relational databases.
 - name: Python for Finance
   category: Programming Languages
   description: Automate financial data processing, controls and analysis using Python.
@@ -280,18 +279,16 @@ skills:
   description: Document finance processes, controls, roles and handoffs in an understandable and auditable form.
 - name: Accounting Policy Development
   category: Management
-  description: Develop and maintain accounting policies that translate standards into consistent organizational
-    practice.
+  description: Develop and maintain accounting policies that translate standards into consistent organizational practice.
 - name: Audit Engagement Management
   category: Management
-  description: Coordinate scope, staffing, evidence requests, review, issues and client communication for assurance
-    engagements.
+  description: Coordinate scope, staffing, evidence requests, review, issues and client communication for assurance engagements.
 - name: Client Accounting Services
   category: Management
   description: Deliver recurring bookkeeping, reporting, payroll and advisory services to external clients.
 - name: Regulatory Reporting
   category: Management
-  description: Coordinate recurring financial or prudential reports and maintain traceable evidence supporting submissions.
+  description: Coordinate evidence, data quality, controls and submissions required by regulators or supervisory bodies.
 - name: Financial Controls Documentation
   category: Quality Assurance
   description: Document control objectives, procedures, owners, evidence and testing results.
@@ -303,8 +300,7 @@ skills:
   description: Perform structured review of reports, disclosures, calculations and supporting evidence.
 - name: Professional Ethics
   category: Soft Skills
-  description: Apply integrity, objectivity, confidentiality and professional judgment to finance and assurance
-    work.
+  description: Apply integrity, objectivity, confidentiality, competence and professional judgment in decision making.
 - name: Accounting Research
   category: Hard Skills
   description: Research accounting standards, interpretations and precedent to support technical conclusions.
@@ -319,7 +315,7 @@ skills:
   description: Work with operational leaders to translate financial insight into practical business decisions.
 - name: Client Relationship Management
   category: Sales
-  description: Build trusted advisory relationships with accounting, audit and finance clients.
+  description: Build and maintain trusted client relationships through reliability, responsiveness and commercial understanding.
 - name: Advisory Proposal Development
   category: Sales
   description: Develop scoped, priced and outcome-oriented proposals for finance and advisory services.

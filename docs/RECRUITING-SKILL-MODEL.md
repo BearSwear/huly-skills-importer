@@ -1,6 +1,6 @@
 # Huly Recruiting skill model
 
-This document records the behavior that motivated `huly-skills-importer` v0.3.0. It is based on source inspection and live compatibility testing against self-hosted Huly `v0.7.426` with `@hcengineering/api-client@0.7.423`.
+This document records the version-specific Recruiting behavior that motivated `huly-skills-importer` and its controlled-taxonomy workflow. It is based on source inspection and live compatibility testing against self-hosted Huly `v0.7.426` with `@hcengineering/api-client@0.7.423`.
 
 Treat these details as version-specific implementation knowledge, not a permanent Huly API contract.
 
@@ -90,6 +90,22 @@ With **Create new skills if existing not found** disabled, Huly displayed exactl
 This establishes the primary use case for this CLI:
 
 > Materialize a controlled taxonomy before CV ingestion so Huly can map recognized skills without automatically creating arbitrary new skill records.
+
+## Controlled-taxonomy acceptance test
+
+After the broad catalogue was materialized, the same controlled CV was uploaded again with **Create new skills if existing not found** still disabled. All 15 Rekoni-returned terms were now present as materialized skills, and Huly mapped all 15 in the New Talent form.
+
+This provided the end-to-end acceptance test for the project:
+
+```text
+CV
+  -> Rekoni recognizes a term
+  -> matching TagElement already exists
+  -> Huly maps the existing skill
+  -> candidate can persist a TagReference
+```
+
+The importer remains deliberately outside Rekoni itself: it manages the materialized taxonomy, not the recognition engine.
 
 ## Auto-create enabled
 

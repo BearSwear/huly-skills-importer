@@ -4,12 +4,22 @@ These catalogues are community-maintained examples for `huly-skills-importer`. T
 
 ## Design principles
 
-- Every file uses the 18 built-in Huly Recruiting category aliases supported by `huly-skills-importer` v0.4.0.
+- Every file uses the 18 built-in Huly Recruiting category aliases supported by `huly-skills-importer` v0.4.1.
 - The catalogues deliberately avoid assigning skills to `Other`. On Huly v0.7.426, low-reference `Other` skills can be treated as cleanup candidates by the Skills Optimizer.
 - Standards and framework names are materialized as skills only when practical familiarity with the framework is useful in recruiting.
 - Job titles are generally excluded; the files focus on capabilities that can be assigned to individual talents.
-- Importing more than one catalogue is expected to produce overlaps. `huly-skills-importer` is title-idempotent, so review with `--dry-run` first and use `--update-existing` only when you want a catalogue to become authoritative for existing fields.
+- Importing more than one catalogue is expected to produce overlaps. In v0.4.1 every shared normalized title across the bundled broad/industry catalogues uses one canonical title, category and description, so bundled import order does not redefine shared skills.
+- `huly-skills-importer catalogues` checks bundled cross-catalogue consistency, while `merge` rejects conflicting definitions in arbitrary input catalogues.
 - Sector regulation varies by country. Adapt legal/regulatory skills to the jurisdictions in which you recruit.
+
+
+## Bundled consistency in v0.4.1
+
+The broad catalogue and 11 industry files contain intentional overlap because capabilities such as risk management, project management, security testing and client relationship management are transferable across sectors.
+
+v0.4.1 canonicalizes shared definitions across the bundle. A repeated normalized skill name must have the same title/casing, Huly category, description and optional explicit color everywhere it appears. This removes the import-order ambiguity present in v0.4.0.
+
+The canonicalization policy prefers the broad catalogue definition when a shared skill appears there. Industry-only overlaps use a sector-neutral shared definition. This does not prevent organizations from maintaining their own alternative catalogue; it only makes the bundled examples internally coherent.
 
 ## Research basis by catalogue
 

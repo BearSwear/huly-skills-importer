@@ -4,7 +4,7 @@ This project intentionally keeps Huly-specific implementation details isolated i
 
 ## Compatibility baseline
 
-Live testing on 2026-08-16 used:
+Live testing completed through 2026-08-17 used:
 
 - `hcengineering/huly-selfhost`
 - `HULY_VERSION=v0.7.426`
@@ -91,9 +91,11 @@ Observed behavior in Huly `v0.7.426`:
 2. run `discover`;
 3. run `suggestions` and record counts;
 4. run `inspect` and confirm reference queries work;
-5. validate the bundled catalogue;
-6. dry-run `skills/example.yaml`;
-7. create its two skills in a disposable/test workspace;
-8. run the same import again and verify both are skipped;
-9. upload a controlled resume with auto-create disabled and verify existing skill mapping;
-10. only then consider a larger catalogue import.
+5. run `catalogues` and verify zero bundled definition conflicts;
+6. export the test workspace taxonomy and validate the generated YAML;
+7. run `audit skills/example.yaml`;
+8. dry-run `skills/example.yaml`;
+9. create its two skills in a disposable/test workspace;
+10. run the same import again and verify both are skipped;
+11. upload a controlled resume with auto-create disabled and verify existing skill mapping;
+12. only then consider a larger catalogue import.

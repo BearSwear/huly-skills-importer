@@ -1,7 +1,6 @@
-# Community-maintained example catalogue for huly-skills-importer.
-# Research-informed, not an official taxonomy or certification standard.
-# Research basis: Google Ads and Google Analytics Skillshop capabilities; IAB measurement, advertising and privacy guidance; agency campaign, content, creative, analytics and account-management practice.
-# Edit this catalogue to match your organization, jurisdiction and recruiting needs.
+# Community-maintained industry example for huly-skills-importer.
+# See docs/INDUSTRY-CATALOGUES.md for research basis and design notes.
+# Adapt this catalogue to your organization, jurisdiction and Recruiting practice.
 
 version: 1
 name: Marketing and Creative Agency Recruiting Skills
@@ -69,8 +68,8 @@ categories:
 skills:
 - name: Marketing Strategy
   category: Marketing
-  description: Develop marketing direction, objectives, audiences, channels and investment priorities aligned with
-    business goals.
+  description: Develop marketing direction, objectives, audiences, channels and investment priorities aligned with business
+    goals.
 - name: Brand Strategy
   category: Marketing
   description: Define brand positioning, promise, architecture, audience perception and long-term brand direction.
@@ -79,11 +78,10 @@ skills:
   description: Design integrated campaigns with clear audiences, messages, channels, objectives and measurement.
 - name: Content Strategy
   category: Marketing
-  description: Plan content themes, formats, distribution, governance and lifecycle around audience needs and business
-    goals.
+  description: Plan content themes, formats, distribution, governance and lifecycle around audience needs and business goals.
 - name: Content Marketing
   category: Marketing
-  description: Create and distribute useful content that attracts, engages and converts target audiences.
+  description: Educational and demand-generating content for target customers.
 - name: Copywriting
   category: Marketing
   description: Write persuasive, on-brand copy for campaigns, websites, advertisements and customer communications.
@@ -92,11 +90,10 @@ skills:
   description: Plan publishing calendars, responsibilities, review cycles and dependencies across content programs.
 - name: SEO
   category: Marketing
-  description: Improve organic search visibility through content, technical and authority-building practices.
+  description: Search visibility and content optimization for customer acquisition.
 - name: Technical SEO
   category: Web Development
-  description: Identify and resolve crawl, indexing, structured-data, performance and site-architecture issues affecting
-    search.
+  description: Identify and resolve crawl, indexing, structured-data, performance and site-architecture issues affecting search.
 - name: Keyword Research
   category: Business Analytics
   description: Research search demand, intent, competition and topic opportunities to guide content and paid campaigns.
@@ -111,8 +108,7 @@ skills:
   description: Manage search advertising strategy, queries, keywords, bids, budgets and conversion performance.
 - name: Paid Social
   category: Marketing
-  description: Plan and optimize advertising on social platforms using audiences, creative, budgets and performance
-    data.
+  description: Plan and optimize advertising on social platforms using audiences, creative, budgets and performance data.
 - name: Meta Ads
   category: Marketing
   description: Build and optimize paid campaigns across Meta advertising products.
@@ -142,7 +138,7 @@ skills:
   description: Identify, contract and manage creators or influencers against brand, audience and campaign objectives.
 - name: Email Marketing
   category: Marketing
-  description: Design and optimize permission-based email campaigns, segmentation, automation and measurement.
+  description: Campaign design and execution using email channels.
 - name: Lifecycle Marketing
   category: Marketing
   description: Design communications across acquisition, onboarding, activation, retention and re-engagement stages.
@@ -154,7 +150,7 @@ skills:
   description: Coordinate targeted marketing and sales activity around high-value accounts and buying groups.
 - name: Lead Generation
   category: Marketing
-  description: Design and operate programs that create qualified interest and measurable pipeline contribution.
+  description: Creation and testing of repeatable prospect acquisition channels.
 - name: Conversion Rate Optimization
   category: Business Analytics
   description: Use research, analytics and experiments to improve conversion through digital journeys.
@@ -162,8 +158,8 @@ skills:
   category: Web Development
   description: Design and test landing pages for message clarity, usability, speed and conversion.
 - name: A/B Testing
-  category: Quality Assurance
-  description: Design controlled experiments, define success metrics and interpret results without misleading conclusions.
+  category: Marketing
+  description: Controlled testing of product or marketing variants.
 - name: Marketing Analytics
   category: Business Analytics
   description: Analyze campaign, customer and channel data to evaluate performance and guide decisions.
@@ -178,8 +174,7 @@ skills:
   description: Implement reliable measurement of meaningful customer actions across advertising and digital properties.
 - name: Attribution Analysis
   category: Business Analytics
-  description: Evaluate how channels and touchpoints contribute to customer outcomes under different attribution
-    models.
+  description: Evaluate how channels and touchpoints contribute to customer outcomes under different attribution models.
 - name: Marketing Mix Modeling
   category: Business Analytics
   description: Estimate incremental marketing contribution and channel effects using aggregated statistical analysis.
@@ -197,10 +192,10 @@ skills:
   description: Measure acquisition spend relative to new-customer or new-account outcomes.
 - name: Market Research
   category: Business Analytics
-  description: Collect and analyze market, customer and competitor information to support marketing decisions.
+  description: Structured research of markets, competitors, customer segments and demand.
 - name: Competitive Analysis
   category: Business Analytics
-  description: Assess competitor positioning, offers, channels and messaging to identify market opportunities.
+  description: Comparison of product capabilities, pricing, positioning and alternatives.
 - name: Brand Tracking
   category: Business Analytics
   description: Measure awareness, consideration, preference and brand associations over time.
@@ -209,7 +204,7 @@ skills:
   description: Build clear performance reporting connecting activities, spend, outputs and outcomes.
 - name: Dashboard Design
   category: Design
-  description: Design understandable marketing dashboards that prioritize actionable measures and appropriate context.
+  description: Design of useful customer and operator dashboards.
 - name: Graphic Design
   category: Design
   description: Create visual communication for campaigns, brands, digital channels and client deliverables.
@@ -221,7 +216,7 @@ skills:
   description: Develop coherent identity systems including typography, color, imagery and application rules.
 - name: Presentation Design
   category: Design
-  description: Create clear, persuasive and visually coherent presentations for pitches, strategy and reporting.
+  description: Create clear presentations that communicate logic, evidence, recommendations and decisions visually.
 - name: Motion Design
   category: Design
   description: Create animated visual assets for digital campaigns, social media and video.
@@ -233,14 +228,13 @@ skills:
   description: Plan and direct photography to meet brand, campaign and production requirements.
 - name: Figma
   category: Design
-  description: Design interfaces, campaign assets and collaborative visual systems using Figma.
+  description: Interface design and prototyping with Figma.
 - name: Adobe Creative Cloud
   category: Design
   description: Use professional creative applications for image, layout, video and visual production.
 - name: UX Design
   category: Design
-  description: Design digital experiences around user goals, usability, information architecture and conversion
-    needs.
+  description: Design of usable workflows and interactions for customers and operators.
 - name: Web Design
   category: Design
   description: Design responsive websites and pages balancing brand, content, usability and performance.
@@ -252,17 +246,16 @@ skills:
   description: Build responsive marketing websites and interactions using Webflow.
 - name: HTML
   category: Web Development
-  description: Create semantic page structures and marketing content using HTML.
+  description: Semantic web markup using HTML.
 - name: CSS
   category: Web Development
-  description: Style responsive digital experiences using modern CSS.
+  description: Web styling and responsive layout using CSS.
 - name: JavaScript
   category: Programming Languages
-  description: Implement interactive marketing-site behavior and measurement integrations using JavaScript.
+  description: JavaScript development for web applications and integrations.
 - name: CRM
-  category: Hard Skills
-  description: Use customer relationship management systems to manage contacts, opportunities, segmentation and
-    campaign handoffs.
+  category: Sales
+  description: Customer relationship management processes and tooling.
 - name: CRM Integration
   category: Backend Development
   description: Integrate CRM, marketing automation, forms and data platforms through APIs and workflows.
@@ -271,16 +264,17 @@ skills:
   description: Connect advertising, analytics and marketing systems for controlled data exchange and automation.
 - name: Client Discovery
   category: Sales
-  description: Elicit client goals, constraints, audiences, positioning and success criteria before proposing work.
+  description: Elicit client goals, constraints, users, priorities and success criteria before defining an engagement or solution.
 - name: Proposal Development
   category: Sales
-  description: Develop clear agency proposals covering objectives, scope, deliverables, approach, team and pricing.
+  description: Develop clear proposals covering objectives, scope, deliverables, approach, team, assumptions, pricing and
+    value.
 - name: Pitching
   category: Sales
-  description: Present creative or strategic recommendations persuasively to prospective or existing clients.
+  description: Present recommendations, concepts or proposals persuasively to prospective or existing clients and stakeholders.
 - name: Account Management
   category: Sales
-  description: Manage client relationships, expectations, priorities, commercial health and ongoing opportunities.
+  description: Ongoing commercial relationship and expansion management.
 - name: Client Retention
   category: Sales
   description: Strengthen client satisfaction, trust and value to support long-term relationships.
